@@ -1,5 +1,5 @@
 services:
-  - type: worker
+  - type: web
     name: bollywood-scraper-cron
     env: node
     buildCommand: npm install

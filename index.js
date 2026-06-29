@@ -16,6 +16,8 @@
 require("dotenv").config();
 const mongoose = require("mongoose");
 const cron = require("node-cron");
+const http = require("http");
+const https = require("https");
 const { run, runIncremental } = require("./src/orchestrator");
 const logger = require("./src/utils/logger");
 
@@ -46,6 +48,34 @@ async function main() {
   if (argMap["cron"]) {
     logger.info("Starting cron scheduler — incremental update runs nightly at 03:00 IST");
     await mongoose.connect(process.env.MONGO_URI);
+    
+    // Set up keep-alive HTTP server
+    const PORT = process.env.PORT || 3000;
+    const server = http.createServer((req, res) => {
+      if (req.url === "/ping") {
+        res.writeHead(200);
+        res.end("pong");
+      } else {
+        res.writeHead(200);
+        res.end("Bollywood Scraper Cron is running!");
+      }
+    });
+
+    server.listen(PORT, () => {
+      logger.info(`Keep-alive server listening on port ${PORT}`);
+      
+      // Ping itself every 2 minutes (120000 ms) to prevent sleeping on free tiers
+      setInterval(() => {
+        const url = process.env.RENDER_EXTERNAL_URL || `http://localhost:${PORT}/ping`;
+        const protocol = url.startsWith("https") ? https : http;
+        protocol.get(url, (res) => {
+          logger.info(`Self-ping successful: ${res.statusCode}`);
+        }).on("error", (err) => {
+          logger.warn(`Self-ping failed: ${err.message}`);
+        });
+      }, 2 * 60 * 1000);
+    });
+
     cron.schedule("0 3 * * *", async () => {
       logger.info("Cron: starting incremental Bollywood scrape…");
       try {
