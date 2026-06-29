@@ -1,0 +1,10 @@
+{"err":"timeout of 15000ms exceeded","level":"error","message":"TMDB fetchMoviesByYear failed","page":1,"timestamp":"2026-06-28 11:25:22","year":2024}
+{"err":"","level":"error","message":"TMDB fetchMoviesByYear failed","page":1,"timestamp":"2026-06-28 11:29:40","year":2024}
+{"err":"connect ECONNREFUSED 127.0.0.1:10809","level":"error","message":"TMDB fetchMoviesByYear failed","page":1,"timestamp":"2026-06-28 12:21:19","year":2024}
+{"err":"connect ECONNREFUSED 127.0.0.1:10809","level":"error","message":"TMDB fetchMoviesByYear failed","page":1,"timestamp":"2026-06-28 12:21:38","year":2024}
+{"err":"connect ECONNREFUSED 127.0.0.1:10809","level":"error","message":"TMDB fetchMoviesByYear failed","page":1,"timestamp":"2026-06-28 12:22:49","year":2024}
+{"err":"connect ECONNREFUSED 127.0.0.1:10809","level":"error","message":"TMDB fetchMoviesByYear failed","page":1,"timestamp":"2026-06-28 12:23:34","year":2024}
+{"err":"","level":"error","message":"TMDB fetchMoviesByYear failed","page":1,"timestamp":"2026-06-28 12:25:16","year":2024}
+{"err":"","level":"error","message":"TMDB fetchMoviesByYear failed","page":1,"timestamp":"2026-06-28 12:34:54","year":2024}
+{"err":"connect ECONNREFUSED 127.0.0.1:10809","level":"error","message":"TMDB fetchMoviesByYear failed","page":1,"timestamp":"2026-06-28 12:39:21","year":2024}
+{"err":"connect ETIMEDOUT 49.44.79.236:443","level":"error","message":"TMDB fetchMoviesByYear failed","page":1,"timestamp":"2026-06-28 12:41:19","year":2024}

@@ -1,0 +1,14 @@
+services:
+  - type: worker
+    name: bollywood-scraper-cron
+    env: node
+    buildCommand: npm install
+    startCommand: npm run cron
+    autoDeploy: true
+    envVars:
+      - key: MONGO_URI
+        sync: false
+      - key: TMDB_API_KEY
+        sync: false
+      - key: OMDB_API_KEY
+        sync: false

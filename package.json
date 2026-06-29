@@ -1,0 +1,36 @@
+{
+  "name": "bollywood-scraper",
+  "version": "1.0.0",
+  "description": "Automated Bollywood movie scraper for Ollypedia",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "full": "node index.js",
+    "incremental": "node index.js --incremental",
+    "reset": "node index.js --reset",
+    "year": "node index.js --year=2024",
+    "retry": "node index.js --retry-failed",
+    "validate": "node index.js --validate",
+    "cron": "node index.js --cron"
+  },
+  "keywords": [
+    "bollywood",
+    "scraper",
+    "mongodb",
+    "tmdb",
+    "omdb"
+  ],
+  "author": "Ollypedia",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "axios": "^1.6.0",
+    "cheerio": "^1.0.0",
+    "dotenv": "^16.0.0",
+    "freekeys": "^0.0.4",
+    "mongoose": "^8.0.0",
+    "node-cron": "^3.0.0",
+    "p-limit": "^3.1.0",
+    "p-queue": "^7.4.0",
+    "winston": "^3.11.0"
+  }
+}
