@@ -8,3 +8,7 @@
 {"err":"","level":"error","message":"TMDB fetchMoviesByYear failed","page":1,"timestamp":"2026-06-28 12:34:54","year":2024}
 {"err":"connect ECONNREFUSED 127.0.0.1:10809","level":"error","message":"TMDB fetchMoviesByYear failed","page":1,"timestamp":"2026-06-28 12:39:21","year":2024}
 {"err":"connect ETIMEDOUT 49.44.79.236:443","level":"error","message":"TMDB fetchMoviesByYear failed","page":1,"timestamp":"2026-06-28 12:41:19","year":2024}
+{"err":"read ECONNRESET","level":"error","message":"TMDB fetchMoviesByYear failed","page":1,"timestamp":"2026-06-30 11:11:45","year":2013}
+{"err":"read ECONNRESET","level":"error","message":"TMDB fetchMoviesByYear failed","page":1,"timestamp":"2026-06-30 11:34:43","year":2012}
+{"err":"read ECONNRESET","level":"error","message":"TMDB fetchMoviesByYear failed","page":1,"timestamp":"2026-06-30 12:01:08","year":2010}
+{"err":"read ECONNRESET","level":"error","message":"TMDB fetchMoviesByYear failed","page":1,"timestamp":"2026-06-30 12:39:49","year":2007}

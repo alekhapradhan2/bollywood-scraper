@@ -11,7 +11,12 @@
     "year": "node index.js --year=2024",
     "retry": "node index.js --retry-failed",
     "validate": "node index.js --validate",
-    "cron": "node index.js --cron"
+    "cron": "node index.js --cron",
+    "ott": "node ott-scraper.js",
+    "ott:all": "node ott-scraper.js --all",
+    "ott:dry": "node ott-scraper.js --dry-run",
+    "ott:year": "node ott-scraper.js --year=2024",
+    "ott:range": "node ott-scraper.js --from=2015 --to=2026"
   },
   "keywords": [
     "bollywood",

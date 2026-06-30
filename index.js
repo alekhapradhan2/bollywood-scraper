@@ -86,6 +86,19 @@ async function main() {
     }, {
       timezone: "Asia/Kolkata"
     });
+
+    cron.schedule("0 4 * * *", async () => {
+      logger.info("Cron: starting incremental OTT scrape (last 6 months)…");
+      try {
+        const { runOttIncremental } = require("./ott-scraper");
+        await runOttIncremental();
+      } catch (err) {
+        logger.error("OTT Cron run failed", { err: err.message });
+      }
+    }, {
+      timezone: "Asia/Kolkata"
+    });
+
     logger.info("Cron scheduler active. Press Ctrl+C to stop.");
     return; // keep process alive
   }
