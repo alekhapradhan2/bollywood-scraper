@@ -1,7 +1,8 @@
-// ─────────────────────────────────────────────────────────────────────────────
-//  scrapers/tmdb.js — TMDB API scraper (primary source)
-//  Fetches Bollywood Hindi movie lists, details, credits, images, videos.
-// ─────────────────────────────────────────────────────────────────────────────
+﻿// -----------------------------------------------------------------------------
+//  scrapers/tmdb-bengali.js - TMDB API scraper for Bengali movies
+//  Mirrors tmdb.js exactly but uses with_original_language=bn.
+//  Fetches Bengali movie lists, details, credits, images, videos.
+// -----------------------------------------------------------------------------
 "use strict";
 
 const { TMDB_API_KEY, TMDB_BASE, TMDB_IMG_BASE, POSTER_SIZE, BACKDROP_SIZE, PROFILE_SIZE } = require("../config");
@@ -9,7 +10,7 @@ const { getJSON } = require("../utils/http");
 const logger = require("../utils/logger");
 
 if (!TMDB_API_KEY) {
-  logger.warn("TMDB_API_KEY not set — TMDB scraper will be unavailable.");
+  logger.warn("TMDB_API_KEY not set - Bengali TMDB scraper will be unavailable.");
 }
 
 const BASE = TMDB_BASE;
@@ -21,50 +22,13 @@ function imgUrl(path, size = POSTER_SIZE) {
 }
 
 /**
- * Helper to fetch Pan-India blockbusters (South Indian original, Hindi spoken, high popularity).
- */
-async function fetchPanIndiaMovies(filterQuery, maxPages = 10) {
-  if (!KEY) return [];
-  const allMovies = [];
-  try {
-    const currentYear = new Date().getFullYear();
-    let voteCountFilter = "&vote_count.gte=50";
-    
-    // Relax vote count filter for current/future years or recent/future date ranges
-    const yearMatch = filterQuery.match(/primary_release_year=(\d{4})/);
-    const isFutureOrCurrentYear = yearMatch && parseInt(yearMatch[1]) >= currentYear;
-    const isRecentOrFutureRange = filterQuery.includes("primary_release_date.gte");
-    
-    if (isFutureOrCurrentYear || isRecentOrFutureRange) {
-      voteCountFilter = "";
-    }
-
-    const baseQuery = `${BASE}/discover/movie?api_key=${KEY}&with_original_language=te%7Cta%7Cml%7Ckn&with_spoken_languages=hi&popularity.gte=15${voteCountFilter}&sort_by=popularity.desc&include_adult=false&with_release_type=3%7C2&${filterQuery}`;
-    
-    const first = await getJSON(`${baseQuery}&page=1`);
-    if (!first || !first.results) return [];
-    
-    allMovies.push(...first.results);
-    const totalPages = Math.min(first.total_pages || 1, maxPages);
-    
-    for (let page = 2; page <= totalPages; page++) {
-      const data = await getJSON(`${baseQuery}&page=${page}`);
-      if (data && data.results) allMovies.push(...data.results);
-    }
-  } catch (err) {
-    logger.error("TMDB fetchPanIndiaMovies failed", { filterQuery, err: err.message });
-  }
-  return allMovies;
-}
-
-/**
- * Fetch paginated list of Hindi movies released in a specific year.
+ * Fetch paginated list of Bengali movies released in a specific year.
  * Returns array of basic movie objects with tmdbId.
  */
-async function fetchMoviesByYear(year, page = 1) {
+async function fetchBengaliMoviesByYear(year, page = 1) {
   if (!KEY) return { results: [], totalPages: 0 };
   try {
-    const url = `${BASE}/discover/movie?api_key=${KEY}&with_original_language=hi&primary_release_year=${year}&sort_by=popularity.desc&page=${page}&include_adult=false&with_release_type=3%7C2`;
+    const url = `${BASE}/discover/movie?api_key=${KEY}&with_original_language=bn&primary_release_year=${year}&sort_by=popularity.desc&page=${page}&include_adult=false&with_release_type=3%7C2`;
     const data = await getJSON(url);
     return {
       results: data.results || [],
@@ -72,49 +36,40 @@ async function fetchMoviesByYear(year, page = 1) {
       totalResults: data.total_results || 0,
     };
   } catch (err) {
-    logger.error("TMDB fetchMoviesByYear failed", { year, page, err: err.message });
+    logger.error("Bengali TMDB fetchBengaliMoviesByYear failed", { year, page, err: err.message });
     return { results: [], totalPages: 0 };
   }
 }
 
 /**
- * Fetch ALL pages of Hindi movies for a year.
+ * Fetch ALL pages of Bengali movies for a year.
  */
-async function fetchAllMoviesByYear(year) {
-  const first = await fetchMoviesByYear(year, 1);
+async function fetchAllBengaliMoviesByYear(year) {
+  const first = await fetchBengaliMoviesByYear(year, 1);
   if (!first.results.length) return [];
 
   const allMovies = [...first.results];
   const totalPages = Math.min(first.totalPages, 25); // cap at 25 pages (~500 movies/year)
 
   for (let page = 2; page <= totalPages; page++) {
-    const { results } = await fetchMoviesByYear(year, page);
+    const { results } = await fetchBengaliMoviesByYear(year, page);
     allMovies.push(...results);
   }
 
-  // Fetch Pan-India blockbusters for the same year
-  const panIndia = await fetchPanIndiaMovies(`primary_release_year=${year}`, 10);
-
-  // Combine and deduplicate
-  const uniqueMovies = new Map();
-  for (const m of [...allMovies, ...panIndia]) {
-    uniqueMovies.set(m.id, m);
-  }
-  return Array.from(uniqueMovies.values());
+  return allMovies;
 }
 
 /**
- * Fetch paginated list of Hindi movies released in the last 6 months.
+ * Fetch paginated list of Bengali movies released in the last 6 months.
  */
-async function fetchRecentMovies(page = 1) {
+async function fetchRecentBengaliMovies(page = 1) {
   if (!KEY) return { results: [], totalPages: 0 };
   try {
     const sixMonthsAgo = new Date();
     sixMonthsAgo.setMonth(sixMonthsAgo.getMonth() - 6);
     const dateStr = sixMonthsAgo.toISOString().split("T")[0];
 
-    // Using primary_release_date.gte to fetch recent movies
-    const url = `${BASE}/discover/movie?api_key=${KEY}&with_original_language=hi&primary_release_date.gte=${dateStr}&sort_by=popularity.desc&page=${page}&include_adult=false&with_release_type=3%7C2`;
+    const url = `${BASE}/discover/movie?api_key=${KEY}&with_original_language=bn&primary_release_date.gte=${dateStr}&sort_by=popularity.desc&page=${page}&include_adult=false&with_release_type=3%7C2`;
     const data = await getJSON(url);
     return {
       results: data.results || [],
@@ -122,76 +77,59 @@ async function fetchRecentMovies(page = 1) {
       totalResults: data.total_results || 0,
     };
   } catch (err) {
-    logger.error("TMDB fetchRecentMovies failed", { page, err: err.message });
+    logger.error("Bengali TMDB fetchRecentBengaliMovies failed", { page, err: err.message });
     return { results: [], totalPages: 0 };
   }
 }
 
 /**
- * Fetch ALL pages of recent Hindi movies (last 6 months).
+ * Fetch ALL pages of recent Bengali movies (last 6 months).
  */
-async function fetchAllRecentMovies() {
-  const first = await fetchRecentMovies(1);
+async function fetchAllRecentBengaliMovies() {
+  const first = await fetchRecentBengaliMovies(1);
   if (!first.results.length) return [];
 
   const allMovies = [...first.results];
   const totalPages = Math.min(first.totalPages, 25); // cap at 25 pages
 
   for (let page = 2; page <= totalPages; page++) {
-    const { results } = await fetchRecentMovies(page);
+    const { results } = await fetchRecentBengaliMovies(page);
     allMovies.push(...results);
   }
 
-  // Fetch recent Pan-India blockbusters
-  const sixMonthsAgo = new Date();
-  sixMonthsAgo.setMonth(sixMonthsAgo.getMonth() - 6);
-  const dateStr = sixMonthsAgo.toISOString().split("T")[0];
-  const panIndia = await fetchPanIndiaMovies(`primary_release_date.gte=${dateStr}`, 10);
-
-  // Combine and deduplicate
-  const uniqueMovies = new Map();
-  for (const m of [...allMovies, ...panIndia]) {
-    uniqueMovies.set(m.id, m);
-  }
-  return Array.from(uniqueMovies.values());
+  return allMovies;
 }
 
 /**
  * Fetch full movie details from TMDB including credits, images, videos, keywords.
- * Returns enriched movie object.
  */
-async function fetchMovieDetails(tmdbId) {
+async function fetchBengaliMovieDetails(tmdbId) {
   if (!KEY) return null;
   try {
     const url = `${BASE}/movie/${tmdbId}?api_key=${KEY}&append_to_response=credits,images,videos,keywords,release_dates,external_ids,recommendations,watch/providers`;
     const d = await getJSON(url);
     return d;
   } catch (err) {
-    logger.error("TMDB fetchMovieDetails failed", { tmdbId, err: err.message });
+    logger.error("Bengali TMDB fetchBengaliMovieDetails failed", { tmdbId, err: err.message });
     return null;
   }
 }
 
 /**
- * Map raw TMDB movie data to our normalized scraper format.
- * @param {object} d  — raw TMDB response with appended responses
- * @returns {object}  normalized movie data
+ * Map raw TMDB movie data to normalized scraper format for Bengali movies.
+ * Mirrors mapTmdbMovie() but sets language: "Bengali".
  */
-function mapTmdbMovie(d) {
+function mapTmdbBengaliMovie(d) {
   if (!d) return null;
 
-  // ── Basic info
   const releaseDate = d.release_date || "";
   const year = releaseDate ? new Date(releaseDate).getFullYear() : null;
 
-  // ── Genres
   const genres = (d.genres || []).map((g) => g.name);
-
-  // ── Production companies
   const productionCompanies = (d.production_companies || []).map((p) => p.name);
 
-  // ── Credits — cast
-  const castRaw = (d.credits?.cast || []).slice(0, 30); // top 30
+  // Credits - cast (top 30)
+  const castRaw = (d.credits?.cast || []).slice(0, 30);
   const cast = castRaw.map((c) => ({
     tmdbId: c.id,
     name: c.name || "",
@@ -202,7 +140,7 @@ function mapTmdbMovie(d) {
     type: "Actor",
   }));
 
-  // ── Credits — crew
+  // Credits - crew
   const crewRaw = d.credits?.crew || [];
   const crewMap = {};
   const crewRoles = [
@@ -236,45 +174,40 @@ function mapTmdbMovie(d) {
     }
   }
 
-  // ── Images
-  const posters = (d.images?.posters || [])
-    .slice(0, 5)
-    .map((p) => imgUrl(p.file_path, POSTER_SIZE));
-  const backdrops = (d.images?.backdrops || [])
-    .slice(0, 3)
-    .map((b) => imgUrl(b.file_path, BACKDROP_SIZE));
+  // Images
+  const posters = (d.images?.posters || []).slice(0, 5).map((p) => imgUrl(p.file_path, POSTER_SIZE));
+  const backdrops = (d.images?.backdrops || []).slice(0, 3).map((b) => imgUrl(b.file_path, BACKDROP_SIZE));
 
-  // ── Videos — trailer/teaser
+  // Videos - trailer/teaser
   const videos = (d.videos?.results || []);
   const trailer = videos.find((v) => v.type === "Trailer" && v.site === "YouTube")
     || videos.find((v) => v.type === "Teaser" && v.site === "YouTube")
     || null;
 
-  // ── Keywords
+  // Keywords
   const keywords = (d.keywords?.keywords || []).map((k) => k.name);
 
-  // ── External IDs
+  // External IDs
   const imdbId = d.external_ids?.imdb_id || d.imdb_id || "";
 
-  // ── Indian certification
+  // Indian certification
   const certEntry = (d.release_dates?.results || []).find((r) => r.iso_3166_1 === "IN");
   const certification = certEntry?.release_dates?.[0]?.certification || "";
 
-  // ── OTT Providers (India)
+  // OTT Providers (India)
   let streamingOn = "";
   let streamingUrl = "";
   const inProviders = d["watch/providers"]?.results?.IN;
   if (inProviders) {
     const flatrate = inProviders.flatrate?.[0];
     const free = inProviders.free?.[0];
-    const provider = flatrate || free; // Prefer flatrate (subscription), fallback to free
+    const provider = flatrate || free;
     if (provider) {
       streamingOn = provider.provider_name;
       streamingUrl = inProviders.link || "";
     }
   }
 
-  // ── Box office (TMDB provides these in USD, we convert later)
   const budgetUSD = d.budget || 0;
   const revenueUSD = d.revenue || 0;
 
@@ -288,8 +221,8 @@ function mapTmdbMovie(d) {
     synopsis: d.overview || "",
     releaseDate,
     year,
-    runtime: d.runtime || 0,           // minutes
-    language: "Hindi",
+    runtime: d.runtime || 0,
+    language: "Bengali",
     genres,
     certification,
     status: mapStatus(d.status),
@@ -329,16 +262,16 @@ function mapStatus(tmdbStatus) {
 }
 
 /**
- * Search TMDB for a movie by title and year — useful for dedup checks.
+ * Search TMDB for a movie by title and year.
  */
-async function searchMovie(title, year) {
+async function searchBengaliMovie(title, year) {
   if (!KEY) return [];
   try {
     const url = `${BASE}/search/movie?api_key=${KEY}&query=${encodeURIComponent(title)}&year=${year}&language=en-US`;
     const data = await getJSON(url);
     return data.results || [];
   } catch (err) {
-    logger.warn("TMDB search failed", { title, year, err: err.message });
+    logger.warn("Bengali TMDB search failed", { title, year, err: err.message });
     return [];
   }
 }
@@ -346,24 +279,24 @@ async function searchMovie(title, year) {
 /**
  * Fetch a person's details from TMDB.
  */
-async function fetchPerson(tmdbPersonId) {
+async function fetchBengaliPerson(tmdbPersonId) {
   if (!KEY) return null;
   try {
     const url = `${BASE}/person/${tmdbPersonId}?api_key=${KEY}&append_to_response=external_ids,images`;
     return await getJSON(url);
   } catch (err) {
-    logger.warn("TMDB fetchPerson failed", { tmdbPersonId, err: err.message });
+    logger.warn("Bengali TMDB fetchPerson failed", { tmdbPersonId, err: err.message });
     return null;
   }
 }
 
 module.exports = {
-  fetchAllMoviesByYear,
-  fetchAllRecentMovies,
-  fetchMoviesByYear,
-  fetchMovieDetails,
-  mapTmdbMovie,
-  searchMovie,
-  fetchPerson,
+  fetchAllBengaliMoviesByYear,
+  fetchAllRecentBengaliMovies,
+  fetchBengaliMoviesByYear,
+  fetchBengaliMovieDetails,
+  mapTmdbBengaliMovie,
+  searchBengaliMovie,
+  fetchBengaliPerson,
   imgUrl,
 };

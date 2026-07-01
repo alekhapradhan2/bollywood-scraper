@@ -1,15 +1,24 @@
 // ─────────────────────────────────────────────────────────────────────────────
-//  index.js — Bollywood Scraper entry point
+//  index.js — Bollywood + Bengali Scraper entry point
 //
-//  Usage:
+//  Bollywood (Hindi) Usage:
 //    node index.js                          Full run (2015 → present)
 //    node index.js --incremental            Only current + last year
 //    node index.js --year=2023              Single year
 //    node index.js --from=2020 --to=2022    Year range
 //    node index.js --reset                  Wipe checkpoint, start fresh
 //    node index.js --retry-failed           Retry only previously failed movies
+//    node index.js --release-upcoming       Auto-update past 'Upcoming' movies to 'Released'
 //    node index.js --cron                   Start scheduler (runs nightly)
 //    node index.js --validate               Validate existing DB records
+//
+//  Bengali Usage:
+//    node index.js --bengali                Full Bengali run (2000 → present)
+//    node index.js --bengali --incremental  Bengali incremental (last 6 months)
+//    node index.js --bengali --year=2010    Bengali single year
+//    node index.js --bengali --from=2005 --to=2015  Bengali year range
+//    node index.js --bengali --reset        Bengali reset + full run
+//    node index.js --bengali --retry-failed Bengali retry failed
 // ─────────────────────────────────────────────────────────────────────────────
 "use strict";
 
@@ -19,7 +28,37 @@ const cron = require("node-cron");
 const http = require("http");
 const https = require("https");
 const { run, runIncremental } = require("./src/orchestrator");
+const { runBengali, runBengaliIncremental } = require("./src/orchestrator-bengali");
 const logger = require("./src/utils/logger");
+
+async function autoReleaseUpcomingMovies() {
+  logger.info("Running auto-release check for upcoming movies...");
+  const Movie = mongoose.models.Movie || mongoose.model("Movie", new mongoose.Schema({}, { strict: false }));
+  
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
+  const todayStr = today.toISOString().split("T")[0];
+
+  const query = {
+    status: "Upcoming",
+    releaseDate: { $lte: todayStr, $ne: "", $ne: "TBA", $ne: null }
+  };
+
+  try {
+    const moviesToUpdate = await Movie.find(query);
+    let updatedCount = 0;
+    for (const m of moviesToUpdate) {
+      await Movie.findByIdAndUpdate(m._id, {
+        $set: { status: "Released", verdict: "Released" }
+      });
+      logger.info(`Auto-released: "${m.title}" (Date: ${m.releaseDate})`);
+      updatedCount++;
+    }
+    logger.info(`Auto-release check complete. Updated ${updatedCount} movies.`);
+  } catch (err) {
+    logger.error("Auto-release check failed", { err: err.message });
+  }
+}
 
 // ── Parse CLI args
 const args = process.argv.slice(2);
@@ -42,6 +81,14 @@ async function main() {
   }
   if (!process.env.OMDB_API_KEY) {
     logger.warn("OMDB_API_KEY not set — OMDb (IMDb ratings) enrichment disabled. Get one free at omdbapi.com");
+  }
+
+  // ── Auto-release manual mode
+  if (argMap["release-upcoming"]) {
+    await mongoose.connect(process.env.MONGO_URI);
+    await autoReleaseUpcomingMovies();
+    await mongoose.disconnect();
+    process.exit(0);
   }
 
   // ── Cron mode: stay alive, run nightly at 3 AM IST
@@ -76,12 +123,19 @@ async function main() {
       }, 2 * 60 * 1000);
     });
 
+    cron.schedule("50 2 * * *", async () => {
+      logger.info("Cron: starting auto-release upcoming movies check…");
+      await autoReleaseUpcomingMovies();
+    }, {
+      timezone: "Asia/Kolkata"
+    });
+
     cron.schedule("0 3 * * *", async () => {
       logger.info("Cron: starting incremental Bollywood scrape…");
       try {
         await runIncremental();
       } catch (err) {
-        logger.error("Cron run failed", { err: err.message });
+        logger.error("Bollywood Cron run failed", { err: err.message });
       }
     }, {
       timezone: "Asia/Kolkata"
@@ -99,7 +153,18 @@ async function main() {
       timezone: "Asia/Kolkata"
     });
 
-    logger.info("Cron scheduler active. Press Ctrl+C to stop.");
+    cron.schedule("0 5 * * *", async () => {
+      logger.info("Cron: starting incremental Bengali scrape…");
+      try {
+        await runBengaliIncremental();
+      } catch (err) {
+        logger.error("Bengali Cron run failed", { err: err.message });
+      }
+    }, {
+      timezone: "Asia/Kolkata"
+    });
+
+    logger.info("Cron scheduler active: Auto-Release@02:50 | Bollywood@03:00 | OTT@04:00 | Bengali@05:00");
     return; // keep process alive
   }
 
@@ -109,7 +174,39 @@ async function main() {
     process.exit(0);
   }
 
-  // ── One-shot scrape modes
+  // ── Bengali scrape modes
+  if (argMap["bengali"]) {
+    if (!process.env.MONGO_URI) {
+      logger.error("MONGO_URI is required.");
+      process.exit(1);
+    }
+    if (argMap["incremental"]) {
+      logger.info("Bengali mode: incremental (last 6 months)");
+      await runBengaliIncremental();
+    } else if (argMap["year"]) {
+      const y = parseInt(argMap["year"]);
+      logger.info(`Bengali mode: single year ${y}`);
+      await runBengali({ startYear: y, endYear: y });
+    } else if (argMap["from"] || argMap["to"]) {
+      const from = parseInt(argMap["from"]) || 2000;
+      const to = parseInt(argMap["to"]) || new Date().getFullYear();
+      logger.info(`Bengali mode: year range ${from}–${to}`);
+      await runBengali({ startYear: from, endYear: to });
+    } else if (argMap["reset"]) {
+      logger.info("Bengali mode: full reset + full run");
+      await runBengali({ reset: true });
+    } else if (argMap["retry-failed"]) {
+      logger.info("Bengali mode: retry failed movies");
+      await runBengali({ retryFailed: true });
+    } else {
+      logger.info("Bengali mode: full run (2000 → present)");
+      await runBengali();
+    }
+    await mongoose.disconnect();
+    process.exit(0);
+  }
+
+  // ── Bollywood one-shot scrape modes
   const opts = {};
 
   if (argMap["incremental"]) {

@@ -12,6 +12,7 @@
 //    node ott-scraper.js --year=2023          # only movies released in 2023
 //    node ott-scraper.js --from=2020 --to=2023  # year range 2020–2023
 //    node ott-scraper.js --id=<mongoId>       # single movie by MongoDB _id
+//    node ott-scraper.js --bengali            # only process Bengali movies
 //    node ott-scraper.js --dry-run            # preview, no DB writes
 // ─────────────────────────────────────────────────────────────────────────────
 "use strict";
@@ -36,6 +37,7 @@ const SINGLE_ID  = (process.argv.find(a => a.startsWith("--id="))   || "").repla
 const YEAR_ARG   = (process.argv.find(a => a.startsWith("--year=")) || "").replace("--year=", "");
 const FROM_ARG   = (process.argv.find(a => a.startsWith("--from=")) || "").replace("--from=", "");
 const TO_ARG     = (process.argv.find(a => a.startsWith("--to="))   || "").replace("--to=",   "");
+const BENGALI_ARG= process.argv.includes("--bengali");
 const CRON_MODE  = process.argv.includes("--cron");
 const CUR_YEAR   = new Date().getFullYear();
 
@@ -257,6 +259,11 @@ function buildQuery(yearFilter) {
     conditions.push({ releaseDate: { $regex: `^${yearFilter}` } });
   }
 
+  // Language filter
+  if (BENGALI_ARG) {
+    conditions.push({ language: "Bengali" });
+  }
+
   // Missing OTT filter (skip when --all or single ID)
   if (!REFETCH_ALL && !SINGLE_ID) {
     conditions.push({
@@ -368,6 +375,7 @@ async function main() {
   console.log(`  Refetch  : ${REFETCH_ALL ? "ALL movies" : "only missing OTT data"}`);
   if (SINGLE_ID)   console.log(`  Target   : single movie ${SINGLE_ID}`);
   else             console.log(`  Years    : ${startYear} → ${endYear}`);
+  console.log(`  Language : ${BENGALI_ARG ? "Bengali" : "All"}`);
   console.log(`  Market   : India (IN)`);
   console.log("━".repeat(52));
 

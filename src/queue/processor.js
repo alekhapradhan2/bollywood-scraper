@@ -2,10 +2,12 @@
 //  queue/processor.js — Orchestrates the full pipeline for one movie
 //  TMDB details → OMDb → Wikipedia → BollywoodHungama → Sacnilk → YouTube
 //  → Merge → Validate → Save
+//  Supports optional basicInfo._language to override language (e.g. "Bengali")
 // ─────────────────────────────────────────────────────────────────────────────
 "use strict";
 
 const { fetchMovieDetails, mapTmdbMovie } = require("../scrapers/tmdb");
+const { fetchBengaliMovieDetails, mapTmdbBengaliMovie } = require("../scrapers/tmdb-bengali");
 const { fetchByImdbId, searchByTitle, mapOmdbData } = require("../scrapers/omdb");
 const { scrapeMovie: scrapeWikipedia } = require("../scrapers/wikipedia");
 const { scrapeBoxOffice: scrapeBH, scrapeDailyBoxOffice: scrapeBHDays } = require("../scrapers/bollywoodhungama");
@@ -19,6 +21,7 @@ const logger = require("../utils/logger");
  * Process a single movie through the full scraping pipeline.
  *
  * @param {object} basicInfo    — { id: tmdbId, title, release_date, ... } from TMDB discover
+ *                                  Optionally include _language: "Bengali" for non-Hindi movies.
  * @param {string} productionId — MongoDB ObjectId string for scraper production house
  * @param {object} stats        — shared stats counters
  * @returns {{ action, movieId, tmdbId }}
@@ -29,13 +32,19 @@ async function processMovie(basicInfo, productionId, stats) {
   const year = basicInfo.release_date
     ? new Date(basicInfo.release_date).getFullYear()
     : null;
+  const isBengali = basicInfo._language === "Bengali";
 
-  logger.info(`Processing: "${title}" (${year}) [TMDB:${tmdbId}]`);
+  logger.info(`Processing: "${title}" (${year}) [TMDB:${tmdbId}]${isBengali ? " [Bengali]" : ""}`);
 
   try {
     // ── Step 1: TMDB full details (primary source)
-    const rawTmdb = await fetchMovieDetails(tmdbId);
-    const tmdb = rawTmdb ? mapTmdbMovie(rawTmdb) : null;
+    // Use Bengali mapper when _language is "Bengali" so language field is set correctly
+    const rawTmdb = isBengali
+      ? await fetchBengaliMovieDetails(tmdbId)
+      : await fetchMovieDetails(tmdbId);
+    const tmdb = rawTmdb
+      ? (isBengali ? mapTmdbBengaliMovie(rawTmdb) : mapTmdbMovie(rawTmdb))
+      : null;
 
     if (!tmdb) {
       logger.warn(`TMDB details missing for ${title} — skipping`);

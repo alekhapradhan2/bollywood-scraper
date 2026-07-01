@@ -1,12 +1,15 @@
 // ─────────────────────────────────────────────────────────────────────────────
-//  config.js — Central configuration for Bollywood scraper
+//  config.js — Central configuration for Bollywood + Bengali scraper
 // ─────────────────────────────────────────────────────────────────────────────
 "use strict";
 
 module.exports = {
-  // ── Date range
+  // ── Date range — Bollywood
   START_YEAR: 2015,
-  END_YEAR: new Date().getFullYear(),
+  END_YEAR: new Date().getFullYear() + 2,
+
+  // ── Date range — Bengali (wider history)
+  BENGALI_START_YEAR: 2000,
 
   // ── Source APIs
   TMDB_API_KEY: process.env.TMDB_API_KEY || "",          // https://www.themoviedb.org/settings/api
@@ -40,12 +43,18 @@ module.exports = {
   // ── Languages considered Bollywood (Hindi-primary)
   BOLLYWOOD_LANGUAGES: ["hi", "Hindi"],
 
-  // ── Default production house ID for scraped movies
-  // You must create a "Bollywood Auto-Import" production in your DB and set this
+  // ── Languages considered Bengali
+  BENGALI_LANGUAGES: ["bn", "Bengali"],
+
+  // ── Default production house ID for scraped movies (Bollywood)
   SCRAPER_PRODUCTION_ID: process.env.SCRAPER_PRODUCTION_ID || "",
+
+  // ── Production house ID for Bengali scraper (optional — falls back to SCRAPER_PRODUCTION_ID)
+  BENGALI_SCRAPER_PRODUCTION_ID: process.env.BENGALI_SCRAPER_PRODUCTION_ID || "",
 
   // ── Checkpoint / log paths (relative to scraper root)
   CHECKPOINT_FILE: "./checkpoints/progress.json",
+  BENGALI_CHECKPOINT_FILE: "./checkpoints/bengali-progress.json",
   LOG_DIR: "./logs",
 
   // ── Image poster sizes

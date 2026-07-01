@@ -160,8 +160,22 @@ function mergeMovieData(sources) {
   ].filter((c) => c && c.value)) || "TBA";
 
   // ── Status and verdict
-  const status = tmdb?.status || "Released";
-  const verdict = deriveVerdict(imdbRating);
+  let status = tmdb?.status || "Released";
+  let verdict = deriveVerdict(imdbRating);
+
+  // If the release date is in the future, override status and verdict to Upcoming
+  if (releaseDateRaw) {
+    const releaseDateObj = new Date(releaseDateRaw);
+    const today = new Date();
+    // Reset time to compare only dates
+    releaseDateObj.setHours(0, 0, 0, 0);
+    today.setHours(0, 0, 0, 0);
+    
+    if (releaseDateObj > today) {
+      status = "Upcoming";
+      verdict = "Upcoming";
+    }
+  }
 
   // ── Website
   const website = validateUrl(pickBest([
@@ -195,7 +209,7 @@ function mergeMovieData(sources) {
   return {
     title: cleanText(title),
     originalTitle: cleanText(originalTitle),
-    language: "Hindi",
+    language: tmdb?.language || "Hindi",
     category: "Feature Film",
     releaseDate: releaseDateRaw,
     releaseYear,
@@ -212,6 +226,7 @@ function mergeMovieData(sources) {
     bannerUrl: validateUrl(bannerUrl),
     thumbnailUrl: validateUrl(posterUrl), // use poster as thumbnail fallback
     imdbId,
+    tmdbId: tmdb?.tmdbId || "",
     imdbRating,
     imdbVotes,
     tmdbRating: tmdb?.tmdbRating || "",

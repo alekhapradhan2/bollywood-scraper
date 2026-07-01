@@ -26,6 +26,7 @@ const MovieSchema = new mongoose.Schema({
   bannerUrl: { type: String, default: "" },
   runtime: { type: String, default: "" },
   imdbId: { type: String, default: "" },
+  tmdbId: { type: String, default: "", index: true },
   imdbRating: { type: String, default: "" },
   imdbVotes: { type: String, default: "" },
   contentRating: { type: String, default: "" },
@@ -102,9 +103,15 @@ const PROTECTED_FIELDS = [
  *   3. Title + year match
  */
 async function findExistingMovie(merged) {
-  const { title, releaseDate, imdbId, externalIds } = merged;
+  const { title, releaseDate, imdbId, tmdbId, externalIds } = merged;
 
-  // 1. IMDb ID (most reliable)
+  // 1. TMDb ID (most reliable for scraper runs)
+  if (tmdbId) {
+    const found = await Movie.findOne({ tmdbId }).lean();
+    if (found) return { doc: found, reason: "tmdbId" };
+  }
+
+  // 2. IMDb ID (second most reliable)
   if (imdbId) {
     const found = await Movie.findOne({ imdbId }).lean();
     if (found) return { doc: found, reason: "imdbId" };
@@ -168,6 +175,7 @@ function buildUpdatePayload(merged, castEntries) {
     bannerUrl: merged.bannerUrl || "",
     runtime: merged.runtime || "",
     imdbId: merged.imdbId || "",
+    tmdbId: merged.tmdbId || "",
     imdbRating: merged.imdbRating || "",
     imdbVotes: merged.imdbVotes || "",
     contentRating: merged.contentRating || "",
@@ -306,6 +314,7 @@ async function saveMovie(merged, productionId, stats) {
       bannerUrl: merged.bannerUrl || "",
       runtime: merged.runtime || "",
       imdbId: merged.imdbId || "",
+      tmdbId: merged.tmdbId || "",
       imdbRating: merged.imdbRating || "",
       imdbVotes: merged.imdbVotes || "",
       contentRating: merged.contentRating || "",
