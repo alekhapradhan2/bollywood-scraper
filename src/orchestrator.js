@@ -91,8 +91,16 @@ async function run(opts = {}) {
     return checkpoint.stats;
   }
 
-  // ── Mode: recent (last 6 months)
-  if (doRecent) {
+  const tmdbIds = opts.tmdbIds || [];
+
+  // ── Mode: specific TMDB IDs
+  if (tmdbIds.length > 0) {
+    logger.info(`\n──── Mode: Specific TMDB IDs ────`);
+    const movies = tmdbIds.map(id => ({ id }));
+    checkpoint.totalMovies += movies.length;
+    cp.save(checkpoint);
+    await processBatchOfMovies(movies, checkpoint, productionId);
+  } else if (doRecent) {
     logger.info(`\n──── Mode: Recent (Last 6 Months) ────`);
     const movies = await fetchAllRecentMovies();
     logger.info(`Found ${movies.length} recent movies`);

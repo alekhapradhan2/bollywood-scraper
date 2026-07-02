@@ -209,7 +209,22 @@ async function main() {
   // ── Bollywood one-shot scrape modes
   const opts = {};
 
-  if (argMap["incremental"]) {
+  if (argMap["tmdb"]) {
+    const ids = argMap["tmdb"].split(",").map(id => parseInt(id.trim())).filter(id => !isNaN(id));
+    logger.info(`Mode: specific TMDB IDs: ${ids.join(", ")}`);
+    await run({ tmdbIds: ids, ...opts });
+  } else if (argMap["search"]) {
+    const query = argMap["search"];
+    const tmdbScraper = require("./src/scrapers/tmdb");
+    logger.info(`Searching TMDB for: "${query}"`);
+    const results = await tmdbScraper.searchMovie(query);
+    if (results.length > 0) {
+      logger.info(`Found ${results.length} results. Taking the first one: "${results[0].title}" (${results[0].release_date}) - ID: ${results[0].id}`);
+      await run({ tmdbIds: [results[0].id], ...opts });
+    } else {
+      logger.error(`No results found for "${query}"`);
+    }
+  } else if (argMap["incremental"]) {
     logger.info("Mode: incremental (last 6 months)");
     await runIncremental();
   } else if (argMap["year"]) {

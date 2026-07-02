@@ -1,4 +1,4 @@
-﻿// -----------------------------------------------------------------------------
+// -----------------------------------------------------------------------------
 //  scrapers/tmdb-bengali.js - TMDB API scraper for Bengali movies
 //  Mirrors tmdb.js exactly but uses with_original_language=bn.
 //  Fetches Bengali movie lists, details, credits, images, videos.
@@ -125,6 +125,8 @@ function mapTmdbBengaliMovie(d) {
   const releaseDate = d.release_date || "";
   const year = releaseDate ? new Date(releaseDate).getFullYear() : null;
 
+  const languages = (d.spoken_languages || []).map(l => l.english_name);
+
   const genres = (d.genres || []).map((g) => g.name);
   const productionCompanies = (d.production_companies || []).map((p) => p.name);
 
@@ -223,6 +225,7 @@ function mapTmdbBengaliMovie(d) {
     year,
     runtime: d.runtime || 0,
     language: "Bengali",
+    languages,
     genres,
     certification,
     status: mapStatus(d.status),

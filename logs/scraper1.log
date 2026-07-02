@@ -26014,3 +26014,135 @@
 {"failed":0,"level":"info","message":"Checkpoint loaded","processed":4482,"skipped":320,"timestamp":"2026-07-01 16:31:45"}
 {"level":"info","message":"\n──── Year: 2027 ────","timestamp":"2026-07-01 16:31:45"}
 {"level":"info","message":"Found 30 movies for 2027","timestamp":"2026-07-01 16:31:47"}
+{"level":"info","message":"Searching TMDB for: \"Toxic\"","timestamp":"2026-07-02 10:32:18"}
+{"level":"info","message":"Found 20 results. Taking the first one: \"Toxic\" (2026-08-26) - ID: 1213243","timestamp":"2026-07-02 10:32:19"}
+{"level":"info","message":"═══════════════════════════════════════════════","timestamp":"2026-07-02 10:32:19"}
+{"level":"info","message":"  Bollywood Scraper — 2015 to 2028","timestamp":"2026-07-02 10:32:19"}
+{"level":"info","message":"═══════════════════════════════════════════════","timestamp":"2026-07-02 10:32:19"}
+{"level":"info","message":"MongoDB connected","timestamp":"2026-07-02 10:32:19"}
+{"failed":0,"level":"info","message":"Checkpoint loaded","processed":4482,"skipped":320,"timestamp":"2026-07-02 10:32:19"}
+{"level":"info","message":"\n──── Mode: Specific TMDB IDs ────","timestamp":"2026-07-02 10:32:19"}
+{"level":"info","message":"Pending: 1 (0 already done)","timestamp":"2026-07-02 10:32:19"}
+{"level":"info","message":"Batch 1/1 — 1 movies","timestamp":"2026-07-02 10:32:19"}
+{"level":"info","message":"Processing: \"\" (null) [TMDB:1213243]","timestamp":"2026-07-02 10:32:19"}
+{"level":"warn","message":"Attempt 1 failed (Request failed with status code 500). Retrying in 2000ms…","timestamp":"2026-07-02 10:32:26"}
+{"level":"warn","message":"Attempt 2 failed (Request failed with status code 500). Retrying in 4000ms…","timestamp":"2026-07-02 10:32:29"}
+{"level":"warn","message":"Movie \"Toxic\" skipped — missing: synopsis","timestamp":"2026-07-02 10:32:37"}
+{"level":"info","message":"Progress — inserted:4410 updated:72 skipped:0 failed:0 | cast created:22686 reused:40485","timestamp":"2026-07-02 10:32:37"}
+{"level":"info","message":"\n═══════════════════════════════════════════════","timestamp":"2026-07-02 10:32:37"}
+{"level":"info","message":"  Scraper completed!","timestamp":"2026-07-02 10:32:37"}
+{"level":"info","message":"  Inserted:     4410","timestamp":"2026-07-02 10:32:37"}
+{"level":"info","message":"  Updated:      72","timestamp":"2026-07-02 10:32:37"}
+{"level":"info","message":"  Skipped:      0","timestamp":"2026-07-02 10:32:37"}
+{"level":"info","message":"  Failed:       0","timestamp":"2026-07-02 10:32:37"}
+{"level":"info","message":"  Cast created: 22686","timestamp":"2026-07-02 10:32:37"}
+{"level":"info","message":"  Cast reused:  40485","timestamp":"2026-07-02 10:32:37"}
+{"level":"info","message":"═══════════════════════════════════════════════\n","timestamp":"2026-07-02 10:32:37"}
+{"level":"info","message":"Searching TMDB for: \"Rakka\"","timestamp":"2026-07-02 10:32:49"}
+{"level":"info","message":"Found 20 results. Taking the first one: \"Rakka\" (2017-06-14) - ID: 461955","timestamp":"2026-07-02 10:32:50"}
+{"level":"info","message":"═══════════════════════════════════════════════","timestamp":"2026-07-02 10:32:50"}
+{"level":"info","message":"  Bollywood Scraper — 2015 to 2028","timestamp":"2026-07-02 10:32:50"}
+{"level":"info","message":"═══════════════════════════════════════════════","timestamp":"2026-07-02 10:32:50"}
+{"level":"info","message":"MongoDB connected","timestamp":"2026-07-02 10:32:51"}
+{"failed":0,"level":"info","message":"Checkpoint loaded","processed":4482,"skipped":321,"timestamp":"2026-07-02 10:32:51"}
+{"level":"info","message":"\n──── Mode: Specific TMDB IDs ────","timestamp":"2026-07-02 10:32:51"}
+{"level":"info","message":"Pending: 1 (0 already done)","timestamp":"2026-07-02 10:32:51"}
+{"level":"info","message":"Batch 1/1 — 1 movies","timestamp":"2026-07-02 10:32:51"}
+{"level":"info","message":"Processing: \"\" (null) [TMDB:461955]","timestamp":"2026-07-02 10:32:51"}
+{"level":"warn","message":"Attempt 1 failed (Request failed with status code 500). Retrying in 2000ms…","timestamp":"2026-07-02 10:32:55"}
+{"level":"warn","message":"Attempt 2 failed (Request failed with status code 500). Retrying in 4000ms…","timestamp":"2026-07-02 10:32:58"}
+{"level":"info","message":"Cast created: Eugene Khumbanyiwa (Actor)","timestamp":"2026-07-02 10:33:05"}
+{"level":"info","message":"Cast created: Robert Hobbs (Actor)","timestamp":"2026-07-02 10:33:06"}
+{"level":"info","message":"Cast created: Carly Pope (Actor)","timestamp":"2026-07-02 10:33:06"}
+{"level":"info","message":"Cast created: Brandon Auret (Actor)","timestamp":"2026-07-02 10:33:07"}
+{"level":"info","message":"Cast created: Michael Huff (Actor)","timestamp":"2026-07-02 10:33:08"}
+{"level":"info","message":"Cast created: Jay Anstey (Actor)","timestamp":"2026-07-02 10:33:09"}
+{"level":"info","message":"Cast created: Alec Gillis (Actor)","timestamp":"2026-07-02 10:33:10"}
+{"level":"info","message":"Cast created: Sigourney Weaver (Actor)","timestamp":"2026-07-02 10:33:10"}
+{"level":"info","message":"Cast created: Neil Meiklejohn (Editor)","timestamp":"2026-07-02 10:33:11"}
+{"level":"info","message":"Cast created: Tony Dean Smith (Editor)","timestamp":"2026-07-02 10:33:11"}
+{"level":"info","message":"Cast created: Julian Clarke (Editor)","timestamp":"2026-07-02 10:33:11"}
+{"level":"info","message":"Cast created: Thomas Sweterlitsch (Writer)","timestamp":"2026-07-02 10:33:11"}
+{"level":"info","message":"Cast created: Neill Blomkamp (Writer)","timestamp":"2026-07-02 10:33:11"}
+{"level":"info","message":"Cast created: Steven St. Arnaud (Producer)","timestamp":"2026-07-02 10:33:11"}
+{"level":"info","message":"Cast created: Mike Blomkamp (Producer)","timestamp":"2026-07-02 10:33:11"}
+{"level":"info","message":"Cast created: Lindsey Eyre (Costume Designer)","timestamp":"2026-07-02 10:33:11"}
+{"level":"info","message":"Cast created: Mannie Ferreira (Cinematographer)","timestamp":"2026-07-02 10:33:11"}
+{"level":"info","message":"Cast created: Richard Simpson (Production Designer)","timestamp":"2026-07-02 10:33:12"}
+{"level":"info","message":"Cast created: Lorne Balfe (Music Director)","timestamp":"2026-07-02 10:33:12"}
+{"id":"6a45f110a7fc7dee0a72e3bb","level":"info","message":"Movie inserted: \"Rakka\" [rakka-2017]","timestamp":"2026-07-02 10:33:12"}
+{"level":"info","message":"Progress — inserted:4411 updated:72 skipped:0 failed:0 | cast created:22705 reused:40486","timestamp":"2026-07-02 10:33:12"}
+{"level":"info","message":"\n═══════════════════════════════════════════════","timestamp":"2026-07-02 10:33:13"}
+{"level":"info","message":"  Scraper completed!","timestamp":"2026-07-02 10:33:13"}
+{"level":"info","message":"  Inserted:     4411","timestamp":"2026-07-02 10:33:13"}
+{"level":"info","message":"  Updated:      72","timestamp":"2026-07-02 10:33:13"}
+{"level":"info","message":"  Skipped:      0","timestamp":"2026-07-02 10:33:13"}
+{"level":"info","message":"  Failed:       0","timestamp":"2026-07-02 10:33:13"}
+{"level":"info","message":"  Cast created: 22705","timestamp":"2026-07-02 10:33:13"}
+{"level":"info","message":"  Cast reused:  40486","timestamp":"2026-07-02 10:33:13"}
+{"level":"info","message":"═══════════════════════════════════════════════\n","timestamp":"2026-07-02 10:33:13"}
+{"level":"info","message":"Mode: specific TMDB IDs: 575264","timestamp":"2026-07-02 12:51:22"}
+{"level":"info","message":"═══════════════════════════════════════════════","timestamp":"2026-07-02 12:51:22"}
+{"level":"info","message":"  Bollywood Scraper — 2015 to 2028","timestamp":"2026-07-02 12:51:22"}
+{"level":"info","message":"═══════════════════════════════════════════════","timestamp":"2026-07-02 12:51:22"}
+{"level":"info","message":"MongoDB connected","timestamp":"2026-07-02 12:51:23"}
+{"failed":0,"level":"info","message":"Checkpoint loaded","processed":4483,"skipped":321,"timestamp":"2026-07-02 12:51:23"}
+{"level":"info","message":"\n──── Mode: Specific TMDB IDs ────","timestamp":"2026-07-02 12:51:23"}
+{"level":"info","message":"Pending: 1 (0 already done)","timestamp":"2026-07-02 12:51:23"}
+{"level":"info","message":"Batch 1/1 — 1 movies","timestamp":"2026-07-02 12:51:23"}
+{"level":"info","message":"Processing: \"\" (null) [TMDB:575264]","timestamp":"2026-07-02 12:51:23"}
+{"level":"warn","message":"Attempt 1 failed (Request failed with status code 500). Retrying in 2000ms…","timestamp":"2026-07-02 12:51:29"}
+{"level":"warn","message":"Attempt 2 failed (Request failed with status code 500). Retrying in 4000ms…","timestamp":"2026-07-02 12:51:33"}
+{"level":"info","message":"Cast created: Hayley Atwell (Actor)","timestamp":"2026-07-02 12:51:39"}
+{"level":"info","message":"Cast created: Ving Rhames (Actor)","timestamp":"2026-07-02 12:51:40"}
+{"level":"info","message":"Cast created: Simon Pegg (Actor)","timestamp":"2026-07-02 12:51:41"}
+{"level":"info","message":"Cast created: Rebecca Ferguson (Actor)","timestamp":"2026-07-02 12:51:42"}
+{"level":"info","message":"Cast created: Vanessa Kirby (Actor)","timestamp":"2026-07-02 12:51:43"}
+{"level":"info","message":"Cast created: Esai Morales (Actor)","timestamp":"2026-07-02 12:51:44"}
+{"level":"info","message":"Cast created: Pom Klementieff (Actor)","timestamp":"2026-07-02 12:51:44"}
+{"level":"info","message":"Cast created: Henry Czerny (Actor)","timestamp":"2026-07-02 12:51:45"}
+{"level":"info","message":"Cast created: Shea Whigham (Actor)","timestamp":"2026-07-02 12:51:46"}
+{"level":"info","message":"Cast created: Greg Tarzan Davis (Actor)","timestamp":"2026-07-02 12:51:47"}
+{"level":"info","message":"Cast created: Frederick Schmidt (Actor)","timestamp":"2026-07-02 12:51:47"}
+{"level":"info","message":"Cast created: Mariela Garriga (Actor)","timestamp":"2026-07-02 12:51:48"}
+{"level":"info","message":"Cast created: Cary Elwes (Actor)","timestamp":"2026-07-02 12:51:49"}
+{"level":"info","message":"Cast created: Charles Parnell (Actor)","timestamp":"2026-07-02 12:51:50"}
+{"level":"info","message":"Cast created: Mark Gatiss (Actor)","timestamp":"2026-07-02 12:51:51"}
+{"level":"info","message":"Cast created: Indira Varma (Actor)","timestamp":"2026-07-02 12:51:51"}
+{"level":"info","message":"Cast created: Rob Delaney (Actor)","timestamp":"2026-07-02 12:51:52"}
+{"level":"info","message":"Cast created: Marcello Walton (Actor)","timestamp":"2026-07-02 12:51:53"}
+{"level":"info","message":"Cast created: Brian Law (Actor)","timestamp":"2026-07-02 12:51:54"}
+{"level":"info","message":"Cast created: Lincoln Conway (Actor)","timestamp":"2026-07-02 12:51:55"}
+{"level":"info","message":"Cast created: Alex James-phelps (Actor)","timestamp":"2026-07-02 12:51:56"}
+{"level":"info","message":"Cast created: Marcin Dorociński (Actor)","timestamp":"2026-07-02 12:51:57"}
+{"level":"info","message":"Cast created: Ivan Ivashkin (Actor)","timestamp":"2026-07-02 12:51:57"}
+{"level":"info","message":"Cast created: Zahari Baharov (Actor)","timestamp":"2026-07-02 12:51:58"}
+{"level":"info","message":"Cast created: Adrian Bouchet (Actor)","timestamp":"2026-07-02 12:51:59"}
+{"level":"info","message":"Cast created: Sam Barrett (Actor)","timestamp":"2026-07-02 12:52:00"}
+{"level":"info","message":"Cast created: Louis Vaughan (Actor)","timestamp":"2026-07-02 12:52:01"}
+{"level":"info","message":"Cast created: Jean Kartal (Actor)","timestamp":"2026-07-02 12:52:01"}
+{"level":"info","message":"Cast created: Os Leanse (Actor)","timestamp":"2026-07-02 12:52:02"}
+{"level":"info","message":"Cast created: Tom Cruise (Actor)","timestamp":"2026-07-02 12:52:03"}
+{"level":"info","message":"Cast created: Bradley J. Fischer (Producer)","timestamp":"2026-07-02 12:52:03"}
+{"level":"info","message":"Cast created: David Ellison (Producer)","timestamp":"2026-07-02 12:52:04"}
+{"level":"info","message":"Cast created: Dana Goldberg (Producer)","timestamp":"2026-07-02 12:52:04"}
+{"level":"info","message":"Cast created: Don Granger (Producer)","timestamp":"2026-07-02 12:52:04"}
+{"level":"info","message":"Cast created: Tommy Gormley (Producer)","timestamp":"2026-07-02 12:52:04"}
+{"level":"info","message":"Cast created: Christopher Mcquarrie (Producer)","timestamp":"2026-07-02 12:52:04"}
+{"level":"info","message":"Cast created: Mindy Marin (Casting Director)","timestamp":"2026-07-02 12:52:05"}
+{"level":"info","message":"Cast created: Erik Jendresen (Writer)","timestamp":"2026-07-02 12:52:05"}
+{"level":"info","message":"Cast created: Gary Freeman (Production Designer)","timestamp":"2026-07-02 12:52:05"}
+{"level":"info","message":"Cast created: Jill Taylor (Costume Designer)","timestamp":"2026-07-02 12:52:05"}
+{"level":"info","message":"Cast created: Eddie Hamilton (Editor)","timestamp":"2026-07-02 12:52:05"}
+{"level":"info","message":"Cast created: Fraser Taggart (Cinematographer)","timestamp":"2026-07-02 12:52:05"}
+{"id":"6a46119d015812b498cd3be8","level":"info","message":"Movie inserted: \"Mission: Impossible - Dead Reckoning Part One\" [mission-impossible-dead-reckoning-part-one-2023]","timestamp":"2026-07-02 12:52:06"}
+{"level":"info","message":"Progress — inserted:4412 updated:72 skipped:0 failed:0 | cast created:22747 reused:40490","timestamp":"2026-07-02 12:52:06"}
+{"level":"info","message":"\n═══════════════════════════════════════════════","timestamp":"2026-07-02 12:52:06"}
+{"level":"info","message":"  Scraper completed!","timestamp":"2026-07-02 12:52:06"}
+{"level":"info","message":"  Inserted:     4412","timestamp":"2026-07-02 12:52:06"}
+{"level":"info","message":"  Updated:      72","timestamp":"2026-07-02 12:52:06"}
+{"level":"info","message":"  Skipped:      0","timestamp":"2026-07-02 12:52:06"}
+{"level":"info","message":"  Failed:       0","timestamp":"2026-07-02 12:52:06"}
+{"level":"info","message":"  Cast created: 22747","timestamp":"2026-07-02 12:52:06"}
+{"level":"info","message":"  Cast reused:  40490","timestamp":"2026-07-02 12:52:06"}
+{"level":"info","message":"═══════════════════════════════════════════════\n","timestamp":"2026-07-02 12:52:06"}

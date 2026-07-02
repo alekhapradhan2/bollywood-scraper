@@ -184,6 +184,9 @@ function mapTmdbMovie(d) {
   const releaseDate = d.release_date || "";
   const year = releaseDate ? new Date(releaseDate).getFullYear() : null;
 
+  // ── Languages
+  const languages = (d.spoken_languages || []).map(l => l.english_name);
+
   // ── Genres
   const genres = (d.genres || []).map((g) => g.name);
 
@@ -290,6 +293,7 @@ function mapTmdbMovie(d) {
     year,
     runtime: d.runtime || 0,           // minutes
     language: "Hindi",
+    languages,
     genres,
     certification,
     status: mapStatus(d.status),
@@ -329,12 +333,13 @@ function mapStatus(tmdbStatus) {
 }
 
 /**
- * Search TMDB for a movie by title and year — useful for dedup checks.
+ * Search TMDB for a movie by title (and optionally year) — useful for dedup checks or manual searching.
  */
 async function searchMovie(title, year) {
   if (!KEY) return [];
   try {
-    const url = `${BASE}/search/movie?api_key=${KEY}&query=${encodeURIComponent(title)}&year=${year}&language=en-US`;
+    let url = `${BASE}/search/movie?api_key=${KEY}&query=${encodeURIComponent(title)}&language=en-US`;
+    if (year) url += `&year=${year}`;
     const data = await getJSON(url);
     return data.results || [];
   } catch (err) {
