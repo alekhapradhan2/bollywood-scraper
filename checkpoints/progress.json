@@ -1,8 +1,8 @@
 {
   "version": 2,
   "startedAt": "2026-06-28T07:45:32.827Z",
-  "lastUpdated": "2026-07-02T07:22:06.081Z",
-  "totalMovies": 8686,
+  "lastUpdated": "2026-07-02T16:42:55.802Z",
+  "totalMovies": 8690,
   "processedIds": [
     370665,
     362045,
@@ -4487,7 +4487,8 @@
     1466241,
     1606091,
     461955,
-    575264
+    575264,
+    1434499
   ],
   "failedIds": [],
   "skippedIds": [
@@ -4816,11 +4817,12 @@
   "currentYear": 2027,
   "currentPage": 1,
   "stats": {
-    "inserted": 4412,
+    "inserted": 4413,
     "updated": 72,
     "skipped": 0,
     "failed": 0,
-    "castCreated": 22747,
-    "castReused": 40490
+    "castCreated": 22754,
+    "castReused": 40490,
+    "force": true
   }
 }

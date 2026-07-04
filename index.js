@@ -12,13 +12,13 @@
 //    node index.js --cron                   Start scheduler (runs nightly)
 //    node index.js --validate               Validate existing DB records
 //
-//  Bengali Usage:
-//    node index.js --bengali                Full Bengali run (2000 → present)
-//    node index.js --bengali --incremental  Bengali incremental (last 6 months)
-//    node index.js --bengali --year=2010    Bengali single year
-//    node index.js --bengali --from=2005 --to=2015  Bengali year range
-//    node index.js --bengali --reset        Bengali reset + full run
-//    node index.js --bengali --retry-failed Bengali retry failed
+//  Regional Usage (bengali, telugu, malayalam):
+//    node index.js --bengali                Full run (2000 → present)
+//    node index.js --telugu --incremental   Incremental (last 6 months)
+//    node index.js --malayalam --year=2026  Single year
+//    node index.js --bengali --from=2005 --to=2015  Year range
+//    node index.js --telugu --reset         Reset + full run
+//    node index.js --malayalam --retry-failed Retry failed
 // ─────────────────────────────────────────────────────────────────────────────
 "use strict";
 
@@ -28,7 +28,7 @@ const cron = require("node-cron");
 const http = require("http");
 const https = require("https");
 const { run, runIncremental } = require("./src/orchestrator");
-const { runBengali, runBengaliIncremental } = require("./src/orchestrator-bengali");
+const { runRegional, runRegionalIncremental } = require("./src/orchestrator-regional");
 const logger = require("./src/utils/logger");
 
 async function autoReleaseUpcomingMovies() {
@@ -156,7 +156,7 @@ async function main() {
     cron.schedule("0 5 * * *", async () => {
       logger.info("Cron: starting incremental Bengali scrape…");
       try {
-        await runBengaliIncremental();
+        await runRegionalIncremental("bengali");
       } catch (err) {
         logger.error("Bengali Cron run failed", { err: err.message });
       }
@@ -164,7 +164,29 @@ async function main() {
       timezone: "Asia/Kolkata"
     });
 
-    logger.info("Cron scheduler active: Auto-Release@02:50 | Bollywood@03:00 | OTT@04:00 | Bengali@05:00");
+    cron.schedule("0 6 * * *", async () => {
+      logger.info("Cron: starting incremental Telugu scrape…");
+      try {
+        await runRegionalIncremental("telugu");
+      } catch (err) {
+        logger.error("Telugu Cron run failed", { err: err.message });
+      }
+    }, {
+      timezone: "Asia/Kolkata"
+    });
+
+    cron.schedule("0 7 * * *", async () => {
+      logger.info("Cron: starting incremental Malayalam scrape…");
+      try {
+        await runRegionalIncremental("malayalam");
+      } catch (err) {
+        logger.error("Malayalam Cron run failed", { err: err.message });
+      }
+    }, {
+      timezone: "Asia/Kolkata"
+    });
+
+    logger.info("Cron scheduler active: Auto-Release@02:50 | Bollywood@03:00 | OTT@04:00 | Bengali@05:00 | Telugu@06:00 | Malayalam@07:00");
     return; // keep process alive
   }
 
@@ -174,40 +196,43 @@ async function main() {
     process.exit(0);
   }
 
-  // ── Bengali scrape modes
-  if (argMap["bengali"]) {
+  // ── Regional scrape modes
+  const regionKeys = ["bengali", "telugu", "malayalam"];
+  const activeRegion = regionKeys.find(k => argMap[k]);
+
+  if (activeRegion) {
     if (!process.env.MONGO_URI) {
       logger.error("MONGO_URI is required.");
       process.exit(1);
     }
     if (argMap["incremental"]) {
-      logger.info("Bengali mode: incremental (last 6 months)");
-      await runBengaliIncremental();
+      logger.info(`Mode: ${activeRegion} incremental (last 6 months)`);
+      await runRegionalIncremental(activeRegion);
     } else if (argMap["year"]) {
       const y = parseInt(argMap["year"]);
-      logger.info(`Bengali mode: single year ${y}`);
-      await runBengali({ startYear: y, endYear: y });
+      logger.info(`Mode: ${activeRegion} single year ${y}`);
+      await runRegional(activeRegion, { startYear: y, endYear: y });
     } else if (argMap["from"] || argMap["to"]) {
-      const from = parseInt(argMap["from"]) || 2000;
-      const to = parseInt(argMap["to"]) || new Date().getFullYear();
-      logger.info(`Bengali mode: year range ${from}–${to}`);
-      await runBengali({ startYear: from, endYear: to });
+      const from = parseInt(argMap["from"]);
+      const to = parseInt(argMap["to"]);
+      logger.info(`Mode: ${activeRegion} year range ${from}–${to}`);
+      await runRegional(activeRegion, { startYear: from, endYear: to });
     } else if (argMap["reset"]) {
-      logger.info("Bengali mode: full reset + full run");
-      await runBengali({ reset: true });
+      logger.info(`Mode: ${activeRegion} full reset + full run`);
+      await runRegional(activeRegion, { reset: true });
     } else if (argMap["retry-failed"]) {
-      logger.info("Bengali mode: retry failed movies");
-      await runBengali({ retryFailed: true });
+      logger.info(`Mode: ${activeRegion} retry failed movies`);
+      await runRegional(activeRegion, { retryFailed: true });
     } else {
-      logger.info("Bengali mode: full run (2000 → present)");
-      await runBengali();
+      logger.info(`Mode: ${activeRegion} full run`);
+      await runRegional(activeRegion);
     }
     await mongoose.disconnect();
     process.exit(0);
   }
 
   // ── Bollywood one-shot scrape modes
-  const opts = {};
+  const opts = { force: argMap["force"] || false };
 
   if (argMap["tmdb"]) {
     const ids = argMap["tmdb"].split(",").map(id => parseInt(id.trim())).filter(id => !isNaN(id));

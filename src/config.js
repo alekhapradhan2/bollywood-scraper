@@ -8,8 +8,12 @@ module.exports = {
   START_YEAR: 2015,
   END_YEAR: new Date().getFullYear() + 2,
 
-  // ── Date range — Bengali (wider history)
-  BENGALI_START_YEAR: 2000,
+  // ── Regional Configs
+  REGIONS: {
+    bengali: { langName: "Bengali", tmdbLang: "bn", startYear: 2000 },
+    telugu: { langName: "Telugu", tmdbLang: "te", startYear: 2000 },
+    malayalam: { langName: "Malayalam", tmdbLang: "ml", startYear: 2000 }
+  },
 
   // ── Source APIs
   TMDB_API_KEY: process.env.TMDB_API_KEY || "",          // https://www.themoviedb.org/settings/api
@@ -43,18 +47,11 @@ module.exports = {
   // ── Languages considered Bollywood (Hindi-primary)
   BOLLYWOOD_LANGUAGES: ["hi", "Hindi"],
 
-  // ── Languages considered Bengali
-  BENGALI_LANGUAGES: ["bn", "Bengali"],
-
   // ── Default production house ID for scraped movies (Bollywood)
   SCRAPER_PRODUCTION_ID: process.env.SCRAPER_PRODUCTION_ID || "",
 
-  // ── Production house ID for Bengali scraper (optional — falls back to SCRAPER_PRODUCTION_ID)
-  BENGALI_SCRAPER_PRODUCTION_ID: process.env.BENGALI_SCRAPER_PRODUCTION_ID || "",
-
   // ── Checkpoint / log paths (relative to scraper root)
   CHECKPOINT_FILE: "./checkpoints/progress.json",
-  BENGALI_CHECKPOINT_FILE: "./checkpoints/bengali-progress.json",
   LOG_DIR: "./logs",
 
   // ── Image poster sizes

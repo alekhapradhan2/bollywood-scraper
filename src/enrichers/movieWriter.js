@@ -242,10 +242,18 @@ function buildUpdatePayload(merged, castEntries) {
  */
 async function saveMovie(merged, productionId, stats) {
   // Validate minimum fields
-  const errors = validateMinimumFields(merged);
-  if (errors.length > 0) {
-    logger.warn(`Movie "${merged.title}" skipped — missing: ${errors.join(", ")}`);
-    return { action: "skipped", reason: `missing: ${errors.join(", ")}` };
+  if (!stats?.force) {
+    const errors = validateMinimumFields(merged);
+    if (errors.length > 0) {
+      logger.warn(`Movie "${merged.title}" skipped — missing: ${errors.join(", ")}`);
+      return { action: "skipped", reason: `missing: ${errors.join(", ")}` };
+    }
+  } else {
+    // Even if forced, we absolutely need a title to save it
+    if (!merged.title) {
+      logger.warn(`Movie skipped — missing title (cannot force)`);
+      return { action: "skipped", reason: `missing title` };
+    }
   }
 
 

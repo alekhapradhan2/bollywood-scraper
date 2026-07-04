@@ -7,7 +7,7 @@
 "use strict";
 
 const { fetchMovieDetails, mapTmdbMovie } = require("../scrapers/tmdb");
-const { fetchBengaliMovieDetails, mapTmdbBengaliMovie } = require("../scrapers/tmdb-bengali");
+const { fetchRegionalMovieDetails, mapTmdbRegionalMovie } = require("../scrapers/tmdb-regional");
 const { fetchByImdbId, searchByTitle, mapOmdbData } = require("../scrapers/omdb");
 const { scrapeMovie: scrapeWikipedia } = require("../scrapers/wikipedia");
 const { scrapeBoxOffice: scrapeBH, scrapeDailyBoxOffice: scrapeBHDays } = require("../scrapers/bollywoodhungama");
@@ -32,18 +32,19 @@ async function processMovie(basicInfo, productionId, stats) {
   const year = basicInfo.release_date
     ? new Date(basicInfo.release_date).getFullYear()
     : null;
-  const isBengali = basicInfo._language === "Bengali";
+  const isRegional = !!basicInfo._regionKey;
+  const langName = basicInfo._language;
 
-  logger.info(`Processing: "${title}" (${year}) [TMDB:${tmdbId}]${isBengali ? " [Bengali]" : ""}`);
+  logger.info(`Processing: "${title}" (${year}) [TMDB:${tmdbId}]${isRegional ? ` [${langName}]` : ""}`);
 
   try {
     // ── Step 1: TMDB full details (primary source)
-    // Use Bengali mapper when _language is "Bengali" so language field is set correctly
-    const rawTmdb = isBengali
-      ? await fetchBengaliMovieDetails(tmdbId)
+    // Use Regional mapper when _regionKey is present so language field is set correctly
+    const rawTmdb = isRegional
+      ? await fetchRegionalMovieDetails(tmdbId)
       : await fetchMovieDetails(tmdbId);
     const tmdb = rawTmdb
-      ? (isBengali ? mapTmdbBengaliMovie(rawTmdb) : mapTmdbMovie(rawTmdb))
+      ? (isRegional ? mapTmdbRegionalMovie(rawTmdb, langName) : mapTmdbMovie(rawTmdb))
       : null;
 
     if (!tmdb) {

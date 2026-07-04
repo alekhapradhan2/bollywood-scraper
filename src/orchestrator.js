@@ -96,6 +96,7 @@ async function run(opts = {}) {
   // ── Mode: specific TMDB IDs
   if (tmdbIds.length > 0) {
     logger.info(`\n──── Mode: Specific TMDB IDs ────`);
+    checkpoint.stats.force = opts.force || false;
     const movies = tmdbIds.map(id => ({ id }));
     checkpoint.totalMovies += movies.length;
     cp.save(checkpoint);
@@ -136,8 +137,8 @@ async function run(opts = {}) {
  * Helper to process an array of movies in batches.
  */
 async function processBatchOfMovies(movies, checkpoint, productionId) {
-  // Filter out already-processed
-  const pending = movies.filter((m) => !cp.isProcessed(checkpoint, m.id));
+  // Filter out already-processed unless forced
+  const pending = checkpoint.stats.force ? movies : movies.filter((m) => !cp.isProcessed(checkpoint, m.id));
   logger.info(`Pending: ${pending.length} (${movies.length - pending.length} already done)`);
 
   if (pending.length === 0) return;
