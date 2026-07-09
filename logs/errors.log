@@ -12,3 +12,8 @@
 {"err":"read ECONNRESET","level":"error","message":"TMDB fetchMoviesByYear failed","page":1,"timestamp":"2026-06-30 11:34:43","year":2012}
 {"err":"read ECONNRESET","level":"error","message":"TMDB fetchMoviesByYear failed","page":1,"timestamp":"2026-06-30 12:01:08","year":2010}
 {"err":"read ECONNRESET","level":"error","message":"TMDB fetchMoviesByYear failed","page":1,"timestamp":"2026-06-30 12:39:49","year":2007}
+{"level":"error","message":"No results found for \"Hrudhayam Murali\"","timestamp":"2026-07-09 13:14:08"}
+{"level":"error","message":"No results found for \"Vasudheva Sutham\"","timestamp":"2026-07-09 13:14:31"}
+{"err":"read ECONNRESET","level":"error","message":"TMDB fetchRegionalMoviesByYear failed [mr]","page":1,"timestamp":"2026-07-09 13:54:58","year":2026}
+{"level":"error","message":"No results found for \"Tumbadchi Manjula\"","timestamp":"2026-07-09 14:01:38"}
+{"level":"error","message":"No results found for \"Tumbadchi Manjula\"","timestamp":"2026-07-09 14:02:16"}

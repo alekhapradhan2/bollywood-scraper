@@ -29070,3 +29070,812 @@
 {"level":"info","message":"  Telugu Scraper completed!","timestamp":"2026-07-05 01:11:29"}
 {"level":"info","message":"Telugu stats - inserted:90 updated:78 skipped:0 failed:0 | cast created:474 reused:2042","timestamp":"2026-07-05 01:11:29"}
 {"level":"info","message":"=================================================\n","timestamp":"2026-07-05 01:11:29"}
+{"level":"info","message":"Searching TMDB for: \"Hrudhayam Murali\"","timestamp":"2026-07-09 13:14:05"}
+{"level":"warn","message":"Attempt 1 failed (read ECONNRESET). Retrying in 2000ms…","timestamp":"2026-07-09 13:14:05"}
+{"level":"error","message":"No results found for \"Hrudhayam Murali\"","timestamp":"2026-07-09 13:14:08"}
+{"level":"info","message":"Searching TMDB for: \"Vasudheva Sutham\"","timestamp":"2026-07-09 13:14:27"}
+{"level":"warn","message":"Attempt 1 failed (read ECONNRESET). Retrying in 2000ms…","timestamp":"2026-07-09 13:14:28"}
+{"level":"error","message":"No results found for \"Vasudheva Sutham\"","timestamp":"2026-07-09 13:14:31"}
+{"level":"info","message":"Searching TMDB for: \"Mother Promise\"","timestamp":"2026-07-09 13:14:40"}
+{"level":"info","message":"Found 4 results. Taking the first one: \"Mother Promise\" (2026-07-10) - ID: 1662770","timestamp":"2026-07-09 13:14:41"}
+{"level":"info","message":"═══════════════════════════════════════════════","timestamp":"2026-07-09 13:14:41"}
+{"level":"info","message":"  Bollywood Scraper — 2015 to 2028","timestamp":"2026-07-09 13:14:41"}
+{"level":"info","message":"═══════════════════════════════════════════════","timestamp":"2026-07-09 13:14:41"}
+{"level":"info","message":"MongoDB connected","timestamp":"2026-07-09 13:14:42"}
+{"failed":0,"level":"info","message":"Checkpoint loaded","processed":4485,"skipped":321,"timestamp":"2026-07-09 13:14:42"}
+{"level":"info","message":"\n──── Mode: Specific TMDB IDs ────","timestamp":"2026-07-09 13:14:42"}
+{"level":"info","message":"Pending: 1 (0 already done)","timestamp":"2026-07-09 13:14:42"}
+{"level":"info","message":"Batch 1/1 — 1 movies","timestamp":"2026-07-09 13:14:42"}
+{"level":"info","message":"Processing: \"\" (null) [TMDB:1662770]","timestamp":"2026-07-09 13:14:42"}
+{"level":"warn","message":"Attempt 1 failed (Request failed with status code 500). Retrying in 2000ms…","timestamp":"2026-07-09 13:14:47"}
+{"level":"warn","message":"Attempt 2 failed (Request failed with status code 500). Retrying in 4000ms…","timestamp":"2026-07-09 13:14:51"}
+{"level":"warn","message":"HTTP 400 for https://www.googleapis.com/youtube/v3/search?part=snippet&q=%20null%20official%20trailer%20Hindi&type=video&maxResults=5&key=your_youtube_api_key_here&videoCategoryId=1 — not retrying","timestamp":"2026-07-09 13:14:59"}
+{"err":"Request failed with status code 400","level":"warn","message":"YouTube trailer search failed","timestamp":"2026-07-09 13:14:59","title":"","year":null}
+{"level":"warn","message":"Movie \"Mother Promise\" skipped — missing: synopsis","timestamp":"2026-07-09 13:14:59"}
+{"level":"info","message":"Progress — inserted:4413 updated:72 skipped:0 failed:0 | cast created:22754 reused:40490","timestamp":"2026-07-09 13:14:59"}
+{"level":"info","message":"\n═══════════════════════════════════════════════","timestamp":"2026-07-09 13:14:59"}
+{"level":"info","message":"  Scraper completed!","timestamp":"2026-07-09 13:14:59"}
+{"level":"info","message":"  Inserted:     4413","timestamp":"2026-07-09 13:14:59"}
+{"level":"info","message":"  Updated:      72","timestamp":"2026-07-09 13:14:59"}
+{"level":"info","message":"  Skipped:      0","timestamp":"2026-07-09 13:14:59"}
+{"level":"info","message":"  Failed:       0","timestamp":"2026-07-09 13:14:59"}
+{"level":"info","message":"  Cast created: 22754","timestamp":"2026-07-09 13:14:59"}
+{"level":"info","message":"  Cast reused:  40490","timestamp":"2026-07-09 13:14:59"}
+{"level":"info","message":"═══════════════════════════════════════════════\n","timestamp":"2026-07-09 13:14:59"}
+{"level":"warn","message":"TMDB_API_KEY not set — TMDB scraper will be unavailable.","timestamp":"2026-07-09 13:15:08"}
+{"level":"info","message":"Searching TMDB for: \"Mother Promise\"","timestamp":"2026-07-09 13:15:41"}
+{"level":"warn","message":"Attempt 1 failed (read ECONNRESET). Retrying in 2000ms…","timestamp":"2026-07-09 13:15:41"}
+{"level":"info","message":"Found 4 results. Taking the first one: \"Mother Promise\" (2026-07-10) - ID: 1662770","timestamp":"2026-07-09 13:15:44"}
+{"level":"info","message":"═══════════════════════════════════════════════","timestamp":"2026-07-09 13:15:44"}
+{"level":"info","message":"  Bollywood Scraper — 2015 to 2028","timestamp":"2026-07-09 13:15:44"}
+{"level":"info","message":"═══════════════════════════════════════════════","timestamp":"2026-07-09 13:15:44"}
+{"level":"info","message":"MongoDB connected","timestamp":"2026-07-09 13:15:46"}
+{"failed":0,"level":"info","message":"Checkpoint loaded","processed":4485,"skipped":322,"timestamp":"2026-07-09 13:15:46"}
+{"level":"info","message":"\n──── Mode: Specific TMDB IDs ────","timestamp":"2026-07-09 13:15:46"}
+{"level":"info","message":"Pending: 1 (0 already done)","timestamp":"2026-07-09 13:15:46"}
+{"level":"info","message":"Batch 1/1 — 1 movies","timestamp":"2026-07-09 13:15:46"}
+{"level":"info","message":"Processing: \"\" (null) [TMDB:1662770]","timestamp":"2026-07-09 13:15:46"}
+{"level":"warn","message":"Attempt 1 failed (Request failed with status code 500). Retrying in 2000ms…","timestamp":"2026-07-09 13:15:50"}
+{"level":"warn","message":"Attempt 2 failed (Request failed with status code 500). Retrying in 4000ms…","timestamp":"2026-07-09 13:15:53"}
+{"level":"warn","message":"HTTP 400 for https://www.googleapis.com/youtube/v3/search?part=snippet&q=%20null%20official%20trailer%20Hindi&type=video&maxResults=5&key=your_youtube_api_key_here&videoCategoryId=1 — not retrying","timestamp":"2026-07-09 13:15:59"}
+{"err":"Request failed with status code 400","level":"warn","message":"YouTube trailer search failed","timestamp":"2026-07-09 13:15:59","title":"","year":null}
+{"level":"info","message":"Cast created: Geetha (Actor)","timestamp":"2026-07-09 13:16:00"}
+{"level":"info","message":"Cast created: Vinaya Prasad (Actor)","timestamp":"2026-07-09 13:16:01"}
+{"level":"info","message":"Cast created: Nagabhushana N S (Actor)","timestamp":"2026-07-09 13:16:02"}
+{"level":"info","message":"Cast created: Yashwanth M K (Actor)","timestamp":"2026-07-09 13:16:03"}
+{"level":"info","message":"Cast created: Shamanth Venugopal (Actor)","timestamp":"2026-07-09 13:16:03"}
+{"level":"info","message":"Cast created: Poornachandra Mysuru (Director)","timestamp":"2026-07-09 13:16:04"}
+{"level":"info","message":"Cast created: Mahadev Prasad (Writer)","timestamp":"2026-07-09 13:16:04"}
+{"level":"info","message":"Cast created: Arun Bharamannavar (Writer)","timestamp":"2026-07-09 13:16:04"}
+{"level":"info","message":"Cast created: Harsha Murundi Shivalingappa (Producer)","timestamp":"2026-07-09 13:16:04"}
+{"level":"info","message":"Cast created: Yadunandan K M (Producer)","timestamp":"2026-07-09 13:16:04"}
+{"level":"info","message":"Cast created: Navaneeth Sham (Music Director)","timestamp":"2026-07-09 13:16:04"}
+{"level":"info","message":"Cast created: Pradeep Rao (Editor)","timestamp":"2026-07-09 13:16:05"}
+{"level":"info","message":"Cast created: Subbu Hunsur (Production Designer)","timestamp":"2026-07-09 13:16:05"}
+{"id":"6a4f51bd785c7f059e117a0c","level":"info","message":"Movie inserted: \"Mother Promise\" [mother-promise-2026]","timestamp":"2026-07-09 13:16:05"}
+{"level":"info","message":"Progress — inserted:4414 updated:72 skipped:0 failed:0 | cast created:22767 reused:40494","timestamp":"2026-07-09 13:16:05"}
+{"level":"info","message":"\n═══════════════════════════════════════════════","timestamp":"2026-07-09 13:16:06"}
+{"level":"info","message":"  Scraper completed!","timestamp":"2026-07-09 13:16:06"}
+{"level":"info","message":"  Inserted:     4414","timestamp":"2026-07-09 13:16:06"}
+{"level":"info","message":"  Updated:      72","timestamp":"2026-07-09 13:16:06"}
+{"level":"info","message":"  Skipped:      0","timestamp":"2026-07-09 13:16:06"}
+{"level":"info","message":"  Failed:       0","timestamp":"2026-07-09 13:16:06"}
+{"level":"info","message":"  Cast created: 22767","timestamp":"2026-07-09 13:16:06"}
+{"level":"info","message":"  Cast reused:  40494","timestamp":"2026-07-09 13:16:06"}
+{"level":"info","message":"═══════════════════════════════════════════════\n","timestamp":"2026-07-09 13:16:06"}
+{"level":"info","message":"Mode: marathi single year 2026","timestamp":"2026-07-09 13:54:51"}
+{"level":"info","message":"=================================================","timestamp":"2026-07-09 13:54:51"}
+{"level":"info","message":"  Marathi Movie Scraper - 2026 to 2026","timestamp":"2026-07-09 13:54:51"}
+{"level":"info","message":"=================================================","timestamp":"2026-07-09 13:54:51"}
+{"level":"info","message":"MongoDB connected (Marathi scraper)","timestamp":"2026-07-09 13:54:52"}
+{"failed":0,"level":"info","message":"Marathi checkpoint loaded","processed":0,"skipped":0,"timestamp":"2026-07-09 13:54:52"}
+{"level":"info","message":"\n---- Marathi Year: 2026 ----","timestamp":"2026-07-09 13:54:52"}
+{"level":"warn","message":"Attempt 1 failed (read ECONNRESET). Retrying in 2000ms…","timestamp":"2026-07-09 13:54:52"}
+{"level":"warn","message":"Attempt 2 failed (read ECONNRESET). Retrying in 4000ms…","timestamp":"2026-07-09 13:54:54"}
+{"err":"read ECONNRESET","level":"error","message":"TMDB fetchRegionalMoviesByYear failed [mr]","page":1,"timestamp":"2026-07-09 13:54:58","year":2026}
+{"level":"info","message":"Mode: marathi incremental (last 6 months)","timestamp":"2026-07-09 13:55:06"}
+{"level":"info","message":"=================================================","timestamp":"2026-07-09 13:55:06"}
+{"level":"info","message":"  Marathi Movie Scraper - 2000 to 2028","timestamp":"2026-07-09 13:55:06"}
+{"level":"info","message":"=================================================","timestamp":"2026-07-09 13:55:06"}
+{"level":"info","message":"MongoDB connected (Marathi scraper)","timestamp":"2026-07-09 13:55:07"}
+{"failed":0,"level":"info","message":"Marathi checkpoint loaded","processed":0,"skipped":0,"timestamp":"2026-07-09 13:55:07"}
+{"level":"info","message":"\n---- Mode: Recent Marathi (Last 6 Months) ----","timestamp":"2026-07-09 13:55:07"}
+{"level":"warn","message":"Attempt 1 failed (read ECONNRESET). Retrying in 2000ms…","timestamp":"2026-07-09 13:55:07"}
+{"level":"warn","message":"Attempt 2 failed (read ECONNRESET). Retrying in 4000ms…","timestamp":"2026-07-09 13:55:09"}
+{"level":"info","message":"Found 37 recent Marathi movies","timestamp":"2026-07-09 13:55:14"}
+{"level":"info","message":"Marathi pending: 37 (0 already done)","timestamp":"2026-07-09 13:55:14"}
+{"level":"info","message":"Marathi batch 1/2 - 20 movies","timestamp":"2026-07-09 13:55:14"}
+{"level":"info","message":"Processing: \"Raja Shivaji\" (2026) [TMDB:1247165] [Marathi]","timestamp":"2026-07-09 13:55:14"}
+{"level":"info","message":"Processing: \"Super Duperr\" (2026) [TMDB:1652836] [Marathi]","timestamp":"2026-07-09 13:55:14"}
+{"level":"info","message":"Processing: \"Deool Band 2\" (2026) [TMDB:1699574] [Marathi]","timestamp":"2026-07-09 13:55:14"}
+{"level":"info","message":"Processing: \"Motherhood\" (2026) [TMDB:1608274] [Marathi]","timestamp":"2026-07-09 13:55:14"}
+{"level":"warn","message":"Attempt 1 failed (read ECONNRESET). Retrying in 2000ms…","timestamp":"2026-07-09 13:55:15"}
+{"level":"warn","message":"Attempt 1 failed (read ECONNRESET). Retrying in 2000ms…","timestamp":"2026-07-09 13:55:15"}
+{"level":"warn","message":"Attempt 1 failed (Request failed with status code 429). Retrying in 2000ms…","timestamp":"2026-07-09 13:55:20"}
+{"level":"warn","message":"HTTP 404 for https://www.bollywoodhungama.com/movies/deool-band-2-2026/ — not retrying","timestamp":"2026-07-09 13:55:21"}
+{"level":"warn","message":"Attempt 2 failed (Request failed with status code 429). Retrying in 4000ms…","timestamp":"2026-07-09 13:55:22"}
+{"level":"warn","message":"HTTP 404 for https://www.bollywoodhungama.com/movies/raja-shivaji-2026/ — not retrying","timestamp":"2026-07-09 13:55:22"}
+{"level":"warn","message":"HTTP 400 for https://www.googleapis.com/youtube/v3/search?part=snippet&q=Deool%20Band%202%202026%20official%20trailer%20Hindi&type=video&maxResults=5&key=your_youtube_api_key_here&videoCategoryId=1 — not retrying","timestamp":"2026-07-09 13:55:23"}
+{"err":"Request failed with status code 400","level":"warn","message":"YouTube trailer search failed","timestamp":"2026-07-09 13:55:23","title":"Deool Band 2","year":2026}
+{"level":"info","message":"Cast created: Snehal Tarde (Actor)","timestamp":"2026-07-09 13:55:23"}
+{"level":"warn","message":"HTTP 404 for https://www.bollywoodhungama.com/movies/super-duperr-2026/ — not retrying","timestamp":"2026-07-09 13:55:23"}
+{"level":"info","message":"Cast created: Devendra Gaikwad (Actor)","timestamp":"2026-07-09 13:55:24"}
+{"level":"info","message":"Cast created: Jagannath Nivangune (Actor)","timestamp":"2026-07-09 13:55:25"}
+{"level":"info","message":"Cast created: Prajakt Deshmukh (Writer)","timestamp":"2026-07-09 13:55:25"}
+{"level":"info","message":"Cast created: Vidula Chougule (Actor)","timestamp":"2026-07-09 13:55:25"}
+{"level":"info","message":"Cast created: Poornima Oak (Costume Designer)","timestamp":"2026-07-09 13:55:26"}
+{"level":"info","message":"Cast created: Atul Kudale (Actor)","timestamp":"2026-07-09 13:55:26"}
+{"level":"info","message":"Cast created: Kailash Wani (Producer)","timestamp":"2026-07-09 13:55:26"}
+{"id":"6a4f5af6f73d963587345deb","level":"info","message":"Movie inserted: \"Raja Shivaji\" [raja-shivaji-2026]","timestamp":"2026-07-09 13:55:26"}
+{"level":"info","message":"Processing: \"Lagnacha Shot\" (2026) [TMDB:1628964] [Marathi]","timestamp":"2026-07-09 13:55:26"}
+{"level":"info","message":"Cast created: Jayashree Kailas Wani (Producer)","timestamp":"2026-07-09 13:55:26"}
+{"level":"info","message":"Cast created: Kaiwalya Wani (Producer)","timestamp":"2026-07-09 13:55:26"}
+{"level":"info","message":"Cast created: Juili Kailas Wani (Producer)","timestamp":"2026-07-09 13:55:26"}
+{"level":"info","message":"Cast created: Kushal Badrike (Actor)","timestamp":"2026-07-09 13:55:26"}
+{"id":"6a4f5af6f73d963587345e1d","level":"info","message":"Movie inserted: \"Deool Band 2\" [deool-band-2-2026]","timestamp":"2026-07-09 13:55:27"}
+{"level":"info","message":"Processing: \"Ranapati Shivray Swari Agra\" (2026) [TMDB:1641425] [Marathi]","timestamp":"2026-07-09 13:55:27"}
+{"err":"Request failed with status code 429","level":"warn","message":"Wikipedia fetchPageSections failed","pageTitle":"Motherhood (2009 film)","timestamp":"2026-07-09 13:55:27"}
+{"level":"info","message":"Cast created: Jagruti Datir (Actor)","timestamp":"2026-07-09 13:55:27"}
+{"level":"info","message":"Cast created: Namrata Awate Sambherao (Actor)","timestamp":"2026-07-09 13:55:28"}
+{"level":"info","message":"Cast created: Sameer Asha Patil (Director)","timestamp":"2026-07-09 13:55:28"}
+{"id":"6a4f5af8f73d963587345e40","level":"info","message":"Movie inserted: \"Super Duperr\" [super-duperr-2026]","timestamp":"2026-07-09 13:55:28"}
+{"level":"info","message":"Processing: \"Bhidewada\" (2026) [TMDB:1651158] [Marathi]","timestamp":"2026-07-09 13:55:29"}
+{"level":"warn","message":"HTTP 404 for https://www.bollywoodhungama.com/movies/motherhood-2026/ — not retrying","timestamp":"2026-07-09 13:55:29"}
+{"level":"info","message":"Cast created: Aarohi Vakil (Actor)","timestamp":"2026-07-09 13:55:31"}
+{"level":"warn","message":"Attempt 1 failed (Request failed with status code 429). Retrying in 2000ms…","timestamp":"2026-07-09 13:55:31"}
+{"level":"info","message":"Cast created: Abhijit Kevale (Actor)","timestamp":"2026-07-09 13:55:31"}
+{"level":"info","message":"Cast created: Tara Mahajan (Actor)","timestamp":"2026-07-09 13:55:32"}
+{"level":"warn","message":"HTTP 404 for https://www.bollywoodhungama.com/movies/lagnacha-shot-2026/ — not retrying","timestamp":"2026-07-09 13:55:32"}
+{"level":"warn","message":"HTTP 404 for https://www.bollywoodhungama.com/movies/ranapati-shivray-swari-agra-2026/ — not retrying","timestamp":"2026-07-09 13:55:32"}
+{"level":"info","message":"Cast created: Ovee Gandhar Sohoni (Actor)","timestamp":"2026-07-09 13:55:33"}
+{"level":"warn","message":"Attempt 2 failed (Request failed with status code 429). Retrying in 4000ms…","timestamp":"2026-07-09 13:55:33"}
+{"level":"info","message":"Cast created: Jeejivisha Kale (Director)","timestamp":"2026-07-09 13:55:33"}
+{"level":"info","message":"Cast created: Shardul Singh Bayas (Producer)","timestamp":"2026-07-09 13:55:33"}
+{"level":"info","message":"Cast created: Suhrud Godbole (Producer)","timestamp":"2026-07-09 13:55:33"}
+{"level":"info","message":"Cast created: Jayesh Shivaji Bhor (Actor)","timestamp":"2026-07-09 13:55:34"}
+{"id":"6a44e4841d3980d76c633926","level":"info","message":"Movie updated: \"Motherhood\" [slug]","timestamp":"2026-07-09 13:55:34"}
+{"level":"info","message":"Processing: \"Punha Ekda Sade Made 3\" (2026) [TMDB:1635086] [Marathi]","timestamp":"2026-07-09 13:55:34"}
+{"level":"info","message":"Cast created: Digpal Lanjekar (Actor)","timestamp":"2026-07-09 13:55:35"}
+{"level":"info","message":"Cast created: Geeta Gharat (Actor)","timestamp":"2026-07-09 13:55:35"}
+{"level":"warn","message":"Attempt 1 failed (Request failed with status code 429). Retrying in 2000ms…","timestamp":"2026-07-09 13:55:35"}
+{"level":"info","message":"Cast created: Bharat Jadhav (Actor)","timestamp":"2026-07-09 13:55:35"}
+{"level":"info","message":"Cast created: Nupur Daithankar (Actor)","timestamp":"2026-07-09 13:55:35"}
+{"level":"info","message":"Cast created: Abhyang Kuvalekar (Actor)","timestamp":"2026-07-09 13:55:36"}
+{"level":"info","message":"Cast created: Rutuja Kulkarni (Actor)","timestamp":"2026-07-09 13:55:36"}
+{"level":"info","message":"Cast created: Abhijeet Shwetachandra (Actor)","timestamp":"2026-07-09 13:55:37"}
+{"level":"info","message":"Cast created: Sanjay Kulkarni (Actor)","timestamp":"2026-07-09 13:55:37"}
+{"id":"6a4f5b01f73d963587345eaa","level":"info","message":"Movie inserted: \"Ranapati Shivray Swari Agra\" [ranapati-shivray-swari-agra-2026]","timestamp":"2026-07-09 13:55:37"}
+{"level":"info","message":"Processing: \"Rubaab\" (2026) [TMDB:1629725] [Marathi]","timestamp":"2026-07-09 13:55:37"}
+{"err":"Request failed with status code 429","level":"warn","message":"Wikipedia fetchPageSections failed","pageTitle":"List of Marathi films of 2026","timestamp":"2026-07-09 13:55:37"}
+{"level":"warn","message":"Attempt 2 failed (Request failed with status code 429). Retrying in 4000ms…","timestamp":"2026-07-09 13:55:38"}
+{"level":"info","message":"Cast created: Prabhakar More (Actor)","timestamp":"2026-07-09 13:55:38"}
+{"level":"warn","message":"Attempt 1 failed (Request failed with status code 429). Retrying in 2000ms…","timestamp":"2026-07-09 13:55:38"}
+{"level":"info","message":"Cast created: Leena Pandit (Actor)","timestamp":"2026-07-09 13:55:39"}
+{"level":"info","message":"Cast created: Sanjivani Patil (Actor)","timestamp":"2026-07-09 13:55:39"}
+{"level":"info","message":"Cast created: Mangesh Sunil (Actor)","timestamp":"2026-07-09 13:55:40"}
+{"level":"warn","message":"HTTP 404 for https://www.bollywoodhungama.com/movies/bhidewada-2026/ — not retrying","timestamp":"2026-07-09 13:55:40"}
+{"level":"info","message":"Cast created: Rajan Tamhane (Actor)","timestamp":"2026-07-09 13:55:41"}
+{"level":"info","message":"Cast created: Shreya Vaidya (Actor)","timestamp":"2026-07-09 13:55:42"}
+{"level":"info","message":"Cast created: Abhijit Amkar (Actor)","timestamp":"2026-07-09 13:55:43"}
+{"level":"info","message":"Cast created: Vaibhav Chavhan (Actor)","timestamp":"2026-07-09 13:55:43"}
+{"id":"6a4f5b07f73d963587345ed5","level":"info","message":"Movie inserted: \"Lagnacha Shot\" [lagnacha-shot-2026]","timestamp":"2026-07-09 13:55:43"}
+{"level":"info","message":"Processing: \"Baapya\" (2026) [TMDB:1608247] [Marathi]","timestamp":"2026-07-09 13:55:43"}
+{"level":"warn","message":"Attempt 1 failed (Request failed with status code 429). Retrying in 2000ms…","timestamp":"2026-07-09 13:55:43"}
+{"level":"info","message":"Cast created: Prajakta Gaikwad (Actor)","timestamp":"2026-07-09 13:55:44"}
+{"level":"warn","message":"HTTP 404 for https://www.bollywoodhungama.com/movies/rubaab-2026/ — not retrying","timestamp":"2026-07-09 13:55:44"}
+{"level":"warn","message":"Attempt 1 failed (Request failed with status code 429). Retrying in 2000ms…","timestamp":"2026-07-09 13:55:44"}
+{"level":"info","message":"Cast created: Shraddha Gaikwad (Actor)","timestamp":"2026-07-09 13:55:44"}
+{"level":"info","message":"Cast created: Madhav Abhyankar (Actor)","timestamp":"2026-07-09 13:55:45"}
+{"level":"info","message":"Cast created: Shivani Rajeshirke (Director)","timestamp":"2026-07-09 13:55:45"}
+{"level":"info","message":"Cast created: Ajit Shirole (Director)","timestamp":"2026-07-09 13:55:45"}
+{"level":"info","message":"Cast created: Akshay Katti (Writer)","timestamp":"2026-07-09 13:55:45"}
+{"level":"warn","message":"Attempt 2 failed (Request failed with status code 429). Retrying in 4000ms…","timestamp":"2026-07-09 13:55:45"}
+{"id":"6a4f5b0af73d963587345efd","level":"info","message":"Movie inserted: \"Bhidewada\" [bhidewada-2026]","timestamp":"2026-07-09 13:55:46"}
+{"level":"info","message":"Processing: \"Toh, Ti Ani Fuji\" (2026) [TMDB:1608277] [Marathi]","timestamp":"2026-07-09 13:55:46"}
+{"level":"info","message":"Cast created: Sheetal Patil (Actor)","timestamp":"2026-07-09 13:55:46"}
+{"level":"warn","message":"Attempt 2 failed (Request failed with status code 429). Retrying in 4000ms…","timestamp":"2026-07-09 13:55:46"}
+{"level":"info","message":"Cast created: Simran Khedkar (Actor)","timestamp":"2026-07-09 13:55:47"}
+{"level":"warn","message":"Attempt 1 failed (Request failed with status code 429). Retrying in 2000ms…","timestamp":"2026-07-09 13:55:47"}
+{"level":"info","message":"Cast created: Vishal Shirtode (Actor)","timestamp":"2026-07-09 13:55:48"}
+{"level":"info","message":"Cast created: Abhijeet Sakate (Actor)","timestamp":"2026-07-09 13:55:48"}
+{"level":"info","message":"Cast created: Shekhar Bapu Rankhambe (Director)","timestamp":"2026-07-09 13:55:49"}
+{"id":"6a4f5b0df73d963587345f1d","level":"info","message":"Movie inserted: \"Rubaab\" [rubaab-2026]","timestamp":"2026-07-09 13:55:49"}
+{"level":"info","message":"Processing: \"Vedaat Marathe Veer Daudale Saat\" (2027) [TMDB:1079927] [Marathi]","timestamp":"2026-07-09 13:55:49"}
+{"level":"warn","message":"Attempt 2 failed (Request failed with status code 429). Retrying in 4000ms…","timestamp":"2026-07-09 13:55:50"}
+{"err":"Request failed with status code 429","level":"warn","message":"Wikipedia fetchPageSections failed","pageTitle":"Punha Ekda Sade Made Teen","timestamp":"2026-07-09 13:55:50"}
+{"level":"warn","message":"Attempt 1 failed (Request failed with status code 429). Retrying in 2000ms…","timestamp":"2026-07-09 13:55:50"}
+{"err":"Request failed with status code 429","level":"warn","message":"Wikipedia search failed","movieTitle":"Baapya","timestamp":"2026-07-09 13:55:51","year":2026}
+{"level":"warn","message":"HTTP 404 for https://www.bollywoodhungama.com/movies/punha-ekda-sade-made-3-2026/ — not retrying","timestamp":"2026-07-09 13:55:52"}
+{"level":"warn","message":"HTTP 404 for https://www.bollywoodhungama.com/movies/baapya-2026/ — not retrying","timestamp":"2026-07-09 13:55:53"}
+{"level":"warn","message":"Attempt 2 failed (Request failed with status code 429). Retrying in 4000ms…","timestamp":"2026-07-09 13:55:53"}
+{"level":"info","message":"Cast created: Makarand Anaspure (Actor)","timestamp":"2026-07-09 13:55:54"}
+{"level":"warn","message":"HTTP 400 for https://www.googleapis.com/youtube/v3/search?part=snippet&q=Baapya%202026%20official%20trailer%20Hindi&type=video&maxResults=5&key=your_youtube_api_key_here&videoCategoryId=1 — not retrying","timestamp":"2026-07-09 13:55:54"}
+{"err":"Request failed with status code 400","level":"warn","message":"YouTube trailer search failed","timestamp":"2026-07-09 13:55:54","title":"Baapya","year":2026}
+{"level":"info","message":"Cast created: Sukanya Kulkarni (Actor)","timestamp":"2026-07-09 13:55:54"}
+{"level":"info","message":"Cast created: Sandeep Dandavte (Writer)","timestamp":"2026-07-09 13:55:55"}
+{"id":"6a4f5b13f73d963587345f3e","level":"info","message":"Movie inserted: \"Punha Ekda Sade Made 3\" [punha-ekda-sade-made-3-2026]","timestamp":"2026-07-09 13:55:55"}
+{"level":"info","message":"Processing: \"Case No 73\" (2026) [TMDB:1631122] [Marathi]","timestamp":"2026-07-09 13:55:55"}
+{"level":"info","message":"Cast created: Shravani Abhang (Actor)","timestamp":"2026-07-09 13:55:55"}
+{"level":"info","message":"Cast created: Asha Joshi (Actor)","timestamp":"2026-07-09 13:55:56"}
+{"level":"info","message":"Cast created: Ananda Karekar (Actor)","timestamp":"2026-07-09 13:55:57"}
+{"err":"Request failed with status code 429","level":"warn","message":"Wikipedia search failed","movieTitle":"Vedaat Marathe Veer Daudale Saat","timestamp":"2026-07-09 13:55:57","year":2027}
+{"level":"info","message":"Cast created: Aarush Chikhale (Actor)","timestamp":"2026-07-09 13:55:58"}
+{"level":"warn","message":"Attempt 1 failed (Request failed with status code 429). Retrying in 2000ms…","timestamp":"2026-07-09 13:55:58"}
+{"level":"info","message":"Cast created: Gauri Kiran (Actor)","timestamp":"2026-07-09 13:55:58"}
+{"level":"warn","message":"HTTP 404 for https://www.bollywoodhungama.com/movies/toh%2C-ti-ani-fuji-2026/ — not retrying","timestamp":"2026-07-09 13:55:58"}
+{"level":"info","message":"Cast created: Varsha Dandale (Actor)","timestamp":"2026-07-09 13:55:59"}
+{"level":"warn","message":"HTTP 404 for https://www.bollywoodhungama.com/movies/vedaat-marathe-veer-daudale-saat-2027/ — not retrying","timestamp":"2026-07-09 13:55:59"}
+{"level":"info","message":"Cast created: Atharva Fadnis (Actor)","timestamp":"2026-07-09 13:56:00"}
+{"level":"info","message":"Cast created: Omprakash Shinde (Actor)","timestamp":"2026-07-09 13:56:00"}
+{"level":"info","message":"Cast created: Raksha Naiga (Actor)","timestamp":"2026-07-09 13:56:01"}
+{"level":"info","message":"Cast created: Kabir Deven (Actor)","timestamp":"2026-07-09 13:56:01"}
+{"level":"warn","message":"HTTP 400 for https://www.googleapis.com/youtube/v3/search?part=snippet&q=Vedaat%20Marathe%20Veer%20Daudale%20Saat%202027%20official%20trailer%20Hindi&type=video&maxResults=5&key=your_youtube_api_key_here&videoCategoryId=1 — not retrying","timestamp":"2026-07-09 13:56:01"}
+{"err":"Request failed with status code 400","level":"warn","message":"YouTube trailer search failed","timestamp":"2026-07-09 13:56:01","title":"Vedaat Marathe Veer Daudale Saat","year":2027}
+{"level":"info","message":"Cast created: Vishal Nikam (Actor)","timestamp":"2026-07-09 13:56:02"}
+{"level":"info","message":"Cast created: Natsuko Fuji (Actor)","timestamp":"2026-07-09 13:56:02"}
+{"level":"info","message":"Cast created: Vaibhav Misal (Actor)","timestamp":"2026-07-09 13:56:02"}
+{"level":"info","message":"Cast created: Hardik Joshi (Actor)","timestamp":"2026-07-09 13:56:02"}
+{"level":"info","message":"Cast created: Ira Parwade (Actor)","timestamp":"2026-07-09 13:56:02"}
+{"level":"info","message":"Cast created: Fubito Yamano (Actor)","timestamp":"2026-07-09 13:56:02"}
+{"level":"info","message":"Cast created: Irawati Karnik (Writer)","timestamp":"2026-07-09 13:56:03"}
+{"level":"info","message":"Cast created: Rahul Chauhan (Cinematographer)","timestamp":"2026-07-09 13:56:03"}
+{"level":"info","message":"Cast created: John Donica (Cinematographer)","timestamp":"2026-07-09 13:56:03"}
+{"level":"info","message":"Cast created: Ashish Mehta (Production Designer)","timestamp":"2026-07-09 13:56:03"}
+{"level":"warn","message":"HTTP 404 for https://www.bollywoodhungama.com/movies/case-no-73-2026/ — not retrying","timestamp":"2026-07-09 13:56:03"}
+{"level":"info","message":"Cast created: Satya Manjrekar (Actor)","timestamp":"2026-07-09 13:56:03"}
+{"level":"info","message":"Cast created: Ira Alshi (Actor)","timestamp":"2026-07-09 13:56:03"}
+{"id":"6a4f5b1bf73d963587345f91","level":"info","message":"Movie inserted: \"Toh, Ti Ani Fuji\" [toh-ti-ani-fuji-2026]","timestamp":"2026-07-09 13:56:03"}
+{"level":"info","message":"Processing: \"Dukan\" (2026) [TMDB:1653449] [Marathi]","timestamp":"2026-07-09 13:56:03"}
+{"level":"info","message":"Cast created: Sameer Tewari (Director)","timestamp":"2026-07-09 13:56:03"}
+{"level":"info","message":"Cast created: Nandakishore Neelakanta Rao (Cinematographer)","timestamp":"2026-07-09 13:56:04"}
+{"level":"info","message":"Cast created: Vikrant Katkar (Writer)","timestamp":"2026-07-09 13:56:04"}
+{"level":"info","message":"Cast created: Nikhil Ashok Palande (Writer)","timestamp":"2026-07-09 13:56:04"}
+{"level":"info","message":"Cast created: Gaurav Gajanan Relekar (Writer)","timestamp":"2026-07-09 13:56:04"}
+{"level":"info","message":"Cast created: Priti Nair (Writer)","timestamp":"2026-07-09 13:56:04"}
+{"level":"info","message":"Cast created: Utkarsh Shinde (Actor)","timestamp":"2026-07-09 13:56:04"}
+{"level":"info","message":"Cast created: Muktal Telang (Producer)","timestamp":"2026-07-09 13:56:04"}
+{"level":"info","message":"Cast created: Neil Natu (Editor)","timestamp":"2026-07-09 13:56:04"}
+{"level":"warn","message":"HTTP 400 for https://www.googleapis.com/youtube/v3/search?part=snippet&q=Case%20No%2073%202026%20official%20trailer%20Hindi&type=video&maxResults=5&key=your_youtube_api_key_here&videoCategoryId=1 — not retrying","timestamp":"2026-07-09 13:56:04"}
+{"err":"Request failed with status code 400","level":"warn","message":"YouTube trailer search failed","timestamp":"2026-07-09 13:56:04","title":"Case No 73","year":2026}
+{"id":"6a4f5b1df73d963587345fce","level":"info","message":"Movie inserted: \"Baapya\" [baapya-2026]","timestamp":"2026-07-09 13:56:05"}
+{"level":"info","message":"Processing: \"Scorpion\" (2026) [TMDB:1204440] [Marathi]","timestamp":"2026-07-09 13:56:05"}
+{"level":"info","message":"Cast created: Piyush Apte (Actor)","timestamp":"2026-07-09 13:56:05"}
+{"level":"info","message":"Cast created: Jay Dudhane (Actor)","timestamp":"2026-07-09 13:56:05"}
+{"level":"info","message":"Cast created: Vaseem Qureshi (Producer)","timestamp":"2026-07-09 13:56:05"}
+{"level":"info","message":"Cast created: Parag Kulkarni (Writer)","timestamp":"2026-07-09 13:56:05"}
+{"id":"6a4f5b1df73d963587345fff","level":"info","message":"Movie inserted: \"Vedaat Marathe Veer Daudale Saat\" [vedaat-marathe-veer-daudale-saat-2027]","timestamp":"2026-07-09 13:56:05"}
+{"level":"info","message":"Processing: \"Sakhe Ga Saajani\" (2026) [TMDB:1663781] [Marathi]","timestamp":"2026-07-09 13:56:05"}
+{"level":"info","message":"Cast created: Nandita Patkar (Actor)","timestamp":"2026-07-09 13:56:06"}
+{"level":"info","message":"Cast created: Ashok Shinde (Actor)","timestamp":"2026-07-09 13:56:06"}
+{"level":"info","message":"Cast created: Milind Mukteshwar Apte (Director)","timestamp":"2026-07-09 13:56:07"}
+{"id":"6a4f5b1ff73d96358734601b","level":"info","message":"Movie inserted: \"Case No 73\" [case-no-73-2026]","timestamp":"2026-07-09 13:56:07"}
+{"level":"info","message":"Processing: \"Portraits\" (2026) [TMDB:1653445] [Marathi]","timestamp":"2026-07-09 13:56:07"}
+{"level":"warn","message":"HTTP 404 for https://www.bollywoodhungama.com/movies/dukan-2026/ — not retrying","timestamp":"2026-07-09 13:56:08"}
+{"level":"warn","message":"Attempt 1 failed (Request failed with status code 429). Retrying in 2000ms…","timestamp":"2026-07-09 13:56:09"}
+{"id":"6a4f5b22f73d96358734602b","level":"info","message":"Movie inserted: \"Dukan\" [dukan-2026]","timestamp":"2026-07-09 13:56:10"}
+{"level":"info","message":"Processing: \"Aga Aga Sunbai Kay Mhantay Sasubai\" (2026) [TMDB:1619620] [Marathi]","timestamp":"2026-07-09 13:56:10"}
+{"level":"warn","message":"HTTP 404 for https://www.bollywoodhungama.com/movies/scorpion-2026/ — not retrying","timestamp":"2026-07-09 13:56:10"}
+{"level":"warn","message":"Attempt 1 failed (Request failed with status code 429). Retrying in 2000ms…","timestamp":"2026-07-09 13:56:11"}
+{"level":"warn","message":"Attempt 2 failed (Request failed with status code 429). Retrying in 4000ms…","timestamp":"2026-07-09 13:56:11"}
+{"level":"warn","message":"HTTP 400 for https://www.googleapis.com/youtube/v3/search?part=snippet&q=Scorpion%202026%20official%20trailer%20Hindi&type=video&maxResults=5&key=your_youtube_api_key_here&videoCategoryId=1 — not retrying","timestamp":"2026-07-09 13:56:11"}
+{"err":"Request failed with status code 400","level":"warn","message":"YouTube trailer search failed","timestamp":"2026-07-09 13:56:11","title":"Scorpion","year":2026}
+{"level":"warn","message":"HTTP 404 for https://www.bollywoodhungama.com/movies/portraits-2026/ — not retrying","timestamp":"2026-07-09 13:56:12"}
+{"level":"info","message":"Cast created: Urjita Wani (Actor)","timestamp":"2026-07-09 13:56:12"}
+{"level":"info","message":"Cast created: Sujay Kulkarni (Actor)","timestamp":"2026-07-09 13:56:13"}
+{"level":"warn","message":"Attempt 2 failed (Request failed with status code 429). Retrying in 4000ms…","timestamp":"2026-07-09 13:56:13"}
+{"level":"warn","message":"HTTP 400 for https://www.googleapis.com/youtube/v3/search?part=snippet&q=Portraits%202026%20official%20trailer%20Hindi&type=video&maxResults=5&key=your_youtube_api_key_here&videoCategoryId=1 — not retrying","timestamp":"2026-07-09 13:56:13"}
+{"err":"Request failed with status code 400","level":"warn","message":"YouTube trailer search failed","timestamp":"2026-07-09 13:56:13","title":"Portraits","year":2026}
+{"level":"info","message":"Cast created: Milinda Natu (Actor)","timestamp":"2026-07-09 13:56:13"}
+{"level":"info","message":"Cast created: Urmila Jagtap (Actor)","timestamp":"2026-07-09 13:56:13"}
+{"id":"6a4f5b26f73d963587346047","level":"info","message":"Movie inserted: \"Portraits\" [portraits-2026]","timestamp":"2026-07-09 13:56:14"}
+{"level":"info","message":"Processing: \"Ghabadkund\" (2026) [TMDB:1718397] [Marathi]","timestamp":"2026-07-09 13:56:14"}
+{"level":"info","message":"Cast created: Sumedh Natu (Actor)","timestamp":"2026-07-09 13:56:14"}
+{"level":"info","message":"Cast created: Arya Chakraborty (Editor)","timestamp":"2026-07-09 13:56:14"}
+{"id":"6a4f5b27f73d96358734605d","level":"info","message":"Movie inserted: \"Scorpion\" [scorpion-2026]","timestamp":"2026-07-09 13:56:15"}
+{"level":"info","message":"Processing: \"Salbardi\" (2026) [TMDB:1681195] [Marathi]","timestamp":"2026-07-09 13:56:15"}
+{"level":"warn","message":"Attempt 1 failed (Request failed with status code 429). Retrying in 2000ms…","timestamp":"2026-07-09 13:56:15"}
+{"err":"Request failed with status code 429","level":"warn","message":"Wikipedia fetchPageSummary failed","pageTitle":"Sakhe Ga Saajani","timestamp":"2026-07-09 13:56:15"}
+{"level":"warn","message":"Attempt 1 failed (Request failed with status code 429). Retrying in 2000ms…","timestamp":"2026-07-09 13:56:16"}
+{"err":"Request failed with status code 429","level":"warn","message":"Wikipedia search failed","movieTitle":"Aga Aga Sunbai Kay Mhantay Sasubai","timestamp":"2026-07-09 13:56:17","year":2026}
+{"level":"warn","message":"Attempt 2 failed (Request failed with status code 429). Retrying in 4000ms…","timestamp":"2026-07-09 13:56:17"}
+{"level":"warn","message":"HTTP 404 for https://www.bollywoodhungama.com/movies/sakhe-ga-saajani-2026/ — not retrying","timestamp":"2026-07-09 13:56:17"}
+{"level":"warn","message":"Attempt 2 failed (Request failed with status code 429). Retrying in 4000ms…","timestamp":"2026-07-09 13:56:18"}
+{"level":"info","message":"Mode: marathi single year 2026","timestamp":"2026-07-09 13:56:18"}
+{"level":"info","message":"=================================================","timestamp":"2026-07-09 13:56:18"}
+{"level":"info","message":"  Marathi Movie Scraper - 2026 to 2026","timestamp":"2026-07-09 13:56:18"}
+{"level":"info","message":"=================================================","timestamp":"2026-07-09 13:56:18"}
+{"level":"info","message":"Cast created: Abhijeet Khandkekar (Actor)","timestamp":"2026-07-09 13:56:19"}
+{"level":"info","message":"MongoDB connected (Marathi scraper)","timestamp":"2026-07-09 13:56:19"}
+{"failed":0,"level":"info","message":"Marathi checkpoint loaded","processed":0,"skipped":0,"timestamp":"2026-07-09 13:56:19"}
+{"level":"info","message":"\n---- Marathi Year: 2026 ----","timestamp":"2026-07-09 13:56:19"}
+{"id":"6a4f5b2bf73d963587346076","level":"info","message":"Movie inserted: \"Sakhe Ga Saajani\" [sakhe-ga-saajani-2026]","timestamp":"2026-07-09 13:56:19"}
+{"level":"warn","message":"Attempt 1 failed (read ECONNRESET). Retrying in 2000ms…","timestamp":"2026-07-09 13:56:19"}
+{"level":"warn","message":"HTTP 404 for https://www.bollywoodhungama.com/movies/aga-aga-sunbai-kay-mhantay-sasubai-2026/ — not retrying","timestamp":"2026-07-09 13:56:20"}
+{"level":"info","message":"Cast created: Rajan Bhise (Actor)","timestamp":"2026-07-09 13:56:21"}
+{"level":"warn","message":"Attempt 2 failed (read ECONNRESET). Retrying in 4000ms…","timestamp":"2026-07-09 13:56:21"}
+{"level":"info","message":"Cast created: Nakul Ghanekar (Actor)","timestamp":"2026-07-09 13:56:22"}
+{"level":"info","message":"Cast created: Omkar Mangesh Datt (Writer)","timestamp":"2026-07-09 13:56:22"}
+{"id":"6a4f5b2ef73d96358734608e","level":"info","message":"Movie inserted: \"Aga Aga Sunbai Kay Mhantay Sasubai\" [aga-aga-sunbai-kay-mhantay-sasubai-2026]","timestamp":"2026-07-09 13:56:22"}
+{"level":"warn","message":"Attempt 1 failed (Request failed with status code 429). Retrying in 2000ms…","timestamp":"2026-07-09 13:56:23"}
+{"err":"Request failed with status code 429","level":"warn","message":"Wikipedia search failed","movieTitle":"Salbardi","timestamp":"2026-07-09 13:56:23","year":2026}
+{"level":"warn","message":"Attempt 2 failed (Request failed with status code 429). Retrying in 4000ms…","timestamp":"2026-07-09 13:56:25"}
+{"level":"warn","message":"HTTP 404 for https://www.bollywoodhungama.com/movies/salbardi-2026/ — not retrying","timestamp":"2026-07-09 13:56:25"}
+{"level":"warn","message":"HTTP 400 for https://www.googleapis.com/youtube/v3/search?part=snippet&q=Salbardi%202026%20official%20trailer%20Hindi&type=video&maxResults=5&key=your_youtube_api_key_here&videoCategoryId=1 — not retrying","timestamp":"2026-07-09 13:56:26"}
+{"err":"Request failed with status code 400","level":"warn","message":"YouTube trailer search failed","timestamp":"2026-07-09 13:56:26","title":"Salbardi","year":2026}
+{"level":"info","message":"Cast created: Onkar Bhojane (Actor)","timestamp":"2026-07-09 13:56:26"}
+{"level":"info","message":"Found 37 Marathi movies for 2026","timestamp":"2026-07-09 13:56:26"}
+{"level":"info","message":"Marathi pending: 37 (0 already done)","timestamp":"2026-07-09 13:56:26"}
+{"level":"info","message":"Marathi batch 1/2 - 20 movies","timestamp":"2026-07-09 13:56:26"}
+{"level":"info","message":"Processing: \"Raja Shivaji\" (2026) [TMDB:1247165] [Marathi]","timestamp":"2026-07-09 13:56:26"}
+{"level":"info","message":"Processing: \"Krantijyoti Vidyalay Marathi Madhyam\" (2026) [TMDB:1597670] [Marathi]","timestamp":"2026-07-09 13:56:26"}
+{"level":"info","message":"Processing: \"Super Duperr\" (2026) [TMDB:1652836] [Marathi]","timestamp":"2026-07-09 13:56:26"}
+{"level":"info","message":"Processing: \"Deool Band 2\" (2026) [TMDB:1699574] [Marathi]","timestamp":"2026-07-09 13:56:26"}
+{"level":"warn","message":"Attempt 1 failed (read ECONNRESET). Retrying in 2000ms…","timestamp":"2026-07-09 13:56:27"}
+{"level":"info","message":"Cast created: Pravin Dalimbkar (Actor)","timestamp":"2026-07-09 13:56:27"}
+{"level":"warn","message":"Attempt 1 failed (read ECONNRESET). Retrying in 2000ms…","timestamp":"2026-07-09 13:56:27"}
+{"level":"info","message":"Cast created: Ramesh Sahebrao Choudhari (Director)","timestamp":"2026-07-09 13:56:27"}
+{"level":"info","message":"Cast created: Mohit Randive (Writer)","timestamp":"2026-07-09 13:56:28"}
+{"level":"info","message":"Cast created: Rohit Shukre (Writer)","timestamp":"2026-07-09 13:56:28"}
+{"level":"info","message":"Cast created: Siddhesh More (Cinematographer)","timestamp":"2026-07-09 13:56:28"}
+{"id":"6a4f5b34f73d9635873460b2","level":"info","message":"Movie inserted: \"Salbardi\" [salbardi-2026]","timestamp":"2026-07-09 13:56:28"}
+{"level":"warn","message":"Attempt 1 failed (Request failed with status code 429). Retrying in 2000ms…","timestamp":"2026-07-09 13:56:28"}
+{"level":"warn","message":"Attempt 1 failed (Request failed with status code 429). Retrying in 2000ms…","timestamp":"2026-07-09 13:56:29"}
+{"err":"Request failed with status code 429","level":"warn","message":"Wikipedia fetchPageSections failed","pageTitle":"Ghabadkund","timestamp":"2026-07-09 13:56:29"}
+{"level":"warn","message":"Attempt 1 failed (Request failed with status code 429). Retrying in 2000ms…","timestamp":"2026-07-09 13:56:30"}
+{"level":"warn","message":"Attempt 2 failed (Request failed with status code 429). Retrying in 4000ms…","timestamp":"2026-07-09 13:56:31"}
+{"level":"warn","message":"Attempt 2 failed (Request failed with status code 429). Retrying in 4000ms…","timestamp":"2026-07-09 13:56:31"}
+{"level":"warn","message":"HTTP 404 for https://www.bollywoodhungama.com/movies/ghabadkund-2026/ — not retrying","timestamp":"2026-07-09 13:56:32"}
+{"level":"warn","message":"Attempt 1 failed (Request failed with status code 429). Retrying in 2000ms…","timestamp":"2026-07-09 13:56:32"}
+{"level":"warn","message":"Attempt 2 failed (Request failed with status code 429). Retrying in 4000ms…","timestamp":"2026-07-09 13:56:32"}
+{"level":"warn","message":"HTTP 400 for https://www.googleapis.com/youtube/v3/search?part=snippet&q=Ghabadkund%202026%20official%20trailer%20Hindi&type=video&maxResults=5&key=your_youtube_api_key_here&videoCategoryId=1 — not retrying","timestamp":"2026-07-09 13:56:33"}
+{"err":"Request failed with status code 400","level":"warn","message":"YouTube trailer search failed","timestamp":"2026-07-09 13:56:33","title":"Ghabadkund","year":2026}
+{"id":"6a4f5b39f73d9635873460c7","level":"info","message":"Movie inserted: \"Ghabadkund\" [ghabadkund-2026]","timestamp":"2026-07-09 13:56:33"}
+{"level":"info","message":"Marathi stats - inserted:19 updated:1 skipped:0 failed:0 | cast created:107 reused:133","timestamp":"2026-07-09 13:56:33"}
+{"level":"info","message":"Marathi batch 2/2 - 17 movies","timestamp":"2026-07-09 13:56:34"}
+{"level":"info","message":"Processing: \"Mohor\" (2026) [TMDB:1636558] [Marathi]","timestamp":"2026-07-09 13:56:34"}
+{"level":"info","message":"Processing: \"11:11\" (2026) [TMDB:1692140] [Marathi]","timestamp":"2026-07-09 13:56:34"}
+{"level":"info","message":"Processing: \"A (Dis)Liked Story\" (2026) [TMDB:1718920] [Marathi]","timestamp":"2026-07-09 13:56:34"}
+{"level":"info","message":"Processing: \"Memoria~\" (2026) [TMDB:1604250] [Marathi]","timestamp":"2026-07-09 13:56:34"}
+{"level":"warn","message":"Attempt 1 failed (Request failed with status code 429). Retrying in 2000ms…","timestamp":"2026-07-09 13:56:35"}
+{"level":"warn","message":"Attempt 1 failed (Request failed with status code 429). Retrying in 2000ms…","timestamp":"2026-07-09 13:56:36"}
+{"level":"warn","message":"Attempt 1 failed (Request failed with status code 429). Retrying in 2000ms…","timestamp":"2026-07-09 13:56:37"}
+{"err":"Request failed with status code 429","level":"warn","message":"Wikipedia search failed","movieTitle":"Deool Band 2","timestamp":"2026-07-09 13:56:37","year":2026}
+{"level":"warn","message":"Attempt 1 failed (Request failed with status code 429). Retrying in 2000ms…","timestamp":"2026-07-09 13:56:37"}
+{"level":"warn","message":"Attempt 1 failed (Request failed with status code 429). Retrying in 2000ms…","timestamp":"2026-07-09 13:56:37"}
+{"level":"warn","message":"Attempt 1 failed (Request failed with status code 429). Retrying in 2000ms…","timestamp":"2026-07-09 13:56:37"}
+{"level":"warn","message":"Attempt 1 failed (Request failed with status code 429). Retrying in 2000ms…","timestamp":"2026-07-09 13:56:37"}
+{"level":"warn","message":"Attempt 2 failed (Request failed with status code 429). Retrying in 4000ms…","timestamp":"2026-07-09 13:56:38"}
+{"level":"warn","message":"Attempt 2 failed (Request failed with status code 429). Retrying in 4000ms…","timestamp":"2026-07-09 13:56:38"}
+{"level":"warn","message":"HTTP 404 for https://www.bollywoodhungama.com/movies/raja-shivaji-2026/ — not retrying","timestamp":"2026-07-09 13:56:39"}
+{"level":"warn","message":"Attempt 2 failed (Request failed with status code 429). Retrying in 4000ms…","timestamp":"2026-07-09 13:56:39"}
+{"level":"warn","message":"Attempt 2 failed (Request failed with status code 429). Retrying in 4000ms…","timestamp":"2026-07-09 13:56:39"}
+{"level":"warn","message":"Attempt 2 failed (Request failed with status code 429). Retrying in 4000ms…","timestamp":"2026-07-09 13:56:39"}
+{"level":"warn","message":"Attempt 2 failed (Request failed with status code 429). Retrying in 4000ms…","timestamp":"2026-07-09 13:56:39"}
+{"level":"warn","message":"Attempt 2 failed (Request failed with status code 429). Retrying in 4000ms…","timestamp":"2026-07-09 13:56:39"}
+{"level":"warn","message":"HTTP 404 for https://www.bollywoodhungama.com/movies/deool-band-2-2026/ — not retrying","timestamp":"2026-07-09 13:56:40"}
+{"id":"6a4f5af6f73d963587345deb","level":"info","message":"Movie updated: \"Raja Shivaji\" [tmdbId]","timestamp":"2026-07-09 13:56:41"}
+{"level":"info","message":"Processing: \"Motherhood\" (2026) [TMDB:1608274] [Marathi]","timestamp":"2026-07-09 13:56:41"}
+{"level":"warn","message":"HTTP 400 for https://www.googleapis.com/youtube/v3/search?part=snippet&q=Deool%20Band%202%202026%20official%20trailer%20Hindi&type=video&maxResults=5&key=your_youtube_api_key_here&videoCategoryId=1 — not retrying","timestamp":"2026-07-09 13:56:41"}
+{"err":"Request failed with status code 400","level":"warn","message":"YouTube trailer search failed","timestamp":"2026-07-09 13:56:41","title":"Deool Band 2","year":2026}
+{"level":"warn","message":"Attempt 1 failed (Request failed with status code 429). Retrying in 2000ms…","timestamp":"2026-07-09 13:56:42"}
+{"err":"Request failed with status code 429","level":"warn","message":"Wikipedia fetchPageSections failed","pageTitle":"Cliffs of Moher","timestamp":"2026-07-09 13:56:42"}
+{"id":"6a4f5af6f73d963587345e1d","level":"info","message":"Movie updated: \"Deool Band 2\" [tmdbId]","timestamp":"2026-07-09 13:56:42"}
+{"level":"info","message":"Processing: \"Lagnacha Shot\" (2026) [TMDB:1628964] [Marathi]","timestamp":"2026-07-09 13:56:42"}
+{"err":"Request failed with status code 429","level":"warn","message":"Wikipedia search failed","movieTitle":"A (Dis)Liked Story","timestamp":"2026-07-09 13:56:43","year":2026}
+{"level":"warn","message":"Attempt 1 failed (Request failed with status code 429). Retrying in 2000ms…","timestamp":"2026-07-09 13:56:43"}
+{"err":"Request failed with status code 429","level":"warn","message":"Wikipedia fetchPageSections failed","pageTitle":"Super Duperr","timestamp":"2026-07-09 13:56:43"}
+{"err":"Request failed with status code 429","level":"warn","message":"Wikipedia search failed","movieTitle":"11:11","timestamp":"2026-07-09 13:56:43","year":2026}
+{"err":"Request failed with status code 429","level":"warn","message":"Wikipedia search failed","movieTitle":"Memoria~","timestamp":"2026-07-09 13:56:43","year":2026}
+{"err":"Request failed with status code 429","level":"warn","message":"Wikipedia fetchPageSummary failed","pageTitle":"Krantijyoti Vidyalay Marathi Madhyam","timestamp":"2026-07-09 13:56:44"}
+{"err":"Request failed with status code 429","level":"warn","message":"Wikipedia fetchPageSections failed","pageTitle":"Krantijyoti Vidyalay Marathi Madhyam","timestamp":"2026-07-09 13:56:44"}
+{"level":"warn","message":"Attempt 2 failed (Request failed with status code 429). Retrying in 4000ms…","timestamp":"2026-07-09 13:56:44"}
+{"level":"warn","message":"HTTP 404 for https://www.bollywoodhungama.com/movies/mohor-2026/ — not retrying","timestamp":"2026-07-09 13:56:44"}
+{"level":"warn","message":"HTTP 404 for https://www.bollywoodhungama.com/movies/krantijyoti-vidyalay-marathi-madhyam-2026/ — not retrying","timestamp":"2026-07-09 13:56:45"}
+{"level":"warn","message":"HTTP 404 for https://www.bollywoodhungama.com/movies/a-(dis)liked-story-2026/ — not retrying","timestamp":"2026-07-09 13:56:45"}
+{"level":"warn","message":"HTTP 400 for https://www.googleapis.com/youtube/v3/search?part=snippet&q=Mohor%202026%20official%20trailer%20Hindi&type=video&maxResults=5&key=your_youtube_api_key_here&videoCategoryId=1 — not retrying","timestamp":"2026-07-09 13:56:45"}
+{"err":"Request failed with status code 400","level":"warn","message":"YouTube trailer search failed","timestamp":"2026-07-09 13:56:45","title":"Mohor","year":2026}
+{"level":"warn","message":"Attempt 2 failed (Request failed with status code 429). Retrying in 4000ms…","timestamp":"2026-07-09 13:56:45"}
+{"level":"warn","message":"HTTP 404 for https://www.bollywoodhungama.com/movies/super-duperr-2026/ — not retrying","timestamp":"2026-07-09 13:56:45"}
+{"level":"info","message":"Cast created: Rohit Mane (Actor)","timestamp":"2026-07-09 13:56:46"}
+{"level":"info","message":"Cast created: Arundhati Agashe (Writer)","timestamp":"2026-07-09 13:56:46"}
+{"level":"warn","message":"HTTP 404 for https://www.bollywoodhungama.com/movies/11%3A11-2026/ — not retrying","timestamp":"2026-07-09 13:56:46"}
+{"level":"warn","message":"HTTP 404 for https://www.bollywoodhungama.com/movies/memoria~-2026/ — not retrying","timestamp":"2026-07-09 13:56:46"}
+{"level":"info","message":"Cast created: Ashwini Pathak (Producer)","timestamp":"2026-07-09 13:56:46"}
+{"level":"info","message":"Cast created: Alok Deshpande (Cinematographer)","timestamp":"2026-07-09 13:56:46"}
+{"level":"info","message":"Cast created: Kaushal Pednekar (Editor)","timestamp":"2026-07-09 13:56:46"}
+{"id":"6a4f5b46f73d9635873460e0","level":"info","message":"Movie inserted: \"Mohor\" [mohor-2026]","timestamp":"2026-07-09 13:56:47"}
+{"level":"info","message":"Processing: \"Mukkam Post Bombilwadi\" (2026) [TMDB:1609039] [Marathi]","timestamp":"2026-07-09 13:56:47"}
+{"level":"info","message":"Cast created: Siddharth Chandekar (Actor)","timestamp":"2026-07-09 13:56:47"}
+{"level":"warn","message":"HTTP 400 for https://www.googleapis.com/youtube/v3/search?part=snippet&q=A%20(Dis)Liked%20Story%202026%20official%20trailer%20Hindi&type=video&maxResults=5&key=your_youtube_api_key_here&videoCategoryId=1 — not retrying","timestamp":"2026-07-09 13:56:47"}
+{"err":"Request failed with status code 400","level":"warn","message":"YouTube trailer search failed","timestamp":"2026-07-09 13:56:47","title":"A (Dis)Liked Story","year":2026}
+{"level":"info","message":"Cast created: Hemant Dhome (Director)","timestamp":"2026-07-09 13:56:47"}
+{"level":"info","message":"Cast created: Viraj Gawas (Producer)","timestamp":"2026-07-09 13:56:47"}
+{"level":"info","message":"Cast created: Urfi Kazmi (Producer)","timestamp":"2026-07-09 13:56:47"}
+{"level":"info","message":"Cast created: Ajinkya Dhamal (Producer)","timestamp":"2026-07-09 13:56:47"}
+{"level":"info","message":"Cast created: Pratik Bhor (Producer)","timestamp":"2026-07-09 13:56:48"}
+{"id":"6a4f5af8f73d963587345e40","level":"info","message":"Movie updated: \"Super Duperr\" [tmdbId]","timestamp":"2026-07-09 13:56:48"}
+{"level":"info","message":"Processing: \"Ranapati Shivray Swari Agra\" (2026) [TMDB:1641425] [Marathi]","timestamp":"2026-07-09 13:56:48"}
+{"level":"warn","message":"Attempt 1 failed (Request failed with status code 429). Retrying in 2000ms…","timestamp":"2026-07-09 13:56:48"}
+{"level":"info","message":"Cast created: Satyajeet Shobha Shriram (Cinematographer)","timestamp":"2026-07-09 13:56:48"}
+{"level":"warn","message":"HTTP 400 for https://www.googleapis.com/youtube/v3/search?part=snippet&q=Memoria~%202026%20official%20trailer%20Hindi&type=video&maxResults=5&key=your_youtube_api_key_here&videoCategoryId=1 — not retrying","timestamp":"2026-07-09 13:56:48"}
+{"err":"Request failed with status code 400","level":"warn","message":"YouTube trailer search failed","timestamp":"2026-07-09 13:56:48","title":"Memoria~","year":2026}
+{"level":"info","message":"Cast created: Bhavesh Todankar (Editor)","timestamp":"2026-07-09 13:56:48"}
+{"level":"info","message":"Cast created: Sayali Sanjeev (Actor)","timestamp":"2026-07-09 13:56:48"}
+{"level":"info","message":"Cast created: Shahi A.j (Director)","timestamp":"2026-07-09 13:56:48"}
+{"level":"info","message":"Cast created: Aditya Bedekar (Music Director)","timestamp":"2026-07-09 13:56:48"}
+{"level":"info","message":"Cast created: Shamim Khopkar (Production Designer)","timestamp":"2026-07-09 13:56:48"}
+{"id":"6a4f5b48f73d9635873460fb","level":"info","message":"Movie inserted: \"Memoria~\" [memoria-2026]","timestamp":"2026-07-09 13:56:48"}
+{"level":"info","message":"Processing: \"Upon Starvation\" (2026) [TMDB:1659517] [Marathi]","timestamp":"2026-07-09 13:56:48"}
+{"id":"6a4f5b48d513111051b18579","level":"info","message":"Movie inserted: \"Krantijyoti Vidyalay Marathi Madhyam\" [krantijyoti-vidyalay-marathi-madhyam-2026]","timestamp":"2026-07-09 13:56:48"}
+{"level":"info","message":"Processing: \"Bhidewada\" (2026) [TMDB:1651158] [Marathi]","timestamp":"2026-07-09 13:56:48"}
+{"level":"info","message":"Cast created: Resham Shrivardhan (Actor)","timestamp":"2026-07-09 13:56:49"}
+{"level":"info","message":"Cast created: Dusha (Actor)","timestamp":"2026-07-09 13:56:49"}
+{"id":"6a4f5b49f73d96358734610a","level":"info","message":"Movie inserted: \"11:11\" [1111-2026]","timestamp":"2026-07-09 13:56:49"}
+{"level":"info","message":"Processing: \"Sohla - Celebration Under the Grey Sky\" (2026) [TMDB:1609047] [Marathi]","timestamp":"2026-07-09 13:56:49"}
+{"level":"warn","message":"Attempt 1 failed (Request failed with status code 429). Retrying in 2000ms…","timestamp":"2026-07-09 13:56:49"}
+{"level":"warn","message":"Attempt 1 failed (Request failed with status code 429). Retrying in 2000ms…","timestamp":"2026-07-09 13:56:49"}
+{"level":"info","message":"Cast created: Mrunmayee Deshpande (Actor)","timestamp":"2026-07-09 13:56:49"}
+{"err":"Request failed with status code 429","level":"warn","message":"Wikipedia search failed","movieTitle":"Lagnacha Shot","timestamp":"2026-07-09 13:56:50","year":2026}
+{"id":"6a4f5b4af73d963587346118","level":"info","message":"Movie inserted: \"A (Dis)Liked Story\" [a-disliked-story-2026]","timestamp":"2026-07-09 13:56:50"}
+{"level":"info","message":"Processing: \"Dilemma\" (2026) [TMDB:1609031] [Marathi]","timestamp":"2026-07-09 13:56:50"}
+{"level":"warn","message":"Attempt 1 failed (Request failed with status code 429). Retrying in 2000ms…","timestamp":"2026-07-09 13:56:50"}
+{"level":"warn","message":"Attempt 2 failed (Request failed with status code 429). Retrying in 4000ms…","timestamp":"2026-07-09 13:56:50"}
+{"level":"warn","message":"Attempt 1 failed (Request failed with status code 429). Retrying in 2000ms…","timestamp":"2026-07-09 13:56:51"}
+{"level":"warn","message":"HTTP 404 for https://www.bollywoodhungama.com/movies/lagnacha-shot-2026/ — not retrying","timestamp":"2026-07-09 13:56:51"}
+{"level":"warn","message":"Attempt 2 failed (Request failed with status code 429). Retrying in 4000ms…","timestamp":"2026-07-09 13:56:51"}
+{"level":"warn","message":"Attempt 2 failed (Request failed with status code 429). Retrying in 4000ms…","timestamp":"2026-07-09 13:56:51"}
+{"level":"warn","message":"Attempt 1 failed (Request failed with status code 429). Retrying in 2000ms…","timestamp":"2026-07-09 13:56:51"}
+{"level":"warn","message":"Attempt 2 failed (Request failed with status code 429). Retrying in 4000ms…","timestamp":"2026-07-09 13:56:52"}
+{"level":"warn","message":"Attempt 1 failed (Request failed with status code 429). Retrying in 2000ms…","timestamp":"2026-07-09 13:56:52"}
+{"id":"6a4f5b07f73d963587345ed5","level":"info","message":"Movie updated: \"Lagnacha Shot\" [tmdbId]","timestamp":"2026-07-09 13:56:53"}
+{"level":"info","message":"Processing: \"Punha Ekda Sade Made 3\" (2026) [TMDB:1635086] [Marathi]","timestamp":"2026-07-09 13:56:53"}
+{"level":"warn","message":"Attempt 2 failed (Request failed with status code 429). Retrying in 4000ms…","timestamp":"2026-07-09 13:56:53"}
+{"level":"warn","message":"Attempt 1 failed (Request failed with status code 429). Retrying in 2000ms…","timestamp":"2026-07-09 13:56:53"}
+{"level":"warn","message":"Attempt 2 failed (Request failed with status code 429). Retrying in 4000ms…","timestamp":"2026-07-09 13:56:54"}
+{"err":"Request failed with status code 429","level":"warn","message":"Wikipedia search failed","movieTitle":"Mukkam Post Bombilwadi","timestamp":"2026-07-09 13:56:54","year":2026}
+{"level":"warn","message":"Attempt 2 failed (Request failed with status code 429). Retrying in 4000ms…","timestamp":"2026-07-09 13:56:54"}
+{"err":"Request failed with status code 429","level":"warn","message":"Wikipedia fetchPageSections failed","pageTitle":"Motherhood (2009 film)","timestamp":"2026-07-09 13:56:56"}
+{"err":"Request failed with status code 429","level":"warn","message":"Wikipedia search failed","movieTitle":"Ranapati Shivray Swari Agra","timestamp":"2026-07-09 13:56:56","year":2026}
+{"level":"warn","message":"Attempt 2 failed (Request failed with status code 429). Retrying in 4000ms…","timestamp":"2026-07-09 13:56:56"}
+{"err":"Request failed with status code 429","level":"warn","message":"Wikipedia search failed","movieTitle":"Bhidewada","timestamp":"2026-07-09 13:56:56","year":2026}
+{"level":"warn","message":"HTTP 404 for https://www.bollywoodhungama.com/movies/mukkam-post-bombilwadi-2026/ — not retrying","timestamp":"2026-07-09 13:56:56"}
+{"level":"warn","message":"HTTP 404 for https://www.bollywoodhungama.com/movies/ranapati-shivray-swari-agra-2026/ — not retrying","timestamp":"2026-07-09 13:56:57"}
+{"level":"warn","message":"HTTP 400 for https://www.googleapis.com/youtube/v3/search?part=snippet&q=Mukkam%20Post%20Bombilwadi%202026%20official%20trailer%20Hindi&type=video&maxResults=5&key=your_youtube_api_key_here&videoCategoryId=1 — not retrying","timestamp":"2026-07-09 13:56:57"}
+{"err":"Request failed with status code 400","level":"warn","message":"YouTube trailer search failed","timestamp":"2026-07-09 13:56:57","title":"Mukkam Post Bombilwadi","year":2026}
+{"level":"warn","message":"Movie \"Mukkam Post Bombilwadi\" skipped — missing: posterUrl","timestamp":"2026-07-09 13:56:57"}
+{"level":"info","message":"Processing: \"Gaman\" (2026) [TMDB:1608281] [Marathi]","timestamp":"2026-07-09 13:56:57"}
+{"level":"warn","message":"HTTP 404 for https://www.bollywoodhungama.com/movies/motherhood-2026/ — not retrying","timestamp":"2026-07-09 13:56:58"}
+{"err":"Request failed with status code 429","level":"warn","message":"Wikipedia search failed","movieTitle":"Sohla - Celebration Under the Grey Sky","timestamp":"2026-07-09 13:56:58","year":2026}
+{"level":"warn","message":"Attempt 1 failed (Request failed with status code 429). Retrying in 2000ms…","timestamp":"2026-07-09 13:56:58"}
+{"level":"warn","message":"Attempt 1 failed (Request failed with status code 429). Retrying in 2000ms…","timestamp":"2026-07-09 13:56:59"}
+{"id":"6a4f5b01f73d963587345eaa","level":"info","message":"Movie updated: \"Ranapati Shivray Swari Agra\" [tmdbId]","timestamp":"2026-07-09 13:56:59"}
+{"level":"info","message":"Processing: \"Rubaab\" (2026) [TMDB:1629725] [Marathi]","timestamp":"2026-07-09 13:56:59"}
+{"level":"warn","message":"HTTP 404 for https://www.bollywoodhungama.com/movies/bhidewada-2026/ — not retrying","timestamp":"2026-07-09 13:56:59"}
+{"id":"6a44e4841d3980d76c633926","level":"info","message":"Movie updated: \"Motherhood\" [tmdbId]","timestamp":"2026-07-09 13:57:00"}
+{"level":"warn","message":"HTTP 404 for https://www.bollywoodhungama.com/movies/sohla---celebration-under-the-grey-sky-2026/ — not retrying","timestamp":"2026-07-09 13:57:00"}
+{"level":"info","message":"Processing: \"Baapya\" (2026) [TMDB:1608247] [Marathi]","timestamp":"2026-07-09 13:57:00"}
+{"id":"6a4f5b0af73d963587345efd","level":"info","message":"Movie updated: \"Bhidewada\" [tmdbId]","timestamp":"2026-07-09 13:57:01"}
+{"level":"info","message":"Processing: \"Toh, Ti Ani Fuji\" (2026) [TMDB:1608277] [Marathi]","timestamp":"2026-07-09 13:57:01"}
+{"level":"warn","message":"HTTP 400 for https://www.googleapis.com/youtube/v3/search?part=snippet&q=Sohla%20-%20Celebration%20Under%20the%20Grey%20Sky%202026%20official%20trailer%20Hindi&type=video&maxResults=5&key=your_youtube_api_key_here&videoCategoryId=1 — not retrying","timestamp":"2026-07-09 13:57:01"}
+{"err":"Request failed with status code 400","level":"warn","message":"YouTube trailer search failed","timestamp":"2026-07-09 13:57:01","title":"Sohla - Celebration Under the Grey Sky","year":2026}
+{"level":"warn","message":"HTTP 404 for https://www.bollywoodhungama.com/movies/dilemma-2026/ — not retrying","timestamp":"2026-07-09 13:57:02"}
+{"level":"info","message":"Cast created: Varsha Sujeet (Actor)","timestamp":"2026-07-09 13:57:02"}
+{"level":"warn","message":"Attempt 1 failed (Request failed with status code 429). Retrying in 2000ms…","timestamp":"2026-07-09 13:57:02"}
+{"level":"warn","message":"Attempt 1 failed (Request failed with status code 429). Retrying in 2000ms…","timestamp":"2026-07-09 13:57:02"}
+{"level":"warn","message":"Attempt 1 failed (Request failed with status code 429). Retrying in 2000ms…","timestamp":"2026-07-09 13:57:02"}
+{"level":"warn","message":"Attempt 1 failed (Request failed with status code 429). Retrying in 2000ms…","timestamp":"2026-07-09 13:57:02"}
+{"level":"warn","message":"HTTP 404 for https://www.bollywoodhungama.com/movies/rubaab-2026/ — not retrying","timestamp":"2026-07-09 13:57:03"}
+{"level":"info","message":"Cast created: Alessandra Merediz (Actor)","timestamp":"2026-07-09 13:57:03"}
+{"level":"warn","message":"HTTP 400 for https://www.googleapis.com/youtube/v3/search?part=snippet&q=Dilemma%202026%20official%20trailer%20Hindi&type=video&maxResults=5&key=your_youtube_api_key_here&videoCategoryId=1 — not retrying","timestamp":"2026-07-09 13:57:03"}
+{"err":"Request failed with status code 400","level":"warn","message":"YouTube trailer search failed","timestamp":"2026-07-09 13:57:03","title":"Dilemma","year":2026}
+{"level":"info","message":"Cast created: Nilesh Bhaskar Naik (Director)","timestamp":"2026-07-09 13:57:03"}
+{"level":"info","message":"Cast created: Devdatta Ghone (Actor)","timestamp":"2026-07-09 13:57:03"}
+{"id":"6a4f5b57f73d96358734612f","level":"info","message":"Movie inserted: \"Dilemma\" [dilemma-2026]","timestamp":"2026-07-09 13:57:03"}
+{"level":"info","message":"Processing: \"Maharashtra Epstein Files\" (2026) [TMDB:1726314] [Marathi]","timestamp":"2026-07-09 13:57:03"}
+{"level":"warn","message":"HTTP 404 for https://www.bollywoodhungama.com/movies/punha-ekda-sade-made-3-2026/ — not retrying","timestamp":"2026-07-09 13:57:04"}
+{"level":"warn","message":"HTTP 404 for https://www.bollywoodhungama.com/movies/upon-starvation-2026/ — not retrying","timestamp":"2026-07-09 13:57:04"}
+{"id":"6a4f5b0df73d963587345f1d","level":"info","message":"Movie updated: \"Rubaab\" [tmdbId]","timestamp":"2026-07-09 13:57:04"}
+{"level":"info","message":"Processing: \"Case No 73\" (2026) [TMDB:1631122] [Marathi]","timestamp":"2026-07-09 13:57:04"}
+{"level":"warn","message":"Attempt 2 failed (Request failed with status code 429). Retrying in 4000ms…","timestamp":"2026-07-09 13:57:04"}
+{"level":"info","message":"Cast created: Vaishnavi Ghodke (Actor)","timestamp":"2026-07-09 13:57:04"}
+{"level":"info","message":"Cast created: Saaikat Bagbaan (Director)","timestamp":"2026-07-09 13:57:04"}
+{"level":"info","message":"Cast created: Aditya Gawd (Writer)","timestamp":"2026-07-09 13:57:04"}
+{"level":"info","message":"Cast created: Anupam Purohit (Writer)","timestamp":"2026-07-09 13:57:05"}
+{"level":"info","message":"Cast created: Kavita Bagban (Producer)","timestamp":"2026-07-09 13:57:05"}
+{"level":"warn","message":"Attempt 2 failed (Request failed with status code 429). Retrying in 4000ms…","timestamp":"2026-07-09 13:57:05"}
+{"level":"warn","message":"Attempt 2 failed (Request failed with status code 429). Retrying in 4000ms…","timestamp":"2026-07-09 13:57:05"}
+{"level":"warn","message":"Attempt 2 failed (Request failed with status code 429). Retrying in 4000ms…","timestamp":"2026-07-09 13:57:05"}
+{"level":"info","message":"Cast created: Sachin Srivastav (Producer)","timestamp":"2026-07-09 13:57:05"}
+{"level":"info","message":"Cast created: Ratna Srivastava (Producer)","timestamp":"2026-07-09 13:57:05"}
+{"id":"6a4f5b59f73d963587346150","level":"info","message":"Movie inserted: \"Sohla - Celebration Under the Grey Sky\" [sohla-celebration-under-the-grey-sky-2026]","timestamp":"2026-07-09 13:57:05"}
+{"level":"info","message":"Processing: \"Deva Aaj Pan Vhay\" (2026) [TMDB:1628768] [Marathi]","timestamp":"2026-07-09 13:57:05"}
+{"level":"info","message":"Cast created: Dhairyasheel Pawar (Actor)","timestamp":"2026-07-09 13:57:05"}
+{"level":"warn","message":"Attempt 1 failed (Request failed with status code 429). Retrying in 2000ms…","timestamp":"2026-07-09 13:57:06"}
+{"id":"6a4f5b13f73d963587345f3e","level":"info","message":"Movie updated: \"Punha Ekda Sade Made 3\" [tmdbId]","timestamp":"2026-07-09 13:57:06"}
+{"level":"info","message":"Processing: \"Dukan\" (2026) [TMDB:1653449] [Marathi]","timestamp":"2026-07-09 13:57:06"}
+{"level":"warn","message":"Attempt 1 failed (Request failed with status code 429). Retrying in 2000ms…","timestamp":"2026-07-09 13:57:06"}
+{"level":"info","message":"Cast created: Tushar Tengale (Actor)","timestamp":"2026-07-09 13:57:06"}
+{"level":"info","message":"Cast created: Tejas Shende (Writer)","timestamp":"2026-07-09 13:57:06"}
+{"level":"warn","message":"Attempt 1 failed (Request failed with status code 429). Retrying in 2000ms…","timestamp":"2026-07-09 13:57:06"}
+{"level":"info","message":"Cast created: Madhurima Kamat (Production Designer)","timestamp":"2026-07-09 13:57:07"}
+{"level":"info","message":"Cast created: Mehul Phillip (Production Designer)","timestamp":"2026-07-09 13:57:07"}
+{"level":"warn","message":"Attempt 1 failed (Request failed with status code 429). Retrying in 2000ms…","timestamp":"2026-07-09 13:57:07"}
+{"id":"6a4f5b5bf73d963587346175","level":"info","message":"Movie inserted: \"Upon Starvation\" [upon-starvation-2026]","timestamp":"2026-07-09 13:57:07"}
+{"level":"info","message":"Processing: \"Adishesh\" (2026) [TMDB:1608245] [Marathi]","timestamp":"2026-07-09 13:57:07"}
+{"level":"warn","message":"Attempt 2 failed (Request failed with status code 429). Retrying in 4000ms…","timestamp":"2026-07-09 13:57:08"}
+{"level":"warn","message":"Attempt 1 failed (Request failed with status code 429). Retrying in 2000ms…","timestamp":"2026-07-09 13:57:08"}
+{"level":"warn","message":"Attempt 2 failed (Request failed with status code 429). Retrying in 4000ms…","timestamp":"2026-07-09 13:57:08"}
+{"err":"Request failed with status code 429","level":"warn","message":"Wikipedia fetchPageSections failed","pageTitle":"Nana Patekar filmography","timestamp":"2026-07-09 13:57:08"}
+{"level":"warn","message":"Attempt 2 failed (Request failed with status code 429). Retrying in 4000ms…","timestamp":"2026-07-09 13:57:09"}
+{"err":"Request failed with status code 429","level":"warn","message":"Wikipedia fetchPageSummary failed","pageTitle":"Baapya","timestamp":"2026-07-09 13:57:09"}
+{"level":"warn","message":"Attempt 2 failed (Request failed with status code 429). Retrying in 4000ms…","timestamp":"2026-07-09 13:57:09"}
+{"err":"Request failed with status code 429","level":"warn","message":"Wikipedia fetchPageSections failed","pageTitle":"Baapya","timestamp":"2026-07-09 13:57:09"}
+{"err":"Request failed with status code 429","level":"warn","message":"Wikipedia search failed","movieTitle":"Toh, Ti Ani Fuji","timestamp":"2026-07-09 13:57:09","year":2026}
+{"level":"warn","message":"Attempt 2 failed (Request failed with status code 429). Retrying in 4000ms…","timestamp":"2026-07-09 13:57:10"}
+{"level":"warn","message":"HTTP 404 for https://www.bollywoodhungama.com/movies/gaman-2026/ — not retrying","timestamp":"2026-07-09 13:57:11"}
+{"level":"warn","message":"HTTP 404 for https://www.bollywoodhungama.com/movies/baapya-2026/ — not retrying","timestamp":"2026-07-09 13:57:12"}
+{"level":"warn","message":"HTTP 400 for https://www.googleapis.com/youtube/v3/search?part=snippet&q=Gaman%202026%20official%20trailer%20Hindi&type=video&maxResults=5&key=your_youtube_api_key_here&videoCategoryId=1 — not retrying","timestamp":"2026-07-09 13:57:12"}
+{"err":"Request failed with status code 400","level":"warn","message":"YouTube trailer search failed","timestamp":"2026-07-09 13:57:12","title":"Gaman","year":2026}
+{"level":"info","message":"Cast created: Manoj Naiksatam (Director)","timestamp":"2026-07-09 13:57:12"}
+{"level":"warn","message":"HTTP 404 for https://www.bollywoodhungama.com/movies/toh%2C-ti-ani-fuji-2026/ — not retrying","timestamp":"2026-07-09 13:57:12"}
+{"id":"6a4f5b60f73d963587346188","level":"info","message":"Movie inserted: \"Gaman\" [gaman-2026]","timestamp":"2026-07-09 13:57:12"}
+{"level":"info","message":"Processing: \"Pappa Sanga Kunache\" (2026) [TMDB:1608266] [Marathi]","timestamp":"2026-07-09 13:57:12"}
+{"level":"warn","message":"HTTP 400 for https://www.googleapis.com/youtube/v3/search?part=snippet&q=Baapya%202026%20official%20trailer%20Hindi&type=video&maxResults=5&key=your_youtube_api_key_here&videoCategoryId=1 — not retrying","timestamp":"2026-07-09 13:57:13"}
+{"err":"Request failed with status code 400","level":"warn","message":"YouTube trailer search failed","timestamp":"2026-07-09 13:57:13","title":"Baapya","year":2026}
+{"level":"warn","message":"Attempt 1 failed (Request failed with status code 429). Retrying in 2000ms…","timestamp":"2026-07-09 13:57:13"}
+{"id":"6a4f5b1bf73d963587345f91","level":"info","message":"Movie updated: \"Toh, Ti Ani Fuji\" [tmdbId]","timestamp":"2026-07-09 13:57:14"}
+{"level":"info","message":"Processing: \"Scorpion\" (2026) [TMDB:1204440] [Marathi]","timestamp":"2026-07-09 13:57:14"}
+{"id":"6a4f5b1df73d963587345fce","level":"info","message":"Movie updated: \"Baapya\" [tmdbId]","timestamp":"2026-07-09 13:57:15"}
+{"level":"info","message":"Processing: \"Sakhe Ga Saajani\" (2026) [TMDB:1663781] [Marathi]","timestamp":"2026-07-09 13:57:15"}
+{"level":"warn","message":"Attempt 1 failed (Request failed with status code 429). Retrying in 2000ms…","timestamp":"2026-07-09 13:57:15"}
+{"level":"warn","message":"Attempt 1 failed (Request failed with status code 429). Retrying in 2000ms…","timestamp":"2026-07-09 13:57:15"}
+{"level":"warn","message":"Attempt 1 failed (Request failed with status code 429). Retrying in 2000ms…","timestamp":"2026-07-09 13:57:15"}
+{"level":"warn","message":"Attempt 2 failed (Request failed with status code 429). Retrying in 4000ms…","timestamp":"2026-07-09 13:57:15"}
+{"level":"warn","message":"Attempt 1 failed (Request failed with status code 429). Retrying in 2000ms…","timestamp":"2026-07-09 13:57:16"}
+{"level":"warn","message":"HTTP 404 for https://www.bollywoodhungama.com/movies/dukan-2026/ — not retrying","timestamp":"2026-07-09 13:57:16"}
+{"level":"warn","message":"HTTP 404 for https://www.bollywoodhungama.com/movies/case-no-73-2026/ — not retrying","timestamp":"2026-07-09 13:57:17"}
+{"level":"warn","message":"HTTP 404 for https://www.bollywoodhungama.com/movies/adishesh-2026/ — not retrying","timestamp":"2026-07-09 13:57:17"}
+{"level":"warn","message":"Attempt 2 failed (Request failed with status code 429). Retrying in 4000ms…","timestamp":"2026-07-09 13:57:17"}
+{"level":"warn","message":"HTTP 404 for https://www.bollywoodhungama.com/movies/deva-aaj-pan-vhay-2026/ — not retrying","timestamp":"2026-07-09 13:57:18"}
+{"level":"warn","message":"Attempt 2 failed (Request failed with status code 429). Retrying in 4000ms…","timestamp":"2026-07-09 13:57:18"}
+{"level":"warn","message":"Attempt 2 failed (Request failed with status code 429). Retrying in 4000ms…","timestamp":"2026-07-09 13:57:18"}
+{"id":"6a4f5b22f73d96358734602b","level":"info","message":"Movie updated: \"Dukan\" [tmdbId]","timestamp":"2026-07-09 13:57:18"}
+{"level":"info","message":"Processing: \"Portraits\" (2026) [TMDB:1653445] [Marathi]","timestamp":"2026-07-09 13:57:18"}
+{"level":"warn","message":"HTTP 400 for https://www.googleapis.com/youtube/v3/search?part=snippet&q=Case%20No%2073%202026%20official%20trailer%20Hindi&type=video&maxResults=5&key=your_youtube_api_key_here&videoCategoryId=1 — not retrying","timestamp":"2026-07-09 13:57:18"}
+{"err":"Request failed with status code 400","level":"warn","message":"YouTube trailer search failed","timestamp":"2026-07-09 13:57:18","title":"Case No 73","year":2026}
+{"level":"warn","message":"Attempt 2 failed (Request failed with status code 429). Retrying in 4000ms…","timestamp":"2026-07-09 13:57:18"}
+{"level":"warn","message":"HTTP 400 for https://www.googleapis.com/youtube/v3/search?part=snippet&q=Adishesh%202026%20official%20trailer%20Hindi&type=video&maxResults=5&key=your_youtube_api_key_here&videoCategoryId=1 — not retrying","timestamp":"2026-07-09 13:57:18"}
+{"err":"Request failed with status code 400","level":"warn","message":"YouTube trailer search failed","timestamp":"2026-07-09 13:57:18","title":"Adishesh","year":2026}
+{"level":"warn","message":"Movie \"Adishesh\" skipped — missing: posterUrl","timestamp":"2026-07-09 13:57:18"}
+{"level":"info","message":"Processing: \"Drushya Adrushya\" (2026) [TMDB:1727155] [Marathi]","timestamp":"2026-07-09 13:57:18"}
+{"id":"6a4f5b1ff73d96358734601b","level":"info","message":"Movie updated: \"Case No 73\" [tmdbId]","timestamp":"2026-07-09 13:57:19"}
+{"level":"info","message":"Processing: \"Aga Aga Sunbai Kay Mhantay Sasubai\" (2026) [TMDB:1619620] [Marathi]","timestamp":"2026-07-09 13:57:19"}
+{"level":"warn","message":"Attempt 1 failed (Request failed with status code 429). Retrying in 2000ms…","timestamp":"2026-07-09 13:57:19"}
+{"level":"warn","message":"HTTP 400 for https://www.googleapis.com/youtube/v3/search?part=snippet&q=Deva%20Aaj%20Pan%20Vhay%202026%20official%20trailer%20Hindi&type=video&maxResults=5&key=your_youtube_api_key_here&videoCategoryId=1 — not retrying","timestamp":"2026-07-09 13:57:19"}
+{"err":"Request failed with status code 400","level":"warn","message":"YouTube trailer search failed","timestamp":"2026-07-09 13:57:19","title":"Deva Aaj Pan Vhay","year":2026}
+{"level":"info","message":"Cast created: Amol Jadhav (Director)","timestamp":"2026-07-09 13:57:19"}
+{"level":"warn","message":"Attempt 1 failed (Request failed with status code 429). Retrying in 2000ms…","timestamp":"2026-07-09 13:57:19"}
+{"err":"Request failed with status code 429","level":"warn","message":"Wikipedia fetchPageSections failed","pageTitle":"List of Marathi films of 2026","timestamp":"2026-07-09 13:57:20"}
+{"id":"6a4f5b68f73d963587346193","level":"info","message":"Movie inserted: \"Deva Aaj Pan Vhay\" [deva-aaj-pan-vhay-2026]","timestamp":"2026-07-09 13:57:20"}
+{"level":"info","message":"Processing: \"The Creature\" (2026) [TMDB:1571511] [Marathi]","timestamp":"2026-07-09 13:57:20"}
+{"level":"warn","message":"Attempt 1 failed (Request failed with status code 429). Retrying in 2000ms…","timestamp":"2026-07-09 13:57:20"}
+{"level":"warn","message":"Attempt 1 failed (Request failed with status code 429). Retrying in 2000ms…","timestamp":"2026-07-09 13:57:21"}
+{"level":"warn","message":"Attempt 2 failed (Request failed with status code 429). Retrying in 4000ms…","timestamp":"2026-07-09 13:57:21"}
+{"level":"warn","message":"Attempt 2 failed (Request failed with status code 429). Retrying in 4000ms…","timestamp":"2026-07-09 13:57:22"}
+{"err":"Request failed with status code 429","level":"warn","message":"Wikipedia search failed","movieTitle":"Scorpion","timestamp":"2026-07-09 13:57:22","year":2026}
+{"err":"Request failed with status code 429","level":"warn","message":"Wikipedia fetchPageSections failed","pageTitle":"Arun Sarnaik","timestamp":"2026-07-09 13:57:22"}
+{"err":"Request failed with status code 429","level":"warn","message":"Wikipedia fetchPageSummary failed","pageTitle":"Arun Sarnaik","timestamp":"2026-07-09 13:57:22"}
+{"level":"warn","message":"HTTP 404 for https://www.bollywoodhungama.com/movies/maharashtra-epstein-files-2026/ — not retrying","timestamp":"2026-07-09 13:57:22"}
+{"level":"warn","message":"Attempt 2 failed (Request failed with status code 429). Retrying in 4000ms…","timestamp":"2026-07-09 13:57:22"}
+{"err":"Request failed with status code 429","level":"warn","message":"Wikipedia search failed","movieTitle":"Sakhe Ga Saajani","timestamp":"2026-07-09 13:57:23","year":2026}
+{"level":"warn","message":"HTTP 404 for https://www.bollywoodhungama.com/movies/scorpion-2026/ — not retrying","timestamp":"2026-07-09 13:57:23"}
+{"level":"warn","message":"Attempt 2 failed (Request failed with status code 429). Retrying in 4000ms…","timestamp":"2026-07-09 13:57:23"}
+{"level":"warn","message":"HTTP 400 for https://www.googleapis.com/youtube/v3/search?part=snippet&q=Maharashtra%20Epstein%20Files%202026%20official%20trailer%20Hindi&type=video&maxResults=5&key=your_youtube_api_key_here&videoCategoryId=1 — not retrying","timestamp":"2026-07-09 13:57:23"}
+{"err":"Request failed with status code 400","level":"warn","message":"YouTube trailer search failed","timestamp":"2026-07-09 13:57:23","title":"Maharashtra Epstein Files","year":2026}
+{"level":"info","message":"Cast created: Deepali Sayed (Actor)","timestamp":"2026-07-09 13:57:24"}
+{"level":"info","message":"Cast created: Swaroop Sawant (Director)","timestamp":"2026-07-09 13:57:24"}
+{"level":"warn","message":"HTTP 400 for https://www.googleapis.com/youtube/v3/search?part=snippet&q=Scorpion%202026%20official%20trailer%20Hindi&type=video&maxResults=5&key=your_youtube_api_key_here&videoCategoryId=1 — not retrying","timestamp":"2026-07-09 13:57:24"}
+{"err":"Request failed with status code 400","level":"warn","message":"YouTube trailer search failed","timestamp":"2026-07-09 13:57:24","title":"Scorpion","year":2026}
+{"level":"info","message":"Cast created: Sagarkumar Jain (Writer)","timestamp":"2026-07-09 13:57:24"}
+{"level":"info","message":"Cast created: Sanjay Navgire (Writer)","timestamp":"2026-07-09 13:57:24"}
+{"level":"info","message":"Cast created: Devendra Bhat (Producer)","timestamp":"2026-07-09 13:57:24"}
+{"level":"info","message":"Cast created: Suryakanth Bhunde (Producer)","timestamp":"2026-07-09 13:57:24"}
+{"level":"info","message":"Cast created: Prashant Kadampure (Producer)","timestamp":"2026-07-09 13:57:24"}
+{"level":"warn","message":"HTTP 404 for https://www.bollywoodhungama.com/movies/pappa-sanga-kunache-2026/ — not retrying","timestamp":"2026-07-09 13:57:24"}
+{"level":"info","message":"Cast created: Akash Kakade (Cinematographer)","timestamp":"2026-07-09 13:57:24"}
+{"id":"6a4f5b27f73d96358734605d","level":"info","message":"Movie updated: \"Scorpion\" [tmdbId]","timestamp":"2026-07-09 13:57:24"}
+{"level":"info","message":"Processing: \"Ghabadkund\" (2026) [TMDB:1718397] [Marathi]","timestamp":"2026-07-09 13:57:24"}
+{"level":"info","message":"Cast created: Nitesh Rathod (Editor)","timestamp":"2026-07-09 13:57:24"}
+{"id":"6a4f5b6df73d9635873461b8","level":"info","message":"Movie inserted: \"Maharashtra Epstein Files\" [maharashtra-epstein-files-2026]","timestamp":"2026-07-09 13:57:25"}
+{"level":"info","message":"Processing: \"Dear Panther\" (2026) [TMDB:1526480] [Marathi]","timestamp":"2026-07-09 13:57:25"}
+{"level":"warn","message":"HTTP 404 for https://www.bollywoodhungama.com/movies/sakhe-ga-saajani-2026/ — not retrying","timestamp":"2026-07-09 13:57:25"}
+{"level":"warn","message":"HTTP 400 for https://www.googleapis.com/youtube/v3/search?part=snippet&q=Pappa%20Sanga%20Kunache%202026%20official%20trailer%20Hindi&type=video&maxResults=5&key=your_youtube_api_key_here&videoCategoryId=1 — not retrying","timestamp":"2026-07-09 13:57:25"}
+{"err":"Request failed with status code 400","level":"warn","message":"YouTube trailer search failed","timestamp":"2026-07-09 13:57:25","title":"Pappa Sanga Kunache","year":2026}
+{"level":"warn","message":"Movie \"Pappa Sanga Kunache\" skipped — missing: posterUrl","timestamp":"2026-07-09 13:57:25"}
+{"level":"info","message":"Processing: \"Magazine\" (2026) [TMDB:1728425] [Marathi]","timestamp":"2026-07-09 13:57:25"}
+{"id":"6a4f5b2bf73d963587346076","level":"info","message":"Movie updated: \"Sakhe Ga Saajani\" [tmdbId]","timestamp":"2026-07-09 13:57:26"}
+{"level":"info","message":"Processing: \"Salbardi\" (2026) [TMDB:1681195] [Marathi]","timestamp":"2026-07-09 13:57:26"}
+{"level":"warn","message":"Attempt 1 failed (Request failed with status code 429). Retrying in 2000ms…","timestamp":"2026-07-09 13:57:27"}
+{"level":"warn","message":"Attempt 1 failed (Request failed with status code 429). Retrying in 2000ms…","timestamp":"2026-07-09 13:57:28"}
+{"level":"warn","message":"Attempt 1 failed (Request failed with status code 429). Retrying in 2000ms…","timestamp":"2026-07-09 13:57:28"}
+{"level":"warn","message":"Attempt 1 failed (Request failed with status code 429). Retrying in 2000ms…","timestamp":"2026-07-09 13:57:28"}
+{"level":"warn","message":"Attempt 1 failed (Request failed with status code 429). Retrying in 2000ms…","timestamp":"2026-07-09 13:57:28"}
+{"level":"warn","message":"Attempt 1 failed (Request failed with status code 429). Retrying in 2000ms…","timestamp":"2026-07-09 13:57:28"}
+{"level":"warn","message":"HTTP 404 for https://www.bollywoodhungama.com/movies/dear-panther-2026/ — not retrying","timestamp":"2026-07-09 13:57:29"}
+{"level":"warn","message":"HTTP 404 for https://www.bollywoodhungama.com/movies/drushya-adrushya-2026/ — not retrying","timestamp":"2026-07-09 13:57:29"}
+{"level":"warn","message":"Attempt 2 failed (Request failed with status code 429). Retrying in 4000ms…","timestamp":"2026-07-09 13:57:30"}
+{"level":"warn","message":"HTTP 400 for https://www.googleapis.com/youtube/v3/search?part=snippet&q=Dear%20Panther%202026%20official%20trailer%20Hindi&type=video&maxResults=5&key=your_youtube_api_key_here&videoCategoryId=1 — not retrying","timestamp":"2026-07-09 13:57:30"}
+{"err":"Request failed with status code 400","level":"warn","message":"YouTube trailer search failed","timestamp":"2026-07-09 13:57:30","title":"Dear Panther","year":2026}
+{"level":"info","message":"Cast created: Shonalee Laxman Dhakane (Actor)","timestamp":"2026-07-09 13:57:30"}
+{"level":"warn","message":"Attempt 2 failed (Request failed with status code 429). Retrying in 4000ms…","timestamp":"2026-07-09 13:57:30"}
+{"level":"warn","message":"Attempt 2 failed (Request failed with status code 429). Retrying in 4000ms…","timestamp":"2026-07-09 13:57:30"}
+{"level":"warn","message":"Attempt 2 failed (Request failed with status code 429). Retrying in 4000ms…","timestamp":"2026-07-09 13:57:30"}
+{"level":"warn","message":"Attempt 2 failed (Request failed with status code 429). Retrying in 4000ms…","timestamp":"2026-07-09 13:57:31"}
+{"level":"warn","message":"Attempt 2 failed (Request failed with status code 429). Retrying in 4000ms…","timestamp":"2026-07-09 13:57:31"}
+{"level":"warn","message":"HTTP 400 for https://www.googleapis.com/youtube/v3/search?part=snippet&q=Drushya%20Adrushya%202026%20official%20trailer%20Hindi&type=video&maxResults=5&key=your_youtube_api_key_here&videoCategoryId=1 — not retrying","timestamp":"2026-07-09 13:57:31"}
+{"err":"Request failed with status code 400","level":"warn","message":"YouTube trailer search failed","timestamp":"2026-07-09 13:57:31","title":"Drushya Adrushya","year":2026}
+{"level":"warn","message":"HTTP 404 for https://www.bollywoodhungama.com/movies/portraits-2026/ — not retrying","timestamp":"2026-07-09 13:57:31"}
+{"level":"info","message":"Cast created: Ashlesha Gade (Actor)","timestamp":"2026-07-09 13:57:31"}
+{"level":"warn","message":"HTTP 404 for https://www.bollywoodhungama.com/movies/ghabadkund-2026/ — not retrying","timestamp":"2026-07-09 13:57:31"}
+{"level":"warn","message":"HTTP 400 for https://www.googleapis.com/youtube/v3/search?part=snippet&q=Portraits%202026%20official%20trailer%20Hindi&type=video&maxResults=5&key=your_youtube_api_key_here&videoCategoryId=1 — not retrying","timestamp":"2026-07-09 13:57:32"}
+{"err":"Request failed with status code 400","level":"warn","message":"YouTube trailer search failed","timestamp":"2026-07-09 13:57:32","title":"Portraits","year":2026}
+{"level":"info","message":"Cast created: Keya Ingle (Actor)","timestamp":"2026-07-09 13:57:32"}
+{"level":"info","message":"Cast created: Nitin Sarjerao Shinde (Actor)","timestamp":"2026-07-09 13:57:32"}
+{"level":"info","message":"Cast created: Milind Lele (Director)","timestamp":"2026-07-09 13:57:32"}
+{"level":"info","message":"Cast created: Asmita Kulkarni (Writer)","timestamp":"2026-07-09 13:57:32"}
+{"id":"6a4f5b26f73d963587346047","level":"info","message":"Movie updated: \"Portraits\" [tmdbId]","timestamp":"2026-07-09 13:57:32"}
+{"id":"6a4f5b74f73d9635873461e1","level":"info","message":"Movie inserted: \"Drushya Adrushya\" [drushya-adrushya-2026]","timestamp":"2026-07-09 13:57:32"}
+{"level":"warn","message":"HTTP 400 for https://www.googleapis.com/youtube/v3/search?part=snippet&q=Ghabadkund%202026%20official%20trailer%20Hindi&type=video&maxResults=5&key=your_youtube_api_key_here&videoCategoryId=1 — not retrying","timestamp":"2026-07-09 13:57:33"}
+{"err":"Request failed with status code 400","level":"warn","message":"YouTube trailer search failed","timestamp":"2026-07-09 13:57:33","title":"Ghabadkund","year":2026}
+{"id":"6a4f5b39f73d9635873460c7","level":"info","message":"Movie updated: \"Ghabadkund\" [tmdbId]","timestamp":"2026-07-09 13:57:33"}
+{"level":"info","message":"Cast created: Dhananjay Nirmalaxman Sable (Actor)","timestamp":"2026-07-09 13:57:33"}
+{"id":"6a4f5b75f73d9635873461f3","level":"info","message":"Movie inserted: \"Dear Panther\" [dear-panther-2026]","timestamp":"2026-07-09 13:57:33"}
+{"err":"Request failed with status code 429","level":"warn","message":"Wikipedia search failed","movieTitle":"Salbardi","timestamp":"2026-07-09 13:57:34","year":2026}
+{"err":"Request failed with status code 429","level":"warn","message":"Wikipedia fetchPageSections failed","pageTitle":"Remarkably Bright Creatures (film)","timestamp":"2026-07-09 13:57:35"}
+{"err":"Request failed with status code 429","level":"warn","message":"Wikipedia fetchPageSections failed","pageTitle":"2026 in film","timestamp":"2026-07-09 13:57:35"}
+{"err":"Request failed with status code 429","level":"warn","message":"Wikipedia fetchPageSummary failed","pageTitle":"Remarkably Bright Creatures (film)","timestamp":"2026-07-09 13:57:35"}
+{"err":"Request failed with status code 429","level":"warn","message":"Wikipedia fetchPageSummary failed","pageTitle":"Aga Aga Sunbai! Kay Mhantay Sasubai? (film)","timestamp":"2026-07-09 13:57:35"}
+{"err":"Request failed with status code 429","level":"warn","message":"Wikipedia fetchPageSections failed","pageTitle":"Aga Aga Sunbai! Kay Mhantay Sasubai? (film)","timestamp":"2026-07-09 13:57:35"}
+{"level":"warn","message":"HTTP 404 for https://www.bollywoodhungama.com/movies/salbardi-2026/ — not retrying","timestamp":"2026-07-09 13:57:35"}
+{"level":"warn","message":"HTTP 400 for https://www.googleapis.com/youtube/v3/search?part=snippet&q=Salbardi%202026%20official%20trailer%20Hindi&type=video&maxResults=5&key=your_youtube_api_key_here&videoCategoryId=1 — not retrying","timestamp":"2026-07-09 13:57:36"}
+{"err":"Request failed with status code 400","level":"warn","message":"YouTube trailer search failed","timestamp":"2026-07-09 13:57:36","title":"Salbardi","year":2026}
+{"id":"6a4f5b34f73d9635873460b2","level":"info","message":"Movie updated: \"Salbardi\" [tmdbId]","timestamp":"2026-07-09 13:57:37"}
+{"level":"warn","message":"HTTP 404 for https://www.bollywoodhungama.com/movies/aga-aga-sunbai-kay-mhantay-sasubai-2026/ — not retrying","timestamp":"2026-07-09 13:57:37"}
+{"level":"warn","message":"HTTP 404 for https://www.bollywoodhungama.com/movies/magazine-2026/ — not retrying","timestamp":"2026-07-09 13:57:38"}
+{"level":"warn","message":"HTTP 404 for https://www.bollywoodhungama.com/movies/the-creature-2026/ — not retrying","timestamp":"2026-07-09 13:57:38"}
+{"id":"6a4f5b2ef73d96358734608e","level":"info","message":"Movie updated: \"Aga Aga Sunbai Kay Mhantay Sasubai\" [tmdbId]","timestamp":"2026-07-09 13:57:39"}
+{"level":"info","message":"Marathi stats - inserted:1 updated:19 skipped:0 failed:0 | cast created:10 reused:237","timestamp":"2026-07-09 13:57:39"}
+{"level":"warn","message":"HTTP 400 for https://www.googleapis.com/youtube/v3/search?part=snippet&q=Magazine%202026%20official%20trailer%20Hindi&type=video&maxResults=5&key=your_youtube_api_key_here&videoCategoryId=1 — not retrying","timestamp":"2026-07-09 13:57:39"}
+{"err":"Request failed with status code 400","level":"warn","message":"YouTube trailer search failed","timestamp":"2026-07-09 13:57:39","title":"Magazine","year":2026}
+{"level":"warn","message":"Movie \"Magazine\" skipped — missing: releaseDate, posterUrl","timestamp":"2026-07-09 13:57:39"}
+{"level":"info","message":"Marathi batch 2/2 - 17 movies","timestamp":"2026-07-09 13:57:39"}
+{"level":"info","message":"Processing: \"Mohor\" (2026) [TMDB:1636558] [Marathi]","timestamp":"2026-07-09 13:57:39"}
+{"level":"info","message":"Processing: \"11:11\" (2026) [TMDB:1692140] [Marathi]","timestamp":"2026-07-09 13:57:39"}
+{"level":"info","message":"Processing: \"A (Dis)Liked Story\" (2026) [TMDB:1718920] [Marathi]","timestamp":"2026-07-09 13:57:39"}
+{"level":"info","message":"Processing: \"Memoria~\" (2026) [TMDB:1604250] [Marathi]","timestamp":"2026-07-09 13:57:39"}
+{"level":"warn","message":"HTTP 400 for https://www.googleapis.com/youtube/v3/search?part=snippet&q=The%20Creature%202026%20official%20trailer%20Hindi&type=video&maxResults=5&key=your_youtube_api_key_here&videoCategoryId=1 — not retrying","timestamp":"2026-07-09 13:57:40"}
+{"err":"Request failed with status code 400","level":"warn","message":"YouTube trailer search failed","timestamp":"2026-07-09 13:57:40","title":"The Creature","year":2026}
+{"level":"info","message":"Cast created: Ravindra Manik Jadhav (Director)","timestamp":"2026-07-09 13:57:40"}
+{"id":"6a4f5b7cf73d963587346207","level":"info","message":"Movie inserted: \"The Creature\" [the-creature-2026]","timestamp":"2026-07-09 13:57:40"}
+{"level":"info","message":"Marathi stats - inserted:32 updated:1 skipped:0 failed:0 | cast created:152 reused:164","timestamp":"2026-07-09 13:57:40"}
+{"level":"warn","message":"Attempt 1 failed (read ECONNRESET). Retrying in 2000ms…","timestamp":"2026-07-09 13:57:40"}
+{"level":"info","message":"\n=================================================","timestamp":"2026-07-09 13:57:41"}
+{"level":"info","message":"  Marathi Scraper completed!","timestamp":"2026-07-09 13:57:41"}
+{"level":"info","message":"Marathi stats - inserted:32 updated:1 skipped:0 failed:0 | cast created:152 reused:164","timestamp":"2026-07-09 13:57:41"}
+{"level":"info","message":"=================================================\n","timestamp":"2026-07-09 13:57:41"}
+{"level":"warn","message":"Attempt 1 failed (Request failed with status code 429). Retrying in 2000ms…","timestamp":"2026-07-09 13:57:42"}
+{"level":"warn","message":"Attempt 1 failed (Request failed with status code 429). Retrying in 2000ms…","timestamp":"2026-07-09 13:57:42"}
+{"level":"warn","message":"Attempt 1 failed (Request failed with status code 429). Retrying in 2000ms…","timestamp":"2026-07-09 13:57:43"}
+{"level":"warn","message":"Attempt 2 failed (Request failed with status code 429). Retrying in 4000ms…","timestamp":"2026-07-09 13:57:44"}
+{"level":"warn","message":"Attempt 2 failed (Request failed with status code 429). Retrying in 4000ms…","timestamp":"2026-07-09 13:57:45"}
+{"level":"warn","message":"HTTP 404 for https://www.bollywoodhungama.com/movies/mohor-2026/ — not retrying","timestamp":"2026-07-09 13:57:45"}
+{"level":"warn","message":"Attempt 2 failed (Request failed with status code 429). Retrying in 4000ms…","timestamp":"2026-07-09 13:57:45"}
+{"level":"warn","message":"HTTP 400 for https://www.googleapis.com/youtube/v3/search?part=snippet&q=Mohor%202026%20official%20trailer%20Hindi&type=video&maxResults=5&key=your_youtube_api_key_here&videoCategoryId=1 — not retrying","timestamp":"2026-07-09 13:57:46"}
+{"err":"Request failed with status code 400","level":"warn","message":"YouTube trailer search failed","timestamp":"2026-07-09 13:57:46","title":"Mohor","year":2026}
+{"id":"6a4f5b46f73d9635873460e0","level":"info","message":"Movie updated: \"Mohor\" [tmdbId]","timestamp":"2026-07-09 13:57:47"}
+{"level":"info","message":"Processing: \"Mukkam Post Bombilwadi\" (2026) [TMDB:1609039] [Marathi]","timestamp":"2026-07-09 13:57:47"}
+{"level":"warn","message":"Attempt 1 failed (Request failed with status code 429). Retrying in 2000ms…","timestamp":"2026-07-09 13:57:48"}
+{"err":"Request failed with status code 429","level":"warn","message":"Wikipedia search failed","movieTitle":"11:11","timestamp":"2026-07-09 13:57:48","year":2026}
+{"err":"Request failed with status code 429","level":"warn","message":"Wikipedia search failed","movieTitle":"A (Dis)Liked Story","timestamp":"2026-07-09 13:57:49","year":2026}
+{"err":"Request failed with status code 429","level":"warn","message":"Wikipedia search failed","movieTitle":"Memoria~","timestamp":"2026-07-09 13:57:50","year":2026}
+{"level":"warn","message":"Attempt 2 failed (Request failed with status code 429). Retrying in 4000ms…","timestamp":"2026-07-09 13:57:50"}
+{"level":"warn","message":"HTTP 404 for https://www.bollywoodhungama.com/movies/a-(dis)liked-story-2026/ — not retrying","timestamp":"2026-07-09 13:57:50"}
+{"level":"warn","message":"HTTP 404 for https://www.bollywoodhungama.com/movies/11%3A11-2026/ — not retrying","timestamp":"2026-07-09 13:57:51"}
+{"level":"warn","message":"HTTP 400 for https://www.googleapis.com/youtube/v3/search?part=snippet&q=A%20(Dis)Liked%20Story%202026%20official%20trailer%20Hindi&type=video&maxResults=5&key=your_youtube_api_key_here&videoCategoryId=1 — not retrying","timestamp":"2026-07-09 13:57:51"}
+{"err":"Request failed with status code 400","level":"warn","message":"YouTube trailer search failed","timestamp":"2026-07-09 13:57:51","title":"A (Dis)Liked Story","year":2026}
+{"id":"6a4f5b4af73d963587346118","level":"info","message":"Movie updated: \"A (Dis)Liked Story\" [tmdbId]","timestamp":"2026-07-09 13:57:52"}
+{"level":"info","message":"Processing: \"Upon Starvation\" (2026) [TMDB:1659517] [Marathi]","timestamp":"2026-07-09 13:57:52"}
+{"level":"warn","message":"HTTP 404 for https://www.bollywoodhungama.com/movies/memoria~-2026/ — not retrying","timestamp":"2026-07-09 13:57:52"}
+{"id":"6a4f5b49f73d96358734610a","level":"info","message":"Movie updated: \"11:11\" [tmdbId]","timestamp":"2026-07-09 13:57:52"}
+{"level":"info","message":"Processing: \"Sohla - Celebration Under the Grey Sky\" (2026) [TMDB:1609047] [Marathi]","timestamp":"2026-07-09 13:57:52"}
+{"level":"warn","message":"Attempt 1 failed (Request failed with status code 429). Retrying in 2000ms…","timestamp":"2026-07-09 13:57:53"}
+{"level":"warn","message":"HTTP 400 for https://www.googleapis.com/youtube/v3/search?part=snippet&q=Memoria~%202026%20official%20trailer%20Hindi&type=video&maxResults=5&key=your_youtube_api_key_here&videoCategoryId=1 — not retrying","timestamp":"2026-07-09 13:57:54"}
+{"err":"Request failed with status code 400","level":"warn","message":"YouTube trailer search failed","timestamp":"2026-07-09 13:57:54","title":"Memoria~","year":2026}
+{"id":"6a4f5b48f73d9635873460fb","level":"info","message":"Movie updated: \"Memoria~\" [tmdbId]","timestamp":"2026-07-09 13:57:54"}
+{"level":"info","message":"Processing: \"Dilemma\" (2026) [TMDB:1609031] [Marathi]","timestamp":"2026-07-09 13:57:54"}
+{"level":"warn","message":"Attempt 1 failed (Request failed with status code 429). Retrying in 2000ms…","timestamp":"2026-07-09 13:57:54"}
+{"err":"Request failed with status code 429","level":"warn","message":"Wikipedia search failed","movieTitle":"Mukkam Post Bombilwadi","timestamp":"2026-07-09 13:57:54","year":2026}
+{"level":"warn","message":"Attempt 1 failed (Request failed with status code 429). Retrying in 2000ms…","timestamp":"2026-07-09 13:57:55"}
+{"level":"warn","message":"Attempt 2 failed (Request failed with status code 429). Retrying in 4000ms…","timestamp":"2026-07-09 13:57:55"}
+{"level":"warn","message":"Attempt 2 failed (Request failed with status code 429). Retrying in 4000ms…","timestamp":"2026-07-09 13:57:56"}
+{"level":"warn","message":"Attempt 2 failed (Request failed with status code 429). Retrying in 4000ms…","timestamp":"2026-07-09 13:57:57"}
+{"level":"warn","message":"HTTP 404 for https://www.bollywoodhungama.com/movies/mukkam-post-bombilwadi-2026/ — not retrying","timestamp":"2026-07-09 13:57:57"}
+{"level":"warn","message":"HTTP 400 for https://www.googleapis.com/youtube/v3/search?part=snippet&q=Mukkam%20Post%20Bombilwadi%202026%20official%20trailer%20Hindi&type=video&maxResults=5&key=your_youtube_api_key_here&videoCategoryId=1 — not retrying","timestamp":"2026-07-09 13:57:58"}
+{"err":"Request failed with status code 400","level":"warn","message":"YouTube trailer search failed","timestamp":"2026-07-09 13:57:58","title":"Mukkam Post Bombilwadi","year":2026}
+{"level":"warn","message":"Movie \"Mukkam Post Bombilwadi\" skipped — missing: posterUrl","timestamp":"2026-07-09 13:57:58"}
+{"level":"info","message":"Processing: \"Gaman\" (2026) [TMDB:1608281] [Marathi]","timestamp":"2026-07-09 13:57:58"}
+{"level":"warn","message":"Attempt 1 failed (Request failed with status code 429). Retrying in 2000ms…","timestamp":"2026-07-09 13:57:59"}
+{"level":"warn","message":"Attempt 1 failed (Request failed with status code 429). Retrying in 2000ms…","timestamp":"2026-07-09 13:58:02"}
+{"level":"warn","message":"HTTP 404 for https://www.bollywoodhungama.com/movies/gaman-2026/ — not retrying","timestamp":"2026-07-09 13:58:04"}
+{"level":"warn","message":"HTTP 404 for https://www.bollywoodhungama.com/movies/upon-starvation-2026/ — not retrying","timestamp":"2026-07-09 13:58:04"}
+{"level":"warn","message":"HTTP 404 for https://www.bollywoodhungama.com/movies/sohla---celebration-under-the-grey-sky-2026/ — not retrying","timestamp":"2026-07-09 13:58:05"}
+{"level":"warn","message":"Attempt 2 failed (Request failed with status code 429). Retrying in 4000ms…","timestamp":"2026-07-09 13:58:05"}
+{"level":"warn","message":"HTTP 400 for https://www.googleapis.com/youtube/v3/search?part=snippet&q=Gaman%202026%20official%20trailer%20Hindi&type=video&maxResults=5&key=your_youtube_api_key_here&videoCategoryId=1 — not retrying","timestamp":"2026-07-09 13:58:05"}
+{"err":"Request failed with status code 400","level":"warn","message":"YouTube trailer search failed","timestamp":"2026-07-09 13:58:05","title":"Gaman","year":2026}
+{"id":"6a4f5b60f73d963587346188","level":"info","message":"Movie updated: \"Gaman\" [tmdbId]","timestamp":"2026-07-09 13:58:05"}
+{"level":"info","message":"Processing: \"Maharashtra Epstein Files\" (2026) [TMDB:1726314] [Marathi]","timestamp":"2026-07-09 13:58:05"}
+{"level":"warn","message":"HTTP 400 for https://www.googleapis.com/youtube/v3/search?part=snippet&q=Sohla%20-%20Celebration%20Under%20the%20Grey%20Sky%202026%20official%20trailer%20Hindi&type=video&maxResults=5&key=your_youtube_api_key_here&videoCategoryId=1 — not retrying","timestamp":"2026-07-09 13:58:06"}
+{"err":"Request failed with status code 400","level":"warn","message":"YouTube trailer search failed","timestamp":"2026-07-09 13:58:06","title":"Sohla - Celebration Under the Grey Sky","year":2026}
+{"id":"6a4f5b5bf73d963587346175","level":"info","message":"Movie updated: \"Upon Starvation\" [tmdbId]","timestamp":"2026-07-09 13:58:06"}
+{"level":"info","message":"Processing: \"Deva Aaj Pan Vhay\" (2026) [TMDB:1628768] [Marathi]","timestamp":"2026-07-09 13:58:06"}
+{"id":"6a4f5b59f73d963587346150","level":"info","message":"Movie updated: \"Sohla - Celebration Under the Grey Sky\" [tmdbId]","timestamp":"2026-07-09 13:58:07"}
+{"level":"info","message":"Processing: \"Adishesh\" (2026) [TMDB:1608245] [Marathi]","timestamp":"2026-07-09 13:58:07"}
+{"level":"warn","message":"Attempt 1 failed (Request failed with status code 429). Retrying in 2000ms…","timestamp":"2026-07-09 13:58:07"}
+{"level":"warn","message":"Attempt 1 failed (Request failed with status code 429). Retrying in 2000ms…","timestamp":"2026-07-09 13:58:08"}
+{"level":"warn","message":"Attempt 1 failed (Request failed with status code 429). Retrying in 2000ms…","timestamp":"2026-07-09 13:58:09"}
+{"err":"Request failed with status code 429","level":"warn","message":"Wikipedia fetchPageSummary failed","pageTitle":"The Dilemma","timestamp":"2026-07-09 13:58:09"}
+{"level":"warn","message":"Attempt 2 failed (Request failed with status code 429). Retrying in 4000ms…","timestamp":"2026-07-09 13:58:09"}
+{"level":"warn","message":"Attempt 2 failed (Request failed with status code 429). Retrying in 4000ms…","timestamp":"2026-07-09 13:58:10"}
+{"level":"warn","message":"Attempt 2 failed (Request failed with status code 429). Retrying in 4000ms…","timestamp":"2026-07-09 13:58:11"}
+{"level":"warn","message":"HTTP 404 for https://www.bollywoodhungama.com/movies/dilemma-2026/ — not retrying","timestamp":"2026-07-09 13:58:11"}
+{"level":"warn","message":"HTTP 400 for https://www.googleapis.com/youtube/v3/search?part=snippet&q=Dilemma%202026%20official%20trailer%20Hindi&type=video&maxResults=5&key=your_youtube_api_key_here&videoCategoryId=1 — not retrying","timestamp":"2026-07-09 13:58:13"}
+{"err":"Request failed with status code 400","level":"warn","message":"YouTube trailer search failed","timestamp":"2026-07-09 13:58:13","title":"Dilemma","year":2026}
+{"id":"6a4f5b57f73d96358734612f","level":"info","message":"Movie updated: \"Dilemma\" [tmdbId]","timestamp":"2026-07-09 13:58:13"}
+{"level":"info","message":"Processing: \"Pappa Sanga Kunache\" (2026) [TMDB:1608266] [Marathi]","timestamp":"2026-07-09 13:58:13"}
+{"err":"Request failed with status code 429","level":"warn","message":"Wikipedia search failed","movieTitle":"Maharashtra Epstein Files","timestamp":"2026-07-09 13:58:13","year":2026}
+{"level":"warn","message":"Attempt 1 failed (Request failed with status code 429). Retrying in 2000ms…","timestamp":"2026-07-09 13:58:14"}
+{"err":"Request failed with status code 429","level":"warn","message":"Wikipedia search failed","movieTitle":"Deva Aaj Pan Vhay","timestamp":"2026-07-09 13:58:15","year":2026}
+{"err":"Request failed with status code 429","level":"warn","message":"Wikipedia search failed","movieTitle":"Adishesh","timestamp":"2026-07-09 13:58:15","year":2026}
+{"level":"warn","message":"HTTP 404 for https://www.bollywoodhungama.com/movies/maharashtra-epstein-files-2026/ — not retrying","timestamp":"2026-07-09 13:58:16"}
+{"level":"warn","message":"Attempt 2 failed (Request failed with status code 429). Retrying in 4000ms…","timestamp":"2026-07-09 13:58:17"}
+{"level":"warn","message":"HTTP 404 for https://www.bollywoodhungama.com/movies/deva-aaj-pan-vhay-2026/ — not retrying","timestamp":"2026-07-09 13:58:17"}
+{"level":"warn","message":"HTTP 400 for https://www.googleapis.com/youtube/v3/search?part=snippet&q=Maharashtra%20Epstein%20Files%202026%20official%20trailer%20Hindi&type=video&maxResults=5&key=your_youtube_api_key_here&videoCategoryId=1 — not retrying","timestamp":"2026-07-09 13:58:17"}
+{"err":"Request failed with status code 400","level":"warn","message":"YouTube trailer search failed","timestamp":"2026-07-09 13:58:17","title":"Maharashtra Epstein Files","year":2026}
+{"level":"warn","message":"HTTP 404 for https://www.bollywoodhungama.com/movies/adishesh-2026/ — not retrying","timestamp":"2026-07-09 13:58:17"}
+{"id":"6a4f5b6df73d9635873461b8","level":"info","message":"Movie updated: \"Maharashtra Epstein Files\" [tmdbId]","timestamp":"2026-07-09 13:58:18"}
+{"level":"info","message":"Processing: \"Drushya Adrushya\" (2026) [TMDB:1727155] [Marathi]","timestamp":"2026-07-09 13:58:18"}
+{"level":"warn","message":"Attempt 1 failed (Request failed with status code 429). Retrying in 2000ms…","timestamp":"2026-07-09 13:58:19"}
+{"level":"warn","message":"HTTP 400 for https://www.googleapis.com/youtube/v3/search?part=snippet&q=Adishesh%202026%20official%20trailer%20Hindi&type=video&maxResults=5&key=your_youtube_api_key_here&videoCategoryId=1 — not retrying","timestamp":"2026-07-09 13:58:19"}
+{"err":"Request failed with status code 400","level":"warn","message":"YouTube trailer search failed","timestamp":"2026-07-09 13:58:19","title":"Adishesh","year":2026}
+{"level":"warn","message":"Movie \"Adishesh\" skipped — missing: posterUrl","timestamp":"2026-07-09 13:58:19"}
+{"level":"info","message":"Processing: \"The Creature\" (2026) [TMDB:1571511] [Marathi]","timestamp":"2026-07-09 13:58:19"}
+{"level":"warn","message":"Attempt 1 failed (Request failed with status code 429). Retrying in 2000ms…","timestamp":"2026-07-09 13:58:20"}
+{"level":"warn","message":"HTTP 400 for https://www.googleapis.com/youtube/v3/search?part=snippet&q=Deva%20Aaj%20Pan%20Vhay%202026%20official%20trailer%20Hindi&type=video&maxResults=5&key=your_youtube_api_key_here&videoCategoryId=1 — not retrying","timestamp":"2026-07-09 13:58:20"}
+{"err":"Request failed with status code 400","level":"warn","message":"YouTube trailer search failed","timestamp":"2026-07-09 13:58:20","title":"Deva Aaj Pan Vhay","year":2026}
+{"id":"6a4f5b68f73d963587346193","level":"info","message":"Movie updated: \"Deva Aaj Pan Vhay\" [tmdbId]","timestamp":"2026-07-09 13:58:20"}
+{"level":"info","message":"Processing: \"Dear Panther\" (2026) [TMDB:1526480] [Marathi]","timestamp":"2026-07-09 13:58:20"}
+{"level":"warn","message":"Attempt 1 failed (Request failed with status code 429). Retrying in 2000ms…","timestamp":"2026-07-09 13:58:21"}
+{"err":"Request failed with status code 429","level":"warn","message":"Wikipedia search failed","movieTitle":"Pappa Sanga Kunache","timestamp":"2026-07-09 13:58:21","year":2026}
+{"level":"warn","message":"Attempt 2 failed (Request failed with status code 429). Retrying in 4000ms…","timestamp":"2026-07-09 13:58:21"}
+{"level":"warn","message":"Attempt 2 failed (Request failed with status code 429). Retrying in 4000ms…","timestamp":"2026-07-09 13:58:22"}
+{"level":"warn","message":"HTTP 404 for https://www.bollywoodhungama.com/movies/pappa-sanga-kunache-2026/ — not retrying","timestamp":"2026-07-09 13:58:22"}
+{"level":"warn","message":"Attempt 2 failed (Request failed with status code 429). Retrying in 4000ms…","timestamp":"2026-07-09 13:58:23"}
+{"level":"warn","message":"HTTP 400 for https://www.googleapis.com/youtube/v3/search?part=snippet&q=Pappa%20Sanga%20Kunache%202026%20official%20trailer%20Hindi&type=video&maxResults=5&key=your_youtube_api_key_here&videoCategoryId=1 — not retrying","timestamp":"2026-07-09 13:58:23"}
+{"err":"Request failed with status code 400","level":"warn","message":"YouTube trailer search failed","timestamp":"2026-07-09 13:58:23","title":"Pappa Sanga Kunache","year":2026}
+{"level":"warn","message":"Movie \"Pappa Sanga Kunache\" skipped — missing: posterUrl","timestamp":"2026-07-09 13:58:23"}
+{"level":"info","message":"Processing: \"Magazine\" (2026) [TMDB:1728425] [Marathi]","timestamp":"2026-07-09 13:58:23"}
+{"level":"warn","message":"Attempt 1 failed (Request failed with status code 429). Retrying in 2000ms…","timestamp":"2026-07-09 13:58:24"}
+{"err":"Request failed with status code 429","level":"warn","message":"Wikipedia search failed","movieTitle":"Drushya Adrushya","timestamp":"2026-07-09 13:58:25","year":2026}
+{"err":"Request failed with status code 429","level":"warn","message":"Wikipedia search failed","movieTitle":"The Creature","timestamp":"2026-07-09 13:58:26","year":2026}
+{"level":"warn","message":"Attempt 2 failed (Request failed with status code 429). Retrying in 4000ms…","timestamp":"2026-07-09 13:58:26"}
+{"level":"warn","message":"HTTP 404 for https://www.bollywoodhungama.com/movies/the-creature-2026/ — not retrying","timestamp":"2026-07-09 13:58:27"}
+{"level":"warn","message":"HTTP 404 for https://www.bollywoodhungama.com/movies/drushya-adrushya-2026/ — not retrying","timestamp":"2026-07-09 13:58:27"}
+{"err":"Request failed with status code 429","level":"warn","message":"Wikipedia search failed","movieTitle":"Dear Panther","timestamp":"2026-07-09 13:58:27","year":2026}
+{"level":"warn","message":"HTTP 400 for https://www.googleapis.com/youtube/v3/search?part=snippet&q=The%20Creature%202026%20official%20trailer%20Hindi&type=video&maxResults=5&key=your_youtube_api_key_here&videoCategoryId=1 — not retrying","timestamp":"2026-07-09 13:58:28"}
+{"err":"Request failed with status code 400","level":"warn","message":"YouTube trailer search failed","timestamp":"2026-07-09 13:58:28","title":"The Creature","year":2026}
+{"id":"6a4f5b7cf73d963587346207","level":"info","message":"Movie updated: \"The Creature\" [tmdbId]","timestamp":"2026-07-09 13:58:29"}
+{"level":"warn","message":"HTTP 400 for https://www.googleapis.com/youtube/v3/search?part=snippet&q=Drushya%20Adrushya%202026%20official%20trailer%20Hindi&type=video&maxResults=5&key=your_youtube_api_key_here&videoCategoryId=1 — not retrying","timestamp":"2026-07-09 13:58:29"}
+{"err":"Request failed with status code 400","level":"warn","message":"YouTube trailer search failed","timestamp":"2026-07-09 13:58:29","title":"Drushya Adrushya","year":2026}
+{"id":"6a4f5b74f73d9635873461e1","level":"info","message":"Movie updated: \"Drushya Adrushya\" [tmdbId]","timestamp":"2026-07-09 13:58:30"}
+{"err":"Request failed with status code 429","level":"warn","message":"Wikipedia search failed","movieTitle":"Magazine","timestamp":"2026-07-09 13:58:31","year":2026}
+{"level":"warn","message":"HTTP 404 for https://www.bollywoodhungama.com/movies/dear-panther-2026/ — not retrying","timestamp":"2026-07-09 13:58:31"}
+{"level":"warn","message":"HTTP 400 for https://www.googleapis.com/youtube/v3/search?part=snippet&q=Dear%20Panther%202026%20official%20trailer%20Hindi&type=video&maxResults=5&key=your_youtube_api_key_here&videoCategoryId=1 — not retrying","timestamp":"2026-07-09 13:58:32"}
+{"err":"Request failed with status code 400","level":"warn","message":"YouTube trailer search failed","timestamp":"2026-07-09 13:58:32","title":"Dear Panther","year":2026}
+{"id":"6a4f5b75f73d9635873461f3","level":"info","message":"Movie updated: \"Dear Panther\" [tmdbId]","timestamp":"2026-07-09 13:58:32"}
+{"level":"warn","message":"HTTP 404 for https://www.bollywoodhungama.com/movies/magazine-2026/ — not retrying","timestamp":"2026-07-09 13:58:33"}
+{"level":"warn","message":"HTTP 400 for https://www.googleapis.com/youtube/v3/search?part=snippet&q=Magazine%202026%20official%20trailer%20Hindi&type=video&maxResults=5&key=your_youtube_api_key_here&videoCategoryId=1 — not retrying","timestamp":"2026-07-09 13:58:34"}
+{"err":"Request failed with status code 400","level":"warn","message":"YouTube trailer search failed","timestamp":"2026-07-09 13:58:34","title":"Magazine","year":2026}
+{"level":"warn","message":"Movie \"Magazine\" skipped — missing: releaseDate, posterUrl, synopsis","timestamp":"2026-07-09 13:58:34"}
+{"level":"info","message":"Marathi stats - inserted:1 updated:32 skipped:0 failed:0 | cast created:10 reused:313","timestamp":"2026-07-09 13:58:34"}
+{"level":"info","message":"\n=================================================","timestamp":"2026-07-09 13:58:35"}
+{"level":"info","message":"  Marathi Scraper completed!","timestamp":"2026-07-09 13:58:35"}
+{"level":"info","message":"Marathi stats - inserted:1 updated:32 skipped:0 failed:0 | cast created:10 reused:313","timestamp":"2026-07-09 13:58:35"}
+{"level":"info","message":"=================================================\n","timestamp":"2026-07-09 13:58:35"}
+{"level":"info","message":"Searching TMDB for: \"Tumbadchi Manjula\"","timestamp":"2026-07-09 14:01:30"}
+{"level":"warn","message":"Attempt 1 failed (read ECONNRESET). Retrying in 2000ms…","timestamp":"2026-07-09 14:01:31"}
+{"level":"warn","message":"Attempt 2 failed (read ECONNRESET). Retrying in 4000ms…","timestamp":"2026-07-09 14:01:34"}
+{"err":"read ECONNRESET","level":"warn","message":"TMDB search failed","timestamp":"2026-07-09 14:01:38","title":"Tumbadchi Manjula"}
+{"level":"info","message":"Searching TMDB for: \"Tumbadchi Manjula\"","timestamp":"2026-07-09 14:02:09"}
+{"level":"warn","message":"Attempt 1 failed (read ECONNRESET). Retrying in 2000ms…","timestamp":"2026-07-09 14:02:09"}
+{"level":"warn","message":"Attempt 2 failed (read ECONNRESET). Retrying in 4000ms…","timestamp":"2026-07-09 14:02:12"}
+{"err":"read ECONNRESET","level":"warn","message":"TMDB search failed","timestamp":"2026-07-09 14:02:16","title":"Tumbadchi Manjula"}

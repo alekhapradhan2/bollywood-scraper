@@ -186,7 +186,18 @@ async function main() {
       timezone: "Asia/Kolkata"
     });
 
-    logger.info("Cron scheduler active: Auto-Release@02:50 | Bollywood@03:00 | OTT@04:00 | Bengali@05:00 | Telugu@06:00 | Malayalam@07:00");
+    cron.schedule("0 8 * * *", async () => {
+      logger.info("Cron: starting incremental Marathi scrape…");
+      try {
+        await runRegionalIncremental("marathi");
+      } catch (err) {
+        logger.error("Marathi Cron run failed", { err: err.message });
+      }
+    }, {
+      timezone: "Asia/Kolkata"
+    });
+
+    logger.info("Cron scheduler active: Auto-Release@02:50 | Bollywood@03:00 | OTT@04:00 | Bengali@05:00 | Telugu@06:00 | Malayalam@07:00 | Marathi@08:00");
     return; // keep process alive
   }
 
@@ -197,7 +208,7 @@ async function main() {
   }
 
   // ── Regional scrape modes
-  const regionKeys = ["bengali", "telugu", "malayalam"];
+  const regionKeys = ["bengali", "telugu", "malayalam", "marathi"];
   const activeRegion = regionKeys.find(k => argMap[k]);
 
   if (activeRegion) {

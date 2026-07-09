@@ -12,7 +12,8 @@ module.exports = {
   REGIONS: {
     bengali: { langName: "Bengali", tmdbLang: "bn", startYear: 2000 },
     telugu: { langName: "Telugu", tmdbLang: "te", startYear: 2000 },
-    malayalam: { langName: "Malayalam", tmdbLang: "ml", startYear: 2000 }
+    malayalam: { langName: "Malayalam", tmdbLang: "ml", startYear: 2000 },
+    marathi: { langName: "Marathi", tmdbLang: "mr", startYear: 2000 }
   },
 
   // ── Source APIs
